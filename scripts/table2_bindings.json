@@ -1,0 +1,574 @@
+{
+  "description": "Historical source bindings for Table 2. Population SD (ddof=0); no model rerun. Source identity is selected by corpus, method and original configuration, not proximity of a number.",
+  "cells": [
+    {
+      "model": "majority class",
+      "corpus": "coaid",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "coaid/majority",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "coaid",
+        "method": "majority",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "majority class",
+      "corpus": "recovery",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "recovery/majority",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "recovery",
+        "method": "majority",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "majority class",
+      "corpus": "politifact",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r9/politifact/politifact_eval.json",
+      "field": "/main/majority",
+      "status": "verified",
+      "source_sha256": "d22c2534a08a6c82ade949be9c34ab316c14bd6ec20c3e848b0a60a6669d125c"
+    },
+    {
+      "model": "majority class",
+      "corpus": "gossipcop",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r9/gossipcop_3k/gossipcop_eval.json",
+      "field": "/main/majority",
+      "status": "verified",
+      "source_sha256": "9cfe1acaacbc331a0a8654369bed0d5d6e5f675047ddf16f20e39581e06604e6"
+    },
+    {
+      "model": "GCNFN-style",
+      "corpus": "coaid",
+      "mean": 0.442,
+      "sd": 0.109,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "coaid/gcnfn",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "coaid",
+        "method": "gcnfn",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "GCNFN-style",
+      "corpus": "recovery",
+      "mean": 0.39,
+      "sd": 0.086,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "recovery/gcnfn",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "recovery",
+        "method": "gcnfn",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "GCNFN-style",
+      "corpus": "politifact",
+      "mean": 0.55,
+      "sd": 0.028,
+      "source": "outputs/r9/politifact/politifact_eval.json",
+      "field": "/main/gcnfn",
+      "status": "verified",
+      "source_sha256": "d22c2534a08a6c82ade949be9c34ab316c14bd6ec20c3e848b0a60a6669d125c"
+    },
+    {
+      "model": "GCNFN-style",
+      "corpus": "gossipcop",
+      "mean": 0.692,
+      "sd": 0.18,
+      "source": "outputs/r9/gossipcop_3k/gossipcop_eval.json",
+      "field": "/main/gcnfn",
+      "status": "verified",
+      "source_sha256": "9cfe1acaacbc331a0a8654369bed0d5d6e5f675047ddf16f20e39581e06604e6"
+    },
+    {
+      "model": "BiGCN-style",
+      "corpus": "coaid",
+      "mean": 0.539,
+      "sd": 0.146,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "coaid/bigcn",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "coaid",
+        "method": "bigcn",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "BiGCN-style",
+      "corpus": "recovery",
+      "mean": 0.338,
+      "sd": 0.009,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "recovery/bigcn",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "recovery",
+        "method": "bigcn",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "BiGCN-style",
+      "corpus": "politifact",
+      "mean": 0.536,
+      "sd": 0.029,
+      "source": "outputs/r9/politifact/politifact_eval.json",
+      "field": "/main/bigcn",
+      "status": "verified",
+      "source_sha256": "d22c2534a08a6c82ade949be9c34ab316c14bd6ec20c3e848b0a60a6669d125c"
+    },
+    {
+      "model": "BiGCN-style",
+      "corpus": "gossipcop",
+      "mean": 0.787,
+      "sd": 0.014,
+      "source": "outputs/r9/gossipcop_3k/gossipcop_eval.json",
+      "field": "/main/bigcn",
+      "status": "verified",
+      "source_sha256": "9cfe1acaacbc331a0a8654369bed0d5d6e5f675047ddf16f20e39581e06604e6"
+    },
+    {
+      "model": "UPFD-prop-style",
+      "corpus": "coaid",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "coaid/upfd_prop",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "coaid",
+        "method": "upfd_prop",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "UPFD-prop-style",
+      "corpus": "recovery",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r7/main_table5/main_table.json",
+      "field": "recovery/upfd_prop",
+      "status": "verified",
+      "source_sha256": "b9dca903334a4ed9f043589509e761db685afe8667a9e0b495e8404b62158717",
+      "row_filter": {
+        "dataset": "recovery",
+        "method": "upfd_prop",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "UPFD-prop-style",
+      "corpus": "politifact",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r9/politifact/politifact_eval.json",
+      "field": "/main/upfd_prop",
+      "status": "verified",
+      "source_sha256": "d22c2534a08a6c82ade949be9c34ab316c14bd6ec20c3e848b0a60a6669d125c"
+    },
+    {
+      "model": "UPFD-prop-style",
+      "corpus": "gossipcop",
+      "mean": 0.333,
+      "sd": 0.0,
+      "source": "outputs/r9/gossipcop_3k/gossipcop_eval.json",
+      "field": "/main/upfd_prop",
+      "status": "verified",
+      "source_sha256": "9cfe1acaacbc331a0a8654369bed0d5d6e5f675047ddf16f20e39581e06604e6"
+    },
+    {
+      "model": "RGCN",
+      "corpus": "coaid",
+      "mean": 0.596,
+      "sd": 0.11,
+      "source": "outputs/r9/rgcn/coaid.json",
+      "field": "",
+      "status": "verified",
+      "source_sha256": "523e448e609d0f651d321d787515c779b2d556e315f50c61cec67497091e7bfa"
+    },
+    {
+      "model": "RGCN",
+      "corpus": "recovery",
+      "mean": 0.545,
+      "sd": 0.064,
+      "source": "outputs/r9/rgcn/recovery.json",
+      "field": "",
+      "status": "verified",
+      "source_sha256": "3aa661c3e98cf220df95f85bc2183b0d6c47248a1fb1a84a4cdd49380c2d7bef"
+    },
+    {
+      "model": "RGCN",
+      "corpus": "politifact",
+      "mean": 0.559,
+      "sd": 0.022,
+      "source": "outputs/r9/rgcn/politifact.json",
+      "field": "",
+      "status": "verified",
+      "source_sha256": "9e2bd60b01aed44d5e2931f3871ea138c9ca984e1fa71ecd5630b95147d38874"
+    },
+    {
+      "model": "RGCN",
+      "corpus": "gossipcop",
+      "mean": 0.78,
+      "sd": 0.015,
+      "source": "outputs/r9/rgcn/gossipcop.json",
+      "field": "",
+      "status": "verified",
+      "source_sha256": "3b99050b16c991fbae0b1ebfc5b6f39f904e6d986de1fc9cb78728443b4fb240"
+    },
+    {
+      "model": "GATv2",
+      "corpus": "coaid",
+      "mean": 0.598,
+      "sd": 0.136,
+      "source": "outputs/r10/gatv2/summary.json",
+      "field": "/coaid",
+      "status": "verified",
+      "source_sha256": "3f2e8a398a301d998c2dd999abcd142972953297680df469dd32e277d31ac0ca"
+    },
+    {
+      "model": "GATv2",
+      "corpus": "recovery",
+      "mean": 0.597,
+      "sd": 0.076,
+      "source": "outputs/r10/gatv2/summary.json",
+      "field": "/recovery",
+      "status": "verified",
+      "source_sha256": "3f2e8a398a301d998c2dd999abcd142972953297680df469dd32e277d31ac0ca"
+    },
+    {
+      "model": "GATv2",
+      "corpus": "politifact",
+      "mean": 0.627,
+      "sd": 0.043,
+      "source": "outputs/r10/gatv2/summary.json",
+      "field": "/politifact",
+      "status": "verified",
+      "source_sha256": "3f2e8a398a301d998c2dd999abcd142972953297680df469dd32e277d31ac0ca"
+    },
+    {
+      "model": "GATv2",
+      "corpus": "gossipcop",
+      "mean": 0.797,
+      "sd": 0.019,
+      "source": "outputs/r10/gatv2/summary.json",
+      "field": "/gossipcop",
+      "status": "verified",
+      "source_sha256": "3f2e8a398a301d998c2dd999abcd142972953297680df469dd32e277d31ac0ca"
+    },
+    {
+      "model": "EBGCN-style",
+      "corpus": "coaid",
+      "mean": 0.611,
+      "sd": 0.138,
+      "source": "outputs/r10/gnn_parity/gnn_parity.json",
+      "field": "/coaid/ebgcn",
+      "status": "verified",
+      "source_sha256": "ee99290d3600cfb36e2b0caff4953679e7e9d459edebd5235e986511eff56ee1"
+    },
+    {
+      "model": "EBGCN-style",
+      "corpus": "recovery",
+      "mean": 0.675,
+      "sd": 0.02,
+      "source": "outputs/r11/ebgcn/ebgcn.json",
+      "field": "/recovery",
+      "status": "verified",
+      "source_sha256": "560520f0c1d269babbb822bac1ebe576762df392aab98ddc5e0f8b7fda14182e"
+    },
+    {
+      "model": "EBGCN-style",
+      "corpus": "politifact",
+      "mean": 0.66,
+      "sd": 0.028,
+      "source": "outputs/r11/ebgcn/ebgcn.json",
+      "field": "/politifact",
+      "status": "verified",
+      "source_sha256": "560520f0c1d269babbb822bac1ebe576762df392aab98ddc5e0f8b7fda14182e"
+    },
+    {
+      "model": "EBGCN-style",
+      "corpus": "gossipcop",
+      "mean": 0.789,
+      "sd": 0.018,
+      "source": "outputs/r11/ebgcn/ebgcn.json",
+      "field": "/gossipcop",
+      "status": "verified",
+      "source_sha256": "560520f0c1d269babbb822bac1ebe576762df392aab98ddc5e0f8b7fda14182e"
+    },
+    {
+      "model": "PropMLP (7 features)",
+      "corpus": "coaid",
+      "mean": 0.618,
+      "sd": 0.085,
+      "source": "outputs/r9/propmlp_table/main_table.json",
+      "field": "coaid/propmlp",
+      "status": "verified",
+      "source_sha256": "4ed7ab360df9f7747b7d25eb708fae4c7d06eda36fef0e61ac34afde412cf078",
+      "row_filter": {
+        "dataset": "coaid",
+        "method": "propmlp",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "PropMLP (7 features)",
+      "corpus": "recovery",
+      "mean": 0.659,
+      "sd": 0.024,
+      "source": "outputs/r9/propmlp_table/main_table.json",
+      "field": "recovery/propmlp",
+      "status": "verified",
+      "source_sha256": "4ed7ab360df9f7747b7d25eb708fae4c7d06eda36fef0e61ac34afde412cf078",
+      "row_filter": {
+        "dataset": "recovery",
+        "method": "propmlp",
+        "regime": "without_text"
+      }
+    },
+    {
+      "model": "PropMLP (7 features)",
+      "corpus": "politifact",
+      "mean": 0.657,
+      "sd": 0.032,
+      "source": "outputs/r9/politifact/politifact_eval.json",
+      "field": "/main/propmlp",
+      "status": "verified",
+      "source_sha256": "d22c2534a08a6c82ade949be9c34ab316c14bd6ec20c3e848b0a60a6669d125c"
+    },
+    {
+      "model": "PropMLP (7 features)",
+      "corpus": "gossipcop",
+      "mean": 0.836,
+      "sd": 0.018,
+      "source": "outputs/r9/gossipcop_3k/gossipcop_eval.json",
+      "field": "/main/propmlp",
+      "status": "verified",
+      "source_sha256": "9cfe1acaacbc331a0a8654369bed0d5d6e5f675047ddf16f20e39581e06604e6"
+    },
+    {
+      "model": "PropMLP+ (15 features)",
+      "corpus": "coaid",
+      "mean": 0.61,
+      "sd": 0.059,
+      "source": "outputs/r9/rich_summary/coaid.json",
+      "field": "/main/propmlp_rich",
+      "status": "verified",
+      "source_sha256": "2513203bbe667a9d6cbd2d39faabc033e2a4be32210f600234fa0dcab0dc9fe2"
+    },
+    {
+      "model": "PropMLP+ (15 features)",
+      "corpus": "recovery",
+      "mean": 0.699,
+      "sd": 0.067,
+      "source": "outputs/r9/rich_summary/recovery.json",
+      "field": "/main/propmlp_rich",
+      "status": "verified",
+      "source_sha256": "99dbfb3dedd6d493b3a0d89aee92d191c49b6229f69764469fd9b7975e57544c"
+    },
+    {
+      "model": "PropMLP+ (15 features)",
+      "corpus": "politifact",
+      "mean": 0.717,
+      "sd": 0.039,
+      "source": "outputs/r9/rich_summary/politifact.json",
+      "field": "/main/propmlp_rich",
+      "status": "verified",
+      "source_sha256": "60fb5d5f2772b33d4a83f1ca9dded265590d2eb75ef8b5a6ec82907fd69f6530"
+    },
+    {
+      "model": "PropMLP+ (15 features)",
+      "corpus": "gossipcop",
+      "mean": 0.851,
+      "sd": null,
+      "status": "unavailable",
+      "source": "outputs/r11/transfer/transfer.json",
+      "note": "Historical diagonal mean retained. Matching seed vector absent; SD omitted rather than substituting later same-rounded-mean outputs."
+    },
+    {
+      "model": "RandomForest (7 features)",
+      "corpus": "coaid",
+      "mean": 0.595,
+      "sd": 0.085,
+      "source": "outputs/r9/tabular_baselines/main.json",
+      "field": "/coaid/rf",
+      "status": "verified",
+      "source_sha256": "09127282315fd97001a9394817120ff7dd6d670ac32b11bc17b6167c16136f95"
+    },
+    {
+      "model": "RandomForest (7 features)",
+      "corpus": "recovery",
+      "mean": 0.651,
+      "sd": 0.057,
+      "source": "outputs/r9/tabular_baselines/main.json",
+      "field": "/recovery/rf",
+      "status": "verified",
+      "source_sha256": "09127282315fd97001a9394817120ff7dd6d670ac32b11bc17b6167c16136f95"
+    },
+    {
+      "model": "RandomForest (7 features)",
+      "corpus": "politifact",
+      "mean": 0.667,
+      "sd": 0.04,
+      "source": "outputs/r9/tabular_baselines/main.json",
+      "field": "/politifact/rf",
+      "status": "verified",
+      "source_sha256": "09127282315fd97001a9394817120ff7dd6d670ac32b11bc17b6167c16136f95"
+    },
+    {
+      "model": "RandomForest (7 features)",
+      "corpus": "gossipcop",
+      "mean": 0.865,
+      "sd": 0.022,
+      "source": "outputs/r9/tabular_baselines/main.json",
+      "field": "/gossipcop/rf",
+      "status": "verified",
+      "source_sha256": "09127282315fd97001a9394817120ff7dd6d670ac32b11bc17b6167c16136f95"
+    },
+    {
+      "model": "HistGBT-A (15 features)",
+      "corpus": "coaid",
+      "mean": 0.629,
+      "sd": 0.036,
+      "source": "outputs/r9/stanford2/coaid.json",
+      "field": "/histgbt15",
+      "status": "verified",
+      "source_sha256": "d88ec13b111e0080f82e1ee81f05807460632ec4d677ada2eed3e38b30deed6b"
+    },
+    {
+      "model": "HistGBT-A (15 features)",
+      "corpus": "recovery",
+      "mean": 0.646,
+      "sd": 0.054,
+      "source": "outputs/r9/stanford2/recovery.json",
+      "field": "/histgbt15",
+      "status": "verified",
+      "source_sha256": "3cf021aa1a146409967ddc5a78f1e28407c190d26da2d3139413df953af89ae1"
+    },
+    {
+      "model": "HistGBT-A (15 features)",
+      "corpus": "politifact",
+      "mean": 0.706,
+      "sd": 0.032,
+      "source": "outputs/r9/stanford2/politifact.json",
+      "field": "/histgbt15",
+      "status": "verified",
+      "source_sha256": "8348dccffe94a1f1dfde390b94fc5c9781ec5f76f1da40ac3cafa9628a5df043"
+    },
+    {
+      "model": "HistGBT-A (15 features)",
+      "corpus": "gossipcop",
+      "mean": 0.877,
+      "sd": 0.019,
+      "source": "outputs/r9/stanford2/gossipcop.json",
+      "field": "/histgbt15",
+      "status": "verified",
+      "source_sha256": "03dbbae4d10abdc54f49f7d751b3fe614fed78a6392437118d9970fe7c8d869f"
+    },
+    {
+      "model": "DLF-Full",
+      "corpus": "coaid",
+      "mean": 0.654,
+      "sd": 0.106,
+      "source": "outputs/r9/rich_summary/coaid.json",
+      "field": "/main/docless",
+      "status": "verified",
+      "source_sha256": "2513203bbe667a9d6cbd2d39faabc033e2a4be32210f600234fa0dcab0dc9fe2"
+    },
+    {
+      "model": "DLF-Full",
+      "corpus": "recovery",
+      "mean": 0.663,
+      "sd": 0.034,
+      "source": "outputs/r9/rich_summary/recovery.json",
+      "field": "/main/docless",
+      "status": "verified",
+      "source_sha256": "99dbfb3dedd6d493b3a0d89aee92d191c49b6229f69764469fd9b7975e57544c"
+    },
+    {
+      "model": "DLF-Full",
+      "corpus": "politifact",
+      "mean": 0.678,
+      "sd": 0.041,
+      "source": "outputs/r9/politifact/politifact_eval.json",
+      "field": "/main/docless",
+      "status": "verified",
+      "source_sha256": "d22c2534a08a6c82ade949be9c34ab316c14bd6ec20c3e848b0a60a6669d125c"
+    },
+    {
+      "model": "DLF-Full",
+      "corpus": "gossipcop",
+      "mean": 0.842,
+      "sd": 0.012,
+      "source": "outputs/r9/gossipcop_3k/gossipcop_eval.json",
+      "field": "/main/docless",
+      "status": "verified",
+      "source_sha256": "9cfe1acaacbc331a0a8654369bed0d5d6e5f675047ddf16f20e39581e06604e6"
+    },
+    {
+      "model": "DLF-Full+ (15 features)",
+      "corpus": "coaid",
+      "mean": 0.621,
+      "sd": 0.067,
+      "source": "outputs/r9/rich_summary/coaid.json",
+      "field": "/main/docless_rich",
+      "status": "verified",
+      "source_sha256": "2513203bbe667a9d6cbd2d39faabc033e2a4be32210f600234fa0dcab0dc9fe2"
+    },
+    {
+      "model": "DLF-Full+ (15 features)",
+      "corpus": "recovery",
+      "mean": 0.689,
+      "sd": 0.047,
+      "source": "outputs/r9/rich_summary/recovery.json",
+      "field": "/main/docless_rich",
+      "status": "verified",
+      "source_sha256": "99dbfb3dedd6d493b3a0d89aee92d191c49b6229f69764469fd9b7975e57544c"
+    },
+    {
+      "model": "DLF-Full+ (15 features)",
+      "corpus": "politifact",
+      "mean": 0.724,
+      "sd": 0.036,
+      "source": "outputs/r9/rich_summary/politifact.json",
+      "field": "/main/docless_rich",
+      "status": "verified",
+      "source_sha256": "60fb5d5f2772b33d4a83f1ca9dded265590d2eb75ef8b5a6ec82907fd69f6530"
+    },
+    {
+      "model": "DLF-Full+ (15 features)",
+      "corpus": "gossipcop",
+      "mean": 0.851,
+      "sd": 0.008,
+      "source": "outputs/r13/gossipcop_dlf_plus.json",
+      "field": "",
+      "status": "verified",
+      "source_sha256": "bfdc1241350dc2961c77c8743c060a2a9ee7b1cc00deac3e80e3955a79aaf57d"
+    }
+  ]
+}

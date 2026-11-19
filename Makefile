@@ -37,6 +37,8 @@ test:               ## unit tests (data-dependent tests skip if data/raw is empt
 # ---------------------------------------------------------------- no-training checks
 verify:             ## check headline paper numbers against stored outputs (seconds)
 	$(RUN) scripts/verify_paper_claims.py
+	$(RUN) scripts/verify_audit_evidence.py
+	$(RUN) outputs/r14/ensemble/valselect/verify_no_leakage.py
 
 figures:            ## rebuild Figure 2 plot data and the Table 7 cells into generated/
 	$(RUN) scripts/rev7_make_paper_figures.py

@@ -27,7 +27,7 @@ Everything runs on CPU. No GPU and no model checkpoints are needed.
 | --- | --- |
 | `src/docless/` | Python package: data loaders and cascade schema, hypergraph encoder, next-slice pretraining, adjustment head, abstention, all baselines, evaluation and paired statistics |
 | `scripts/` | One script per experiment; each writes JSON under `outputs/` (see the map below) |
-| `outputs/` | Stored results behind every number in the paper and supplement (JSON, about 10 MB) |
+| `outputs/` | Stored results for the documented comparisons, with historical provenance limits below (JSON) |
 | `tests/` | Unit tests (`pytest`) |
 | `Makefile` | Named targets for every experiment, check and download (`make help`) |
 | `DATA.md` | Where each corpus comes from, the pinned versions, SHA-256 checks and terms of use |
@@ -129,7 +129,41 @@ story IDs of every split so that a rerun can be checked against ours.
 | Publisher-disjoint and size-stratified splits | `make source-disjoint size-split` | `outputs/r9/source_disjoint/`, `outputs/r11/size_split/` |
 | Official BiGCN code, as released | `make official-bigcn` (runs the authors' unmodified code through a one-symbol shim) | `outputs/r15/official_bigcn/twitter15_asreleased.log` |
 
-The validation-only selection in Section 5.1 used eight components on CoAID, ReCOVery and PolitiFact and four on GossipCop (140 corpus, model and seed outputs). `preds/gossipcop` also holds DLF-Full and DLF-Full+ dumps that finished later, so rerunning `published_leader_check.py` lists six GossipCop components; the GossipCop pick and its regret (0.000) do not change. The stored `published_leader_check.json` is the version the paper reports.
+The validation-only selection in Section 5.1 uses the archived primary pool:
+eight components on CoAID, ReCOVery and PolitiFact and four on GossipCop
+(140 corpus/model/seed dumps in `preds/`). Ten later GossipCop DLF dumps remain
+unchanged in `later-preds/`, outside that loader. Pool membership comes from
+`MANIFEST.json`, not a choice made after inspecting test performance.
+`PUBLIC-PROVENANCE.json` binds the shipped files by SHA-256. Blanking test
+fields reproduces the picks and checks fold membership; it does **not** prove
+prospective blinding of pool design. `SELECTION_RULE.json` records when the
+expanded pool was declared. This audit is separate from the UPFD
+validation-selected headline comparison.
+
+### Historical inference and provenance
+
+Run `python scripts/verify_audit_evidence.py` to recompute 51 of the 52 Table 2
+mean/population-SD cells from the original saved five-seed vectors. The
+GossipCop PropMLP+ SD is omitted: its matching seed vector is unavailable.
+A later run with the same rounded mean is not a substitute.
+`scripts/table2_bindings.json` records exact source paths, fields and hashes.
+
+The 23-test event-list family mixes 12 story-clustered contrasts and 11 pooled
+story-seed-row contrasts. The verifier reproduces the archived Holm/BH
+arithmetic, not a new uniformly clustered analysis. Row resampling can
+understate uncertainty. Standalone `paired_rf` and older rich-summary results
+also use rows; the paper's rich-summary discussion uses the clustered family.
+HistGBT-A is tuned with 15 features (`r9/stanford2`); B is fixed with 7 features
+(`r10/rev_stats`, `r10/power`); C is fixed with 15 (`r10/ssl_tree`,
+`r13/label_permutation`). These are separate configurations.
+
+The r7 full CoAID ablation matches the r8 label-aware diagnostic seed for seed.
+Label-free r8 pretraining has mean 0.563; the label-aware diagnostic has 0.587.
+Historical main-table DLF outputs lack per-run sampler flags, so they do not
+establish a uniquely label-free pretraining benefit. Stale GATv2 rows in the
+power file are not used for paper MDE claims. The clustered Weibo file contains
+GCN and summaries, not the full graph pool; its interval is conditional on the
+selected model. Historical outputs remain unchanged.
 
 ### Supplement
 

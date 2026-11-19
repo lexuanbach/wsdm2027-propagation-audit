@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "coaid",
+    "frac": 0.25,
+    "f1_mean": 0.447,
+    "f1_std": 0.111,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "coaid",
+    "frac": 0.5,
+    "f1_mean": 0.599,
+    "f1_std": 0.071,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "coaid",
+    "frac": 0.75,
+    "f1_mean": 0.665,
+    "f1_std": 0.097,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "coaid",
+    "frac": 1.0,
+    "f1_mean": 0.59,
+    "f1_std": 0.129,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "frac": 0.25,
+    "f1_mean": 0.346,
+    "f1_std": 0.042,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "frac": 0.5,
+    "f1_mean": 0.356,
+    "f1_std": 0.043,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "frac": 0.75,
+    "f1_mean": 0.454,
+    "f1_std": 0.038,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "frac": 1.0,
+    "f1_mean": 0.66,
+    "f1_std": 0.034,
+    "n_seeds": 5
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "dataset": "coaid",
+    "mode": "label_free",
+    "f1_mean": 0.563,
+    "f1_std": 0.235,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "mode": "label_aware",
+    "f1_mean": 0.587,
+    "f1_std": 0.195,
+    "n_seeds": 3
+  }
+]

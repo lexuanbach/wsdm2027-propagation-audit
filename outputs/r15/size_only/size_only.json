@@ -1,0 +1,59 @@
+{
+  "feature": "log1p(event count) only, standardised on train",
+  "model": "LogisticRegression(max_iter=2000)",
+  "splits": "same _stratified_split(seed) as every other event-list result",
+  "corpora": {
+    "coaid": {
+      "macro_f1_mean": 0.5142,
+      "macro_f1_std": 0.0573,
+      "acc_mean": 0.5167,
+      "per_seed_macro_f1": [
+        0.5,
+        0.5409,
+        0.5833,
+        0.4126,
+        0.5344
+      ],
+      "n_test": 24
+    },
+    "recovery": {
+      "macro_f1_mean": 0.623,
+      "macro_f1_std": 0.0287,
+      "acc_mean": 0.6239,
+      "per_seed_macro_f1": [
+        0.6085,
+        0.6195,
+        0.6733,
+        0.6276,
+        0.5862
+      ],
+      "n_test": 92
+    },
+    "politifact": {
+      "macro_f1_mean": 0.4963,
+      "macro_f1_std": 0.0806,
+      "acc_mean": 0.5031,
+      "per_seed_macro_f1": [
+        0.3905,
+        0.5142,
+        0.474,
+        0.6363,
+        0.4667
+      ],
+      "n_test": 64
+    },
+    "gossipcop": {
+      "macro_f1_mean": 0.7068,
+      "macro_f1_std": 0.0221,
+      "acc_mean": 0.708,
+      "per_seed_macro_f1": [
+        0.7131,
+        0.7458,
+        0.7028,
+        0.6899,
+        0.6826
+      ],
+      "n_test": 300
+    }
+  }
+}

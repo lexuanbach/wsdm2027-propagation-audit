@@ -1,0 +1,524 @@
+{
+  "coaid": {
+    "n_stories_pooled": 120,
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ],
+    "propmlp": {
+      "full": {
+        "f1_mean": 0.618,
+        "f1_std": 0.085,
+        "per_seed": [
+          0.4965,
+          0.5714,
+          0.608,
+          0.6643,
+          0.7483
+        ],
+        "acc": 0.625
+      },
+      "drop_size": {
+        "f1_mean": 0.6,
+        "f1_std": 0.052,
+        "per_seed": [
+          0.5344,
+          0.5714,
+          0.6643,
+          0.5714,
+          0.6571
+        ],
+        "acc": 0.6083,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.0167,
+          "acc_cost_of_dropping": 0.0167,
+          "direction": "dropping hurts",
+          "p_value": 0.6296,
+          "ci_lo": -0.0333,
+          "ci_hi": 0.0667
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.5,
+        "f1_std": 0.109,
+        "per_seed": [
+          0.4965,
+          0.3651,
+          0.5804,
+          0.4,
+          0.6571
+        ],
+        "acc": 0.5083,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.1167,
+          "acc_cost_of_dropping": 0.1167,
+          "direction": "dropping hurts",
+          "p_value": 0.0214,
+          "ci_lo": 0.0248,
+          "ci_hi": 0.2167
+        }
+      }
+    },
+    "rf": {
+      "full": {
+        "f1_mean": 0.595,
+        "f1_std": 0.085,
+        "per_seed": [
+          0.5344,
+          0.5833,
+          0.608,
+          0.5,
+          0.7483
+        ],
+        "acc": 0.6
+      },
+      "drop_size": {
+        "f1_mean": 0.578,
+        "f1_std": 0.094,
+        "per_seed": [
+          0.5344,
+          0.5,
+          0.608,
+          0.5,
+          0.75
+        ],
+        "acc": 0.5833,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.0167,
+          "acc_cost_of_dropping": 0.0167,
+          "direction": "dropping hurts",
+          "p_value": 0.5792,
+          "ci_lo": -0.025,
+          "ci_hi": 0.0667
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.549,
+        "f1_std": 0.096,
+        "per_seed": [
+          0.4574,
+          0.4167,
+          0.5833,
+          0.6243,
+          0.6643
+        ],
+        "acc": 0.55,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.05,
+          "acc_cost_of_dropping": 0.05,
+          "direction": "dropping hurts",
+          "p_value": 0.4214,
+          "ci_lo": -0.0667,
+          "ci_hi": 0.1667
+        }
+      }
+    }
+  },
+  "recovery": {
+    "n_stories_pooled": 460,
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ],
+    "propmlp": {
+      "full": {
+        "f1_mean": 0.659,
+        "f1_std": 0.024,
+        "per_seed": [
+          0.6847,
+          0.6802,
+          0.6315,
+          0.67,
+          0.6303
+        ],
+        "acc": 0.663
+      },
+      "drop_size": {
+        "f1_mean": 0.672,
+        "f1_std": 0.032,
+        "per_seed": [
+          0.728,
+          0.6683,
+          0.6439,
+          0.6784,
+          0.6392
+        ],
+        "acc": 0.6761,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": -0.013,
+          "acc_cost_of_dropping": -0.013,
+          "direction": "dropping helps",
+          "p_value": 0.2306,
+          "ci_lo": -0.0326,
+          "ci_hi": 0.0065
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.664,
+        "f1_std": 0.03,
+        "per_seed": [
+          0.7173,
+          0.6582,
+          0.6462,
+          0.6714,
+          0.6289
+        ],
+        "acc": 0.6674,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": -0.0043,
+          "acc_cost_of_dropping": -0.0043,
+          "direction": "dropping helps",
+          "p_value": 0.792,
+          "ci_lo": -0.0304,
+          "ci_hi": 0.0217
+        }
+      }
+    },
+    "rf": {
+      "full": {
+        "f1_mean": 0.651,
+        "f1_std": 0.057,
+        "per_seed": [
+          0.739,
+          0.6951,
+          0.5955,
+          0.626,
+          0.5978
+        ],
+        "acc": 0.6522
+      },
+      "drop_size": {
+        "f1_mean": 0.671,
+        "f1_std": 0.04,
+        "per_seed": [
+          0.7169,
+          0.7037,
+          0.6057,
+          0.6784,
+          0.6522
+        ],
+        "acc": 0.6739,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": -0.0217,
+          "acc_cost_of_dropping": -0.0217,
+          "direction": "dropping helps",
+          "p_value": 0.0582,
+          "ci_lo": -0.0435,
+          "ci_hi": 0.0
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.656,
+        "f1_std": 0.013,
+        "per_seed": [
+          0.6714,
+          0.6725,
+          0.6462,
+          0.6495,
+          0.6413
+        ],
+        "acc": 0.6587,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": -0.0065,
+          "acc_cost_of_dropping": -0.0065,
+          "direction": "dropping helps",
+          "p_value": 0.762,
+          "ci_lo": -0.0435,
+          "ci_hi": 0.0283
+        }
+      }
+    }
+  },
+  "politifact": {
+    "n_stories_pooled": 320,
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ],
+    "propmlp": {
+      "full": {
+        "f1_mean": 0.657,
+        "f1_std": 0.032,
+        "per_seed": [
+          0.7025,
+          0.619,
+          0.6699,
+          0.6718,
+          0.6217
+        ],
+        "acc": 0.6594
+      },
+      "drop_size": {
+        "f1_mean": 0.683,
+        "f1_std": 0.044,
+        "per_seed": [
+          0.7478,
+          0.6476,
+          0.6712,
+          0.7185,
+          0.6297
+        ],
+        "acc": 0.6875,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": -0.0281,
+          "acc_cost_of_dropping": -0.0281,
+          "direction": "dropping helps",
+          "p_value": 0.0772,
+          "ci_lo": -0.0594,
+          "ci_hi": 0.0
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.665,
+        "f1_std": 0.046,
+        "per_seed": [
+          0.7163,
+          0.6363,
+          0.6508,
+          0.7185,
+          0.6015
+        ],
+        "acc": 0.6687,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": -0.0094,
+          "acc_cost_of_dropping": -0.0094,
+          "direction": "dropping helps",
+          "p_value": 0.6856,
+          "ci_lo": -0.0469,
+          "ci_hi": 0.0281
+        }
+      }
+    },
+    "rf": {
+      "full": {
+        "f1_mean": 0.667,
+        "f1_std": 0.04,
+        "per_seed": [
+          0.7185,
+          0.6653,
+          0.6384,
+          0.7013,
+          0.6093
+        ],
+        "acc": 0.6687
+      },
+      "drop_size": {
+        "f1_mean": 0.657,
+        "f1_std": 0.033,
+        "per_seed": [
+          0.6847,
+          0.6476,
+          0.6398,
+          0.7025,
+          0.6085
+        ],
+        "acc": 0.6594,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.0094,
+          "acc_cost_of_dropping": 0.0094,
+          "direction": "dropping hurts",
+          "p_value": 0.5634,
+          "ci_lo": -0.0187,
+          "ci_hi": 0.0375
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.675,
+        "f1_std": 0.035,
+        "per_seed": [
+          0.7085,
+          0.6941,
+          0.6508,
+          0.7025,
+          0.619
+        ],
+        "acc": 0.6813,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": -0.0125,
+          "acc_cost_of_dropping": -0.0125,
+          "direction": "dropping helps",
+          "p_value": 0.6674,
+          "ci_lo": -0.0625,
+          "ci_hi": 0.0375
+        }
+      }
+    }
+  },
+  "gossipcop": {
+    "n_stories_pooled": 1500,
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ],
+    "propmlp": {
+      "full": {
+        "f1_mean": 0.836,
+        "f1_std": 0.018,
+        "per_seed": [
+          0.8594,
+          0.8363,
+          0.8531,
+          0.8131,
+          0.8197
+        ],
+        "acc": 0.8367
+      },
+      "drop_size": {
+        "f1_mean": 0.836,
+        "f1_std": 0.012,
+        "per_seed": [
+          0.8494,
+          0.8198,
+          0.8496,
+          0.8331,
+          0.8266
+        ],
+        "acc": 0.836,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.0007,
+          "acc_cost_of_dropping": 0.0007,
+          "direction": "dropping hurts",
+          "p_value": 0.9406,
+          "ci_lo": -0.0073,
+          "ci_hi": 0.0087
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.826,
+        "f1_std": 0.013,
+        "per_seed": [
+          0.8363,
+          0.803,
+          0.8397,
+          0.8197,
+          0.83
+        ],
+        "acc": 0.826,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.0107,
+          "acc_cost_of_dropping": 0.0107,
+          "direction": "dropping hurts",
+          "p_value": 0.0576,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0213
+        }
+      }
+    },
+    "rf": {
+      "full": {
+        "f1_mean": 0.865,
+        "f1_std": 0.022,
+        "per_seed": [
+          0.8832,
+          0.8366,
+          0.8867,
+          0.8399,
+          0.8767
+        ],
+        "acc": 0.8647
+      },
+      "drop_size": {
+        "f1_mean": 0.863,
+        "f1_std": 0.023,
+        "per_seed": [
+          0.8866,
+          0.83,
+          0.8833,
+          0.8399,
+          0.8733
+        ],
+        "acc": 0.8627,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.002,
+          "acc_cost_of_dropping": 0.002,
+          "direction": "dropping hurts",
+          "p_value": 0.5702,
+          "ci_lo": -0.004,
+          "ci_hi": 0.008
+        }
+      },
+      "drop_size_users": {
+        "f1_mean": 0.831,
+        "f1_std": 0.017,
+        "per_seed": [
+          0.8398,
+          0.8233,
+          0.8464,
+          0.8,
+          0.8432
+        ],
+        "acc": 0.8307,
+        "paired_vs_full": {
+          "mean_loss_delta_reduced_minus_full": 0.034,
+          "acc_cost_of_dropping": 0.034,
+          "direction": "dropping hurts",
+          "p_value": 0.0,
+          "ci_lo": 0.02,
+          "ci_hi": 0.048
+        }
+      }
+    }
+  },
+  "_full_arm_reproduces_table2": {
+    "coaid_propmlp": {
+      "computed": 0.618,
+      "table2": 0.618,
+      "match": true
+    },
+    "recovery_propmlp": {
+      "computed": 0.659,
+      "table2": 0.659,
+      "match": true
+    },
+    "politifact_propmlp": {
+      "computed": 0.657,
+      "table2": 0.657,
+      "match": true
+    },
+    "gossipcop_propmlp": {
+      "computed": 0.836,
+      "table2": 0.836,
+      "match": true
+    },
+    "coaid_rf": {
+      "computed": 0.595,
+      "table2": 0.595,
+      "match": true
+    },
+    "recovery_rf": {
+      "computed": 0.651,
+      "table2": 0.651,
+      "match": true
+    },
+    "politifact_rf": {
+      "computed": 0.667,
+      "table2": 0.667,
+      "match": true
+    },
+    "gossipcop_rf": {
+      "computed": 0.865,
+      "table2": 0.865,
+      "match": true
+    }
+  }
+}

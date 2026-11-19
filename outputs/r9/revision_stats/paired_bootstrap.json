@@ -1,0 +1,20 @@
+{
+  "coaid": {
+    "docless_f1_mean": 0.654,
+    "propmlp_f1_mean": 0.618,
+    "mean_loss_diff_propmlp_minus_docless": 0.0333,
+    "p_value": 0.4136,
+    "ci_lo": -0.0417,
+    "ci_hi": 0.1083,
+    "n_stories": 120
+  },
+  "recovery": {
+    "docless_f1_mean": 0.663,
+    "propmlp_f1_mean": 0.659,
+    "mean_loss_diff_propmlp_minus_docless": 0.0065,
+    "p_value": 0.6324,
+    "ci_lo": -0.0174,
+    "ci_hi": 0.0304,
+    "n_stories": 460
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "dataset": "coaid",
+    "method": "majority",
+    "regime": "without_text",
+    "f1_mean": 0.333,
+    "f1_std": 0.0,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "method": "gcnfn",
+    "regime": "without_text",
+    "f1_mean": 0.6,
+    "f1_std": 0.196,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "method": "upfd_prop",
+    "regime": "without_text",
+    "f1_mean": 0.333,
+    "f1_std": 0.0,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "method": "docless",
+    "regime": "without_text",
+    "f1_mean": 0.587,
+    "f1_std": 0.195,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "method": "majority",
+    "regime": "without_text",
+    "f1_mean": 0.333,
+    "f1_std": 0.0,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "method": "gcnfn",
+    "regime": "without_text",
+    "f1_mean": 0.544,
+    "f1_std": 0.047,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "method": "upfd_prop",
+    "regime": "without_text",
+    "f1_mean": 0.333,
+    "f1_std": 0.0,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "method": "docless",
+    "regime": "without_text",
+    "f1_mean": 0.586,
+    "f1_std": 0.029,
+    "n_seeds": 3
+  }
+]

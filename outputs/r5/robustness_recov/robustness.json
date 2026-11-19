@@ -1,0 +1,152 @@
+{
+  "rows": [
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.0,
+      "f1": 0.5378106821787414
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.1,
+      "f1": 0.4635932203389831
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.2,
+      "f1": 0.5053763440860215
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.3,
+      "f1": 0.5334685598377282
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "perturb": "pop_shift",
+      "level": 0.5,
+      "f1": 0.43021748523692926
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "perturb": "pop_shift",
+      "level": 0.7,
+      "f1": 0.5611009174311927
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "perturb": "pop_shift",
+      "level": 0.9,
+      "f1": 0.39473684210526316
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.0,
+      "f1": 0.49786426198386335
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.1,
+      "f1": 0.3463340891912321
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.2,
+      "f1": 0.5478844540333213
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.3,
+      "f1": 0.3517156862745098
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "perturb": "pop_shift",
+      "level": 0.5,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "perturb": "pop_shift",
+      "level": 0.7,
+      "f1": 0.35664335664335667
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "perturb": "pop_shift",
+      "level": 0.9,
+      "f1": 0.4658134850100723
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "perturb": "label_noise",
+      "level": 0.0,
+      "f1": 0.6609336609336609
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "perturb": "label_noise",
+      "level": 0.1,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "perturb": "label_noise",
+      "level": 0.2,
+      "f1": 0.43021748523692926
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "perturb": "label_noise",
+      "level": 0.3,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "perturb": "pop_shift",
+      "level": 0.5,
+      "f1": 0.650688182249644
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "perturb": "pop_shift",
+      "level": 0.7,
+      "f1": 0.5253071253071253
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "perturb": "pop_shift",
+      "level": 0.9,
+      "f1": 0.6057142857142856
+    }
+  ],
+  "wall_s": 1572.2847390174866
+}

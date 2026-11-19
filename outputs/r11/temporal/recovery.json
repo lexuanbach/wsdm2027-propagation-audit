@@ -1,0 +1,121 @@
+{
+  "dataset": "recovery",
+  "split": "temporal 80/10/10 by earliest event time; test strictly future",
+  "n_test_per_seed": [
+    92,
+    92,
+    92,
+    92,
+    92
+  ],
+  "test_prior_misinfo": 0.993,
+  "results": {
+    "propmlp7": {
+      "f1_mean": 0.2158,
+      "f1_std": 0.0201,
+      "per_seed": [
+        0.2014,
+        0.1862,
+        0.244,
+        0.2269,
+        0.2203
+      ]
+    },
+    "propmlp15": {
+      "f1_mean": 0.3207,
+      "f1_std": 0.0083,
+      "per_seed": [
+        0.3354,
+        0.3128,
+        0.3185,
+        0.3134,
+        0.3235
+      ]
+    },
+    "rf7": {
+      "f1_mean": 0.222,
+      "f1_std": 0.0187,
+      "per_seed": [
+        0.2088,
+        0.2371,
+        0.244,
+        0.193,
+        0.2269
+      ]
+    },
+    "rf15": {
+      "f1_mean": 0.2548,
+      "f1_std": 0.019,
+      "per_seed": [
+        0.2232,
+        0.2702,
+        0.2766,
+        0.2459,
+        0.2581
+      ]
+    },
+    "histgbt7": {
+      "f1_mean": 0.3635,
+      "f1_std": 0.0167,
+      "per_seed": [
+        0.3727,
+        0.383,
+        0.3675,
+        0.3333,
+        0.3611
+      ]
+    },
+    "histgbt15": {
+      "f1_mean": 0.3719,
+      "f1_std": 0.0305,
+      "per_seed": [
+        0.3981,
+        0.3931,
+        0.3931,
+        0.3185,
+        0.3566
+      ]
+    },
+    "histgbt15_iw": {
+      "f1_mean": 0.3635,
+      "f1_std": 0.0232,
+      "per_seed": [
+        0.383,
+        0.3779,
+        0.3727,
+        0.3185,
+        0.3655
+      ]
+    },
+    "rf15_iw": {
+      "f1_mean": 0.2569,
+      "f1_std": 0.0233,
+      "per_seed": [
+        0.216,
+        0.2766,
+        0.2702,
+        0.2459,
+        0.2756
+      ]
+    }
+  },
+  "importance_weighting": {
+    "histgbt15": {
+      "acc_delta_iw_minus_base": -0.0174,
+      "p": 0.2954,
+      "ci95": [
+        -0.0478,
+        0.013
+      ]
+    },
+    "rf15": {
+      "acc_delta_iw_minus_base": 0.0043,
+      "p": 0.8038,
+      "ci95": [
+        -0.0217,
+        0.0326
+      ]
+    },
+    "method": "logistic domain classifier train-vs-future features, weights clipped [0.1,10], label-free"
+  }
+}

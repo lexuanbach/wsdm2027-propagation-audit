@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "seed": 0,
+      "tau": 0.011521536856889725,
+      "coverage": 0.9583333134651184,
+      "acc_all": 0.5,
+      "acc_kept": 0.52173912525177,
+      "f1_all": 0.4857142857142857,
+      "f1_kept": 0.50682261208577,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "full",
+      "wall_s": 16.5
+    },
+    {
+      "seed": 1,
+      "tau": 0.022064991295337677,
+      "coverage": 1.0,
+      "acc_all": 0.5,
+      "acc_kept": 0.5,
+      "f1_all": 0.3333333333333333,
+      "f1_kept": 0.3333333333333333,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "full",
+      "wall_s": 15.31
+    },
+    {
+      "seed": 0,
+      "tau": 0.011489936150610447,
+      "coverage": 0.9583333134651184,
+      "acc_all": 0.5,
+      "acc_kept": 0.52173912525177,
+      "f1_all": 0.39495798319327735,
+      "f1_kept": 0.41025641025641024,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "no_ssl",
+      "wall_s": 13.72
+    },
+    {
+      "seed": 1,
+      "tau": 0.018793892115354538,
+      "coverage": 1.0,
+      "acc_all": 0.4166666567325592,
+      "acc_kept": 0.4166666567325592,
+      "f1_all": 0.34375,
+      "f1_kept": 0.34375,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "no_ssl",
+      "wall_s": 12.55
+    },
+    {
+      "seed": 0,
+      "tau": 0.011554226279258728,
+      "coverage": 0.9583333134651184,
+      "acc_all": 0.5,
+      "acc_kept": 0.52173912525177,
+      "f1_all": 0.4857142857142857,
+      "f1_kept": 0.50682261208577,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "no_causal",
+      "wall_s": 16.43
+    },
+    {
+      "seed": 1,
+      "tau": 0.022546708583831787,
+      "coverage": 1.0,
+      "acc_all": 0.5,
+      "acc_kept": 0.5,
+      "f1_all": 0.3333333333333333,
+      "f1_kept": 0.3333333333333333,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "no_causal",
+      "wall_s": 15.43
+    },
+    {
+      "seed": 0,
+      "tau": 0.014300823211669922,
+      "coverage": 1.0,
+      "acc_all": 0.5,
+      "acc_kept": 0.5,
+      "f1_all": 0.4857142857142857,
+      "f1_kept": 0.4857142857142857,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "no_abstain",
+      "wall_s": 16.16
+    },
+    {
+      "seed": 1,
+      "tau": 0.023956239223480225,
+      "coverage": 1.0,
+      "acc_all": 0.5,
+      "acc_kept": 0.5,
+      "f1_all": 0.3333333333333333,
+      "f1_kept": 0.3333333333333333,
+      "n_test": 24,
+      "dataset": "coaid",
+      "variant": "no_abstain",
+      "wall_s": 15.42
+    }
+  ],
+  "wall_s_total": 121.51675271987915
+}

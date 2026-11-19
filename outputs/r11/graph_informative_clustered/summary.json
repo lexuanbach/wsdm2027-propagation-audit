@@ -1,0 +1,13 @@
+{
+  "weibo": {
+    "logreg": 0.8892,
+    "rf": 0.8843,
+    "histgbt": 0.8772,
+    "mlp": 0.8879,
+    "gcn": 0.8944,
+    "best_graph": "gcn",
+    "best_summary": "logreg",
+    "p_graph_vs_histgbt": 0.0014,
+    "acc_gain_graph_vs_histgbt": 0.0172
+  }
+}

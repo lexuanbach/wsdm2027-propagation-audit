@@ -1,0 +1,23 @@
+[
+  {
+    "dataset": "coaid",
+    "kp": 2,
+    "ke": 2,
+    "f1_mean": 0.591,
+    "f1_std": 0.196
+  },
+  {
+    "dataset": "coaid",
+    "kp": 4,
+    "ke": 4,
+    "f1_mean": 0.587,
+    "f1_std": 0.195
+  },
+  {
+    "dataset": "coaid",
+    "kp": 8,
+    "ke": 8,
+    "f1_mean": 0.576,
+    "f1_std": 0.197
+  }
+]

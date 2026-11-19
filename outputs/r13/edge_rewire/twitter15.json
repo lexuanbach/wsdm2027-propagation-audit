@@ -1,0 +1,217 @@
+{
+  "clustered_best_graph_vs_histgbt": {
+    "mean": 0.0443,
+    "ci95": [
+      0.0,
+      0.0878
+    ],
+    "p": 0.0542,
+    "ci90": [
+      0.0068,
+      0.0812
+    ],
+    "tost_equivalent_0.03": false,
+    "tost_equivalent_0.05": false,
+    "n_stories": 610,
+    "n_rows": 745
+  },
+  "clustered_best_graph_vs_best_summary": {
+    "mean": -0.0242,
+    "ci95": [
+      -0.0597,
+      0.0122
+    ],
+    "p": 0.2054,
+    "ci90": [
+      -0.0537,
+      0.0065
+    ],
+    "tost_equivalent_0.03": false,
+    "tost_equivalent_0.05": false,
+    "n_stories": 610,
+    "n_rows": 745
+  },
+  "seed_paired_t_graph_vs_histgbt": {
+    "t": 1.994,
+    "p": 0.117,
+    "per_seed_acc_graph": [
+      0.3557,
+      0.3087,
+      0.3221,
+      0.3087,
+      0.3557
+    ],
+    "per_seed_acc_histgbt": [
+      0.255,
+      0.3087,
+      0.2685,
+      0.3221,
+      0.2752
+    ]
+  },
+  "dataset": "twitter15",
+  "n_classes": 4,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 60,
+  "n_test_per_seed": [
+    149,
+    149,
+    149,
+    149,
+    149
+  ],
+  "official_splits": false,
+  "profile_features": false,
+  "summary_features": [
+    "log_size",
+    "depth",
+    "log_max_width",
+    "mean_branching",
+    "leaf_frac",
+    "log_root_fanout",
+    "mean_depth",
+    "structural_virality",
+    "depth_per_node"
+  ],
+  "node_features": "depth one-hot(8), log out-degree, is-root, log size",
+  "results": {
+    "logreg": {
+      "f1_mean": 0.3247,
+      "f1_std": 0.0357,
+      "per_seed": [
+        0.3046,
+        0.342,
+        0.2687,
+        0.3741,
+        0.334
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.3288,
+      "f1_std": 0.0161,
+      "per_seed": [
+        0.3227,
+        0.3547,
+        0.3387,
+        0.3088,
+        0.3192
+      ]
+    },
+    "histgbt": {
+      "f1_mean": 0.2844,
+      "f1_std": 0.0261,
+      "per_seed": [
+        0.2517,
+        0.3079,
+        0.2667,
+        0.3213,
+        0.2743
+      ]
+    },
+    "mlp": {
+      "f1_mean": 0.3506,
+      "f1_std": 0.0484,
+      "per_seed": [
+        0.3235,
+        0.3975,
+        0.3026,
+        0.4199,
+        0.3095
+      ]
+    },
+    "bigcn": {
+      "f1_mean": 0.3243,
+      "f1_std": 0.0228,
+      "per_seed": [
+        0.3505,
+        0.3019,
+        0.3093,
+        0.3062,
+        0.3536
+      ]
+    }
+  },
+  "best_graph": "bigcn",
+  "best_summary": "mlp",
+  "paired_best_graph_vs_best_summary": {
+    "acc_gain_graph": -0.0242,
+    "p": 0.1672,
+    "ci95": [
+      -0.0591,
+      0.0094
+    ]
+  },
+  "paired_best_graph_vs_histgbt": {
+    "acc_gain_graph": 0.0443,
+    "p": 0.0384,
+    "ci95": [
+      0.0027,
+      0.0859
+    ]
+  },
+  "tost_graph_vs_histgbt": {
+    "0.03": {
+      "margin": 0.03,
+      "ci90": [
+        0.009395973154362415,
+        0.07919463087248323
+      ],
+      "equivalent": false,
+      "mean": 0.04429530201342282
+    },
+    "0.05": {
+      "margin": 0.05,
+      "ci90": [
+        0.009395973154362415,
+        0.07919463087248323
+      ],
+      "equivalent": false,
+      "mean": 0.04429530201342282
+    }
+  },
+  "histgbt_selected_hparams": [
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 0.0
+    },
+    {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 0.0
+    }
+  ],
+  "timing_s_mean": {
+    "summary_family_s": 10.9,
+    "bigcn_s": 21.6
+  },
+  "n_graphs": 1470,
+  "label_counts": {
+    "0": 373,
+    "1": 362,
+    "2": 366,
+    "3": 369
+  },
+  "wall_s": 178.3
+}

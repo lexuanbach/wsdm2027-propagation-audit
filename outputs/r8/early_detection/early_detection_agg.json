@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "coaid",
+    "frac": 0.25,
+    "f1_mean": 0.483,
+    "f1_std": 0.098,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "frac": 0.5,
+    "f1_mean": 0.564,
+    "f1_std": 0.142,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "frac": 0.75,
+    "f1_mean": 0.545,
+    "f1_std": 0.148,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "frac": 1.0,
+    "f1_mean": 0.556,
+    "f1_std": 0.148,
+    "n_seeds": 3
+  }
+]

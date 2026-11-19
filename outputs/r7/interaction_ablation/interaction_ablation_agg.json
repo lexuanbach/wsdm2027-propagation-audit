@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "coaid",
+    "variant": "full",
+    "f1_mean": 0.587,
+    "f1_std": 0.195,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_ssl",
+    "f1_mean": 0.531,
+    "f1_std": 0.214,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_causal",
+    "f1_mean": 0.587,
+    "f1_std": 0.195,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_abstain",
+    "f1_mean": 0.587,
+    "f1_std": 0.195,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_ssl_no_causal",
+    "f1_mean": 0.531,
+    "f1_std": 0.214,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_ssl_no_abstain",
+    "f1_mean": 0.531,
+    "f1_std": 0.214,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_causal_no_abstain",
+    "f1_mean": 0.587,
+    "f1_std": 0.195,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "variant": "none",
+    "f1_mean": 0.531,
+    "f1_std": 0.214,
+    "n_seeds": 3
+  }
+]

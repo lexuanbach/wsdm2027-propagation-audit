@@ -1,0 +1,586 @@
+{
+  "politifact": {
+    "drift": {
+      "n_train": 502,
+      "n_test": 64,
+      "train_misinfo_rate": 0.446,
+      "test_misinfo_rate": 0.547,
+      "per_feature": [
+        {
+          "feature": "log_spread",
+          "ks": 0.488,
+          "std_mean_shift": -0.383
+        },
+        {
+          "feature": "log_n",
+          "ks": 0.186,
+          "std_mean_shift": 0.349
+        },
+        {
+          "feature": "log_users",
+          "ks": 0.186,
+          "std_mean_shift": 0.349
+        },
+        {
+          "feature": "echo",
+          "ks": 0.138,
+          "std_mean_shift": 0.073
+        },
+        {
+          "feature": "log_pop",
+          "ks": 0.094,
+          "std_mean_shift": 0.134
+        },
+        {
+          "feature": "log_urls",
+          "ks": 0.0,
+          "std_mean_shift": -0.0
+        },
+        {
+          "feature": "log_media",
+          "ks": 0.0,
+          "std_mean_shift": 0.0
+        }
+      ]
+    },
+    "results": {
+      "propmlp": {
+        "baseline": {
+          "f1_mean": 0.458,
+          "f1_std": 0.052,
+          "per_seed": [
+            0.5274,
+            0.4231,
+            0.3892,
+            0.5098,
+            0.4421
+          ]
+        },
+        "testtime": {
+          "f1_mean": 0.313,
+          "f1_std": 0.027,
+          "per_seed": [
+            0.3198,
+            0.3108,
+            0.3016,
+            0.3594,
+            0.2755
+          ]
+        },
+        "quantile": {
+          "f1_mean": 0.386,
+          "f1_std": 0.059,
+          "per_seed": [
+            0.397,
+            0.4781,
+            0.3213,
+            0.4102,
+            0.3221
+          ]
+        },
+        "recency": {
+          "f1_mean": 0.349,
+          "f1_std": 0.059,
+          "per_seed": [
+            0.3818,
+            0.4222,
+            0.2967,
+            0.3818,
+            0.2644
+          ]
+        },
+        "impweight": {
+          "f1_mean": 0.463,
+          "f1_std": 0.049,
+          "per_seed": [
+            0.5331,
+            0.4231,
+            0.4116,
+            0.5098,
+            0.4365
+          ]
+        },
+        "coral": {
+          "f1_mean": 0.45,
+          "f1_std": 0.06,
+          "per_seed": [
+            0.5195,
+            0.4,
+            0.4213,
+            0.5238,
+            0.3846
+          ]
+        }
+      },
+      "propmlp_plus": {
+        "baseline": {
+          "f1_mean": 0.483,
+          "f1_std": 0.033,
+          "per_seed": [
+            0.4797,
+            0.4922,
+            0.4459,
+            0.5393,
+            0.4571
+          ]
+        },
+        "testtime": {
+          "f1_mean": 0.424,
+          "f1_std": 0.024,
+          "per_seed": [
+            0.4183,
+            0.4498,
+            0.4062,
+            0.453,
+            0.3905
+          ]
+        },
+        "quantile": {
+          "f1_mean": 0.464,
+          "f1_std": 0.023,
+          "per_seed": [
+            0.4325,
+            0.498,
+            0.4682,
+            0.4465,
+            0.474
+          ]
+        },
+        "recency": {
+          "f1_mean": 0.454,
+          "f1_std": 0.041,
+          "per_seed": [
+            0.5022,
+            0.4545,
+            0.4284,
+            0.4909,
+            0.3915
+          ]
+        },
+        "impweight": {
+          "f1_mean": 0.505,
+          "f1_std": 0.041,
+          "per_seed": [
+            0.4688,
+            0.5333,
+            0.5,
+            0.5667,
+            0.4571
+          ]
+        },
+        "coral": {
+          "f1_mean": 0.457,
+          "f1_std": 0.018,
+          "per_seed": [
+            0.4459,
+            0.4452,
+            0.4544,
+            0.4922,
+            0.4452
+          ]
+        }
+      },
+      "rf": {
+        "baseline": {
+          "f1_mean": 0.45,
+          "f1_std": 0.029,
+          "per_seed": [
+            0.4875,
+            0.4789,
+            0.4092,
+            0.4452,
+            0.4296
+          ]
+        },
+        "testtime": {
+          "f1_mean": 0.299,
+          "f1_std": 0.026,
+          "per_seed": [
+            0.3412,
+            0.2654,
+            0.2967,
+            0.3118,
+            0.2805
+          ]
+        },
+        "quantile": {
+          "f1_mean": 0.345,
+          "f1_std": 0.036,
+          "per_seed": [
+            0.3832,
+            0.3783,
+            0.3221,
+            0.3522,
+            0.2874
+          ]
+        },
+        "recency": {
+          "f1_mean": 0.38,
+          "f1_std": 0.045,
+          "per_seed": [
+            0.4113,
+            0.4333,
+            0.3444,
+            0.4003,
+            0.3107
+          ]
+        },
+        "impweight": {
+          "f1_mean": 0.431,
+          "f1_std": 0.057,
+          "per_seed": [
+            0.5077,
+            0.4687,
+            0.3552,
+            0.4452,
+            0.3764
+          ]
+        },
+        "coral": {
+          "f1_mean": 0.501,
+          "f1_std": 0.035,
+          "per_seed": [
+            0.5414,
+            0.4667,
+            0.4687,
+            0.5459,
+            0.4842
+          ]
+        }
+      }
+    },
+    "best": {
+      "propmlp": {
+        "baseline": 0.458,
+        "deltas": {
+          "testtime": -0.145,
+          "quantile": -0.072,
+          "recency": -0.109,
+          "impweight": 0.005,
+          "coral": -0.008
+        },
+        "best_mitigation": "impweight",
+        "best_f1": 0.463,
+        "best_gain": 0.005
+      },
+      "propmlp_plus": {
+        "baseline": 0.483,
+        "deltas": {
+          "testtime": -0.059,
+          "quantile": -0.019,
+          "recency": -0.029,
+          "impweight": 0.022,
+          "coral": -0.026
+        },
+        "best_mitigation": "impweight",
+        "best_f1": 0.505,
+        "best_gain": 0.022
+      },
+      "rf": {
+        "baseline": 0.45,
+        "deltas": {
+          "testtime": -0.151,
+          "quantile": -0.105,
+          "recency": -0.07,
+          "impweight": -0.019,
+          "coral": 0.051
+        },
+        "best_mitigation": "coral",
+        "best_f1": 0.501,
+        "best_gain": 0.051
+      }
+    }
+  },
+  "gossipcop": {
+    "drift": {
+      "n_train": 2400,
+      "n_test": 300,
+      "train_misinfo_rate": 0.489,
+      "test_misinfo_rate": 0.64,
+      "per_feature": [
+        {
+          "feature": "log_spread",
+          "ks": 0.212,
+          "std_mean_shift": -0.34
+        },
+        {
+          "feature": "log_pop",
+          "ks": 0.194,
+          "std_mean_shift": -0.232
+        },
+        {
+          "feature": "log_n",
+          "ks": 0.108,
+          "std_mean_shift": -0.062
+        },
+        {
+          "feature": "log_users",
+          "ks": 0.108,
+          "std_mean_shift": -0.062
+        },
+        {
+          "feature": "echo",
+          "ks": 0.09,
+          "std_mean_shift": -0.048
+        },
+        {
+          "feature": "log_urls",
+          "ks": 0.0,
+          "std_mean_shift": 0.0
+        },
+        {
+          "feature": "log_media",
+          "ks": 0.0,
+          "std_mean_shift": 0.0
+        }
+      ]
+    },
+    "results": {
+      "propmlp": {
+        "baseline": {
+          "f1_mean": 0.753,
+          "f1_std": 0.01,
+          "per_seed": [
+            0.7516,
+            0.7617,
+            0.7633,
+            0.7533,
+            0.7363
+          ]
+        },
+        "testtime": {
+          "f1_mean": 0.748,
+          "f1_std": 0.011,
+          "per_seed": [
+            0.7579,
+            0.7643,
+            0.7427,
+            0.7388,
+            0.7351
+          ]
+        },
+        "quantile": {
+          "f1_mean": 0.79,
+          "f1_std": 0.028,
+          "per_seed": [
+            0.7832,
+            0.7916,
+            0.7719,
+            0.8407,
+            0.7608
+          ]
+        },
+        "recency": {
+          "f1_mean": 0.749,
+          "f1_std": 0.011,
+          "per_seed": [
+            0.7584,
+            0.7391,
+            0.7567,
+            0.7566,
+            0.7331
+          ]
+        },
+        "impweight": {
+          "f1_mean": 0.781,
+          "f1_std": 0.013,
+          "per_seed": [
+            0.7756,
+            0.7816,
+            0.7932,
+            0.7965,
+            0.7597
+          ]
+        },
+        "coral": {
+          "f1_mean": 0.76,
+          "f1_std": 0.01,
+          "per_seed": [
+            0.7684,
+            0.7686,
+            0.7666,
+            0.7464,
+            0.7499
+          ]
+        }
+      },
+      "propmlp_plus": {
+        "baseline": {
+          "f1_mean": 0.786,
+          "f1_std": 0.013,
+          "per_seed": [
+            0.7916,
+            0.805,
+            0.7831,
+            0.7866,
+            0.7658
+          ]
+        },
+        "testtime": {
+          "f1_mean": 0.791,
+          "f1_std": 0.016,
+          "per_seed": [
+            0.8024,
+            0.8174,
+            0.779,
+            0.7761,
+            0.7783
+          ]
+        },
+        "quantile": {
+          "f1_mean": 0.807,
+          "f1_std": 0.012,
+          "per_seed": [
+            0.8048,
+            0.8206,
+            0.8089,
+            0.8158,
+            0.7859
+          ]
+        },
+        "recency": {
+          "f1_mean": 0.787,
+          "f1_std": 0.008,
+          "per_seed": [
+            0.7952,
+            0.792,
+            0.7864,
+            0.79,
+            0.7727
+          ]
+        },
+        "impweight": {
+          "f1_mean": 0.809,
+          "f1_std": 0.017,
+          "per_seed": [
+            0.8016,
+            0.8212,
+            0.8251,
+            0.8195,
+            0.7794
+          ]
+        },
+        "coral": {
+          "f1_mean": 0.792,
+          "f1_std": 0.011,
+          "per_seed": [
+            0.8028,
+            0.8052,
+            0.7933,
+            0.7833,
+            0.7762
+          ]
+        }
+      },
+      "rf": {
+        "baseline": {
+          "f1_mean": 0.851,
+          "f1_std": 0.013,
+          "per_seed": [
+            0.8514,
+            0.8342,
+            0.8539,
+            0.8406,
+            0.873
+          ]
+        },
+        "testtime": {
+          "f1_mean": 0.738,
+          "f1_std": 0.011,
+          "per_seed": [
+            0.7526,
+            0.7217,
+            0.7306,
+            0.7398,
+            0.7444
+          ]
+        },
+        "quantile": {
+          "f1_mean": 0.847,
+          "f1_std": 0.026,
+          "per_seed": [
+            0.8742,
+            0.8249,
+            0.8282,
+            0.8232,
+            0.8823
+          ]
+        },
+        "recency": {
+          "f1_mean": 0.838,
+          "f1_std": 0.017,
+          "per_seed": [
+            0.8448,
+            0.8121,
+            0.8575,
+            0.8249,
+            0.8501
+          ]
+        },
+        "impweight": {
+          "f1_mean": 0.848,
+          "f1_std": 0.023,
+          "per_seed": [
+            0.8421,
+            0.8185,
+            0.8607,
+            0.8336,
+            0.8865
+          ]
+        },
+        "coral": {
+          "f1_mean": 0.755,
+          "f1_std": 0.011,
+          "per_seed": [
+            0.7452,
+            0.7678,
+            0.7666,
+            0.75,
+            0.7431
+          ]
+        }
+      }
+    },
+    "best": {
+      "propmlp": {
+        "baseline": 0.753,
+        "deltas": {
+          "testtime": -0.005,
+          "quantile": 0.037,
+          "recency": -0.004,
+          "impweight": 0.028,
+          "coral": 0.007
+        },
+        "best_mitigation": "quantile",
+        "best_f1": 0.79,
+        "best_gain": 0.037
+      },
+      "propmlp_plus": {
+        "baseline": 0.786,
+        "deltas": {
+          "testtime": 0.005,
+          "quantile": 0.021,
+          "recency": 0.001,
+          "impweight": 0.023,
+          "coral": 0.006
+        },
+        "best_mitigation": "impweight",
+        "best_f1": 0.809,
+        "best_gain": 0.023
+      },
+      "rf": {
+        "baseline": 0.851,
+        "deltas": {
+          "testtime": -0.113,
+          "quantile": -0.004,
+          "recency": -0.013,
+          "impweight": -0.003,
+          "coral": -0.096
+        },
+        "best_mitigation": "impweight",
+        "best_f1": 0.848,
+        "best_gain": -0.003
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "n_nodes": 314262,
+  "feat_dim": 10,
+  "n_graphs": 5464,
+  "distinct_profile_vectors": 69554,
+  "vectors_in_more_than_one_graph": 13019,
+  "node_incidences_of_recurring_vectors": 212156,
+  "max_graphs_for_one_vector": 2426,
+  "median_graphs_per_recurring_vector": 3.0,
+  "source": "external/upfd/gossipcop/raw/{new_profile_feature.npz,node_graph_id.npy}",
+  "key": "exact float64 bytes of the 10-d profile row",
+  "purpose": "hedge for main.tex claim that no user recurs in the public releases"
+}

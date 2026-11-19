@@ -1,0 +1,429 @@
+{
+  "generated": "2026-08-24",
+  "scope": "released inputs actually opened by the loaders; regenerated caches (*graph/, processed/) are counted, not hashed",
+  "licence_policy": "no licence is named here unless it is recoverable from the released files; see the supplement dataset card",
+  "trees": [
+    {
+      "root": "artifact/data/raw",
+      "present": true,
+      "n_hashed": 52,
+      "n_derived_skipped": 0,
+      "total_bytes": 73646743,
+      "files": {
+        "coaid/05-01-2020/ClaimFakeCOVID-19.csv": {
+          "bytes": 4071,
+          "mtime": "2026-05-26",
+          "sha256": "5a1d495fc847abf55aeb439102192a04803b2e8f9ccb118b36463f26d9bb36d1"
+        },
+        "coaid/05-01-2020/ClaimFakeCOVID-19_tweets.csv": {
+          "bytes": 12810,
+          "mtime": "2026-05-26",
+          "sha256": "e575942ea454f7a8f24ddaa2b816ffd6a8c32fff6d1cc0a773b2122c0add8954"
+        },
+        "coaid/05-01-2020/ClaimFakeCOVID-19_tweets_replies.csv": {
+          "bytes": 29929,
+          "mtime": "2026-05-26",
+          "sha256": "778b86ff539bde5ebf2b5c152953909e6093b6da68f47ec33612648cc0956e8f"
+        },
+        "coaid/05-01-2020/ClaimRealCOVID-19.csv": {
+          "bytes": 33922,
+          "mtime": "2026-05-26",
+          "sha256": "07817b5cc902cc55bf29a5613d07ee3d776cf8b074f67ee7835796f723dbde6a"
+        },
+        "coaid/05-01-2020/ClaimRealCOVID-19_tweets.csv": {
+          "bytes": 177590,
+          "mtime": "2026-05-26",
+          "sha256": "c69d2bf2858250847caa130d4528ae51ed639cfcea828b909920de900b8dea3b"
+        },
+        "coaid/05-01-2020/ClaimRealCOVID-19_tweets_replies.csv": {
+          "bytes": 468697,
+          "mtime": "2026-05-26",
+          "sha256": "7a2fa30482e6c319e66c3df416b50c01f71ec1d185d3381b27ad9b07b290b1af"
+        },
+        "coaid/05-01-2020/NewsFakeCOVID-19.csv": {
+          "bytes": 286391,
+          "mtime": "2026-05-26",
+          "sha256": "0f812e011a689c88f1cd215e32b5e586161fab30a3a14d5355de2978b37cc4d8"
+        },
+        "coaid/05-01-2020/NewsFakeCOVID-19_tweets.csv": {
+          "bytes": 228761,
+          "mtime": "2026-05-26",
+          "sha256": "60cf547129a4f0dbe8a4bcddfb075c6f4f4d7ed287d8ab0fc256d4a3bfefafc6"
+        },
+        "coaid/05-01-2020/NewsFakeCOVID-19_tweets_replies.csv": {
+          "bytes": 256846,
+          "mtime": "2026-05-26",
+          "sha256": "4c67dcffbb6c4f4941fa86d5b259c6b9a9b314dcb84ec9e74e5a5eb2ffaeaec3"
+        },
+        "coaid/05-01-2020/NewsRealCOVID-19.csv": {
+          "bytes": 1545169,
+          "mtime": "2026-05-26",
+          "sha256": "374cc58444688ac696df9c32afc2db9e74a76c611c9723ca76071a68427e11fb"
+        },
+        "coaid/05-01-2020/NewsRealCOVID-19_tweets.csv": {
+          "bytes": 2236605,
+          "mtime": "2026-05-26",
+          "sha256": "78f6aaa9135ba58ad4d97d359abba30349562bf190cb5a2ad0c1ea21fd4bf56f"
+        },
+        "coaid/05-01-2020/NewsRealCOVID-19_tweets_replies.csv": {
+          "bytes": 2937079,
+          "mtime": "2026-05-26",
+          "sha256": "93c202479224c5d946dec16843abd3b127265bd59ee3da1986e9788d1dbcdc37"
+        },
+        "coaid/07-01-2020/ClaimFakeCOVID-19.csv": {
+          "bytes": 172,
+          "mtime": "2026-05-26",
+          "sha256": "16b6d400783d409ba6b7d0741b0d6d0103f3f70930cf696ee6241f66b66f7329"
+        },
+        "coaid/07-01-2020/ClaimFakeCOVID-19_tweets.csv": {
+          "bytes": 773,
+          "mtime": "2026-05-26",
+          "sha256": "a707d28df62eea9400e15d88c2a93b82e5207ac86cd31970d68161574de4de83"
+        },
+        "coaid/07-01-2020/ClaimFakeCOVID-19_tweets_replies.csv": {
+          "bytes": 169,
+          "mtime": "2026-05-26",
+          "sha256": "d36485205a942321d223d8854f9d99ad3da988c2172f3d6ace53278ef37f8955"
+        },
+        "coaid/07-01-2020/ClaimRealCOVID-19.csv": {
+          "bytes": 40982,
+          "mtime": "2026-05-26",
+          "sha256": "c2d5074c08d9afdda82bc76cf1e235515c0e39faa2cc608814fcb847a93b5a3c"
+        },
+        "coaid/07-01-2020/ClaimRealCOVID-19_tweets.csv": {
+          "bytes": 40701,
+          "mtime": "2026-05-26",
+          "sha256": "7817eb40bd53547e4662f2af122023f5377184d5a872f507d97b842f4011db4f"
+        },
+        "coaid/07-01-2020/ClaimRealCOVID-19_tweets_replies.csv": {
+          "bytes": 91657,
+          "mtime": "2026-05-26",
+          "sha256": "d1e79eece7d8e0aca13c2a9f7a86d455de071356ecc25722e8b9144162440261"
+        },
+        "coaid/07-01-2020/NewsFakeCOVID-19.csv": {
+          "bytes": 170690,
+          "mtime": "2026-05-26",
+          "sha256": "008cfcbe14cc8fc62f204e5794ab6d01db5cd4c058cdf72874b337827629843b"
+        },
+        "coaid/07-01-2020/NewsFakeCOVID-19_tweets.csv": {
+          "bytes": 29967,
+          "mtime": "2026-05-26",
+          "sha256": "eaa9f502b709e3aaec460d197498bea5e42efd1f4a14d05c4be4c967aca4dda1"
+        },
+        "coaid/07-01-2020/NewsFakeCOVID-19_tweets_replies.csv": {
+          "bytes": 75265,
+          "mtime": "2026-05-26",
+          "sha256": "01e9d9d18469101096526a0306cc5fa2709ae44a5f0aee5eb6c47c7537d282bf"
+        },
+        "coaid/07-01-2020/NewsRealCOVID-19.csv": {
+          "bytes": 807605,
+          "mtime": "2026-05-26",
+          "sha256": "84152a5f28c5d9a249ee08a121eec75610d985be76bb1777b8d63d451dd29551"
+        },
+        "coaid/07-01-2020/NewsRealCOVID-19_tweets.csv": {
+          "bytes": 1409860,
+          "mtime": "2026-05-26",
+          "sha256": "a62b87dfb96e788f1ec26ba347e38cb509b016c00d240699d3904b7dcf3f8d2d"
+        },
+        "coaid/07-01-2020/NewsRealCOVID-19_tweets_replies.csv": {
+          "bytes": 2329581,
+          "mtime": "2026-05-26",
+          "sha256": "a364b5ef357e5e1421a081b65995e6a54e729650ae083bd899faacc3cf5e8828"
+        },
+        "coaid/09-01-2020/ClaimRealCOVID-19.csv": {
+          "bytes": 27918,
+          "mtime": "2026-05-26",
+          "sha256": "77bbac9c0215656ae4ff401dd5f957d33afc6128dafdc2fa5ec4655f5f36152f"
+        },
+        "coaid/09-01-2020/ClaimRealCOVID-19_tweets.csv": {
+          "bytes": 8333,
+          "mtime": "2026-05-26",
+          "sha256": "cb6177743c8cc071e1e35bf2ad2ebd5df8b28cfe275e2ca1a2b6b1b69b50c276"
+        },
+        "coaid/09-01-2020/ClaimRealCOVID-19_tweets_replies.csv": {
+          "bytes": 37369,
+          "mtime": "2026-05-26",
+          "sha256": "677ebda1f64e5f293c89f48ba01a80b2b1abd6270df30d4293e7f0f774af8160"
+        },
+        "coaid/09-01-2020/NewsFakeCOVID-19.csv": {
+          "bytes": 37755,
+          "mtime": "2026-05-26",
+          "sha256": "2f991fbdaba994ff1d435c944c69161dd4f146409905c2d77e39d65464bed160"
+        },
+        "coaid/09-01-2020/NewsFakeCOVID-19_tweets.csv": {
+          "bytes": 592,
+          "mtime": "2026-05-26",
+          "sha256": "e83af21c0b2f8f51e927738c6b92828f00ea5ea0477ce295b0c18f4063f6d3f7"
+        },
+        "coaid/09-01-2020/NewsFakeCOVID-19_tweets_replies.csv": {
+          "bytes": 1960,
+          "mtime": "2026-05-26",
+          "sha256": "de7721393d9bbd35bcaad2f3876557f96bbdca0d52709d074c39e7270231011e"
+        },
+        "coaid/09-01-2020/NewsRealCOVID-19.csv": {
+          "bytes": 674750,
+          "mtime": "2026-05-26",
+          "sha256": "a0c4737fb3defe6b70b40a41ee2b831c254873a885ca1fc7234834459fad50e5"
+        },
+        "coaid/09-01-2020/NewsRealCOVID-19_tweets.csv": {
+          "bytes": 2724,
+          "mtime": "2026-05-26",
+          "sha256": "fe3b53b611f8d2546a3bb80af4d7292f18b9a08ad0b3ee7893615e1d1a93898f"
+        },
+        "coaid/09-01-2020/NewsRealCOVID-19_tweets_replies.csv": {
+          "bytes": 2963,
+          "mtime": "2026-05-26",
+          "sha256": "21cf9b0a369c465d9eb54b7b3e3e9cef8110050c8c2996c0e7085ef0cc716779"
+        },
+        "coaid/11-01-2020/ClaimRealCOVID-19.csv": {
+          "bytes": 8163,
+          "mtime": "2026-05-26",
+          "sha256": "9a4c1836fc0f6ca5bb667fc3952c24412e2de101dcbbe649a860c0d0229218de"
+        },
+        "coaid/11-01-2020/ClaimRealCOVID-19_tweets.csv": {
+          "bytes": 325,
+          "mtime": "2026-05-26",
+          "sha256": "72c0199c168c5b8dcd137cc21fedce51c646f66a32672a05db9d77ee181f449d"
+        },
+        "coaid/11-01-2020/ClaimRealCOVID-19_tweets_replies.csv": {
+          "bytes": 9961,
+          "mtime": "2026-05-26",
+          "sha256": "1fe65a8ca5c873b68686783b731c0cd839e7092cbe64977c6f7d94260b846ea4"
+        },
+        "coaid/11-01-2020/NewsFakeCOVID-19.csv": {
+          "bytes": 23562,
+          "mtime": "2026-05-26",
+          "sha256": "48d044a624c6b3fab543f6ccaf5bf053916dca3456c7eaddefca12c73e8fd9e7"
+        },
+        "coaid/11-01-2020/NewsFakeCOVID-19_tweets.csv": {
+          "bytes": 117,
+          "mtime": "2026-05-26",
+          "sha256": "dc0ae1aa4eea178fab62ffebba33121448f6ff8390261f36dbfaeec56a4761ca"
+        },
+        "coaid/11-01-2020/NewsFakeCOVID-19_tweets_replies.csv": {
+          "bytes": 1870,
+          "mtime": "2026-05-26",
+          "sha256": "1756732b11f4b4e155531b98d4a5b195160de1ea3378b6ef8d0331465eb09d75"
+        },
+        "coaid/11-01-2020/NewsRealCOVID-19.csv": {
+          "bytes": 720036,
+          "mtime": "2026-05-26",
+          "sha256": "6ffbfe149c920e131dac8b99034da9409badb32784d1ff691304ce2ba1e6409e"
+        },
+        "coaid/11-01-2020/NewsRealCOVID-19_tweets.csv": {
+          "bytes": 5035,
+          "mtime": "2026-05-26",
+          "sha256": "be34236b9119299aa3a8169da125b8dee70138d104ef8147ad5b19b3189fced4"
+        },
+        "coaid/11-01-2020/NewsRealCOVID-19_tweets_replies.csv": {
+          "bytes": 13641,
+          "mtime": "2026-05-26",
+          "sha256": "8985a7138011d84ebaa29bbb39a13959ec098704e4932ca410eb7dbbf35da4b9"
+        },
+        "coaid/README.md": {
+          "bytes": 1053,
+          "mtime": "2026-05-26",
+          "sha256": "a62c5599257391782c3cd634a36772594bf75ed53d7a4d8b71e4fbf83f22e5f7"
+        },
+        "fakenewsnet/gossipcop_fake.csv": {
+          "bytes": 12538704,
+          "mtime": "2026-05-30",
+          "sha256": "c6932bffadb1230bc61c66bb2ca298f4ef28ce849d268313ad2eed41d18d4c99"
+        },
+        "fakenewsnet/gossipcop_real.csv": {
+          "bytes": 19978126,
+          "mtime": "2026-05-30",
+          "sha256": "d721e9a8b7e660da05c089691743c33fecb25367074e936b5fab3d85cdcbe79f"
+        },
+        "fakenewsnet/politifact_fake.csv": {
+          "bytes": 3286418,
+          "mtime": "2026-05-29",
+          "sha256": "abe7fe7aad801b1e2ab5fc963cbd0881d9670190262ae3df85e91c3380bd004c"
+        },
+        "fakenewsnet/politifact_real.csv": {
+          "bytes": 8278658,
+          "mtime": "2026-05-29",
+          "sha256": "2500f86a7addca0f59fe8cf089c0f802d3eca6980f53538992b3b0e9687dbae0"
+        },
+        "recovery/License.md": {
+          "bytes": 18378,
+          "mtime": "2026-05-26",
+          "sha256": "22608f6acbc110cee97aed6627cd620d59b4a667c19d8ad4729f36db5ad1cdb6"
+        },
+        "recovery/README.md": {
+          "bytes": 3479,
+          "mtime": "2026-05-26",
+          "sha256": "d42e93077d3ad2309d6218458134bf30efda9110967032015538095fa22f3b0d"
+        },
+        "recovery/dataset/recovery-news-data.csv": {
+          "bytes": 11324247,
+          "mtime": "2026-05-26",
+          "sha256": "9b63044e77d4a8d9b8e1d283daf63a338ef3dd4c28bd2ac10121759aabc74982"
+        },
+        "recovery/dataset/recovery-social-media-data.csv": {
+          "bytes": 3421197,
+          "mtime": "2026-05-26",
+          "sha256": "6345585dae2ec7a32f5104685170aa3238391baca19692ee9b10a9fcd26ad5e9"
+        },
+        "recovery/requirements.txt": {
+          "bytes": 4117,
+          "mtime": "2026-05-26",
+          "sha256": "8f28b1a118211356234a56e5d7cb685f6cce51add57c6a3048050bbf764d5517"
+        }
+      }
+    },
+    {
+      "root": "external/BiGCN/data",
+      "present": true,
+      "n_hashed": 7,
+      "n_derived_skipped": 1470,
+      "total_bytes": 3415526058,
+      "files": {
+        "Twitter15/Twitter15_label_All.txt": {
+          "bytes": 96325,
+          "mtime": "2026-08-21",
+          "sha256": "df9a941df2260225017a58d089a783e64cf8384ef5747f242b9de3471c1d918f"
+        },
+        "Twitter15/data.TD_RvNN.vol_5000.txt": {
+          "bytes": 14934525,
+          "mtime": "2026-08-21",
+          "sha256": "a3ce2e8bc18721fb41180d47d2ce7117f7da1c9d641480d5c11f0254f512559d"
+        },
+        "Twitter16/Twitter16_label_All.txt": {
+          "bytes": 52424,
+          "mtime": "2026-08-21",
+          "sha256": "808849df5f482592b773ca63a0780e3fc9a1f954cd017b776016556d6d299257"
+        },
+        "Twitter16/data.TD_RvNN.vol_5000.txt": {
+          "bytes": 14934525,
+          "mtime": "2026-08-21",
+          "sha256": "a3ce2e8bc18721fb41180d47d2ce7117f7da1c9d641480d5c11f0254f512559d"
+        },
+        "Weibo/weibo_id_label.txt": {
+          "bytes": 87892,
+          "mtime": "2026-08-21",
+          "sha256": "8e26108c904989e3babfc6b472730c6964e043f42aa54322985bd0eb5fbdd106"
+        },
+        "Weibo/weibotree.txt": {
+          "bytes": 217970160,
+          "mtime": "2020-02-10",
+          "sha256": "d219ae2054e084a20e645cee445cd638568c5777f58cdfb9c0e5944dcb68bcf3"
+        },
+        "Weibo/weibotree.txt.zip": {
+          "bytes": 50099899,
+          "mtime": "2026-08-21",
+          "sha256": "d8534b562f2354ecf995f0a94aac39f389d58cd962799bc89b13e238da58f883"
+        }
+      }
+    },
+    {
+      "root": "external/upfd",
+      "present": true,
+      "n_hashed": 20,
+      "n_derived_skipped": 10,
+      "total_bytes": 1652547435,
+      "files": {
+        "gossipcop/raw/A.txt": {
+          "bytes": 4412490,
+          "mtime": "2026-08-21",
+          "sha256": "f576a6c3054918c5f1e10e4565a5b9bad005e042f3f7f084f4c14245eabcd698"
+        },
+        "gossipcop/raw/graph_labels.npy": {
+          "bytes": 43840,
+          "mtime": "2026-08-21",
+          "sha256": "f5201a3ebdc2eff401df705d8f891fa54a6b937e62d6de893d823444f0fe1a73"
+        },
+        "gossipcop/raw/new_bert_feature.npz": {
+          "bytes": 874319512,
+          "mtime": "2026-08-21",
+          "sha256": "not-hashed:over-400MB"
+        },
+        "gossipcop/raw/new_content_feature.npz": {
+          "bytes": 224089636,
+          "mtime": "2026-08-21",
+          "sha256": "c41afed2fd955340be595f13b6bd8c240b6093cfa658fa8362a80c51022f23ed"
+        },
+        "gossipcop/raw/new_profile_feature.npz": {
+          "bytes": 5004202,
+          "mtime": "2026-08-21",
+          "sha256": "f3b8444407dcd15ae3b2dfd2d17f4475c42e09f5e13f1b0786404d38b5b5558a"
+        },
+        "gossipcop/raw/new_spacy_feature.npz": {
+          "bytes": 320183474,
+          "mtime": "2026-08-21",
+          "sha256": "13dc54e1fcbc102ca1a62bf5ae46044cee43ec48a1b31469ced59c9fb0566d4f"
+        },
+        "gossipcop/raw/node_graph_id.npy": {
+          "bytes": 2514224,
+          "mtime": "2026-08-21",
+          "sha256": "d6b0489e43b5affd814365be02fcf579d919278bee20d07560d80b24fc12c6da"
+        },
+        "gossipcop/raw/test_idx.npy": {
+          "bytes": 30736,
+          "mtime": "2026-08-21",
+          "sha256": "9fe1ce31859da5184faa2575664ec99ee292bf14bf43ee2f0934a9b0e837e838"
+        },
+        "gossipcop/raw/train_idx.npy": {
+          "bytes": 8864,
+          "mtime": "2026-08-21",
+          "sha256": "40b2491f4ddf758b4440470af9efd204aec2bade1b091ec650e580f1cf3ec88c"
+        },
+        "gossipcop/raw/val_idx.npy": {
+          "bytes": 4496,
+          "mtime": "2026-08-21",
+          "sha256": "84687e0a65866b3bb07cc12ca7d46b198065108be1b85200b71e28cf31b18f8a"
+        },
+        "politifact/raw/A.txt": {
+          "bytes": 506729,
+          "mtime": "2026-08-21",
+          "sha256": "ec4f260d050b74b9a4f5b06c066054862c2cb31e7300b1140bc6fd9a1b95a544"
+        },
+        "politifact/raw/graph_labels.npy": {
+          "bytes": 2640,
+          "mtime": "2026-08-21",
+          "sha256": "e6fb3bfdfffd151b69d055d8b0c2a8d98c38cb11c26ec66c35f473575b61a1c1"
+        },
+        "politifact/raw/new_bert_feature.npz": {
+          "bytes": 126381112,
+          "mtime": "2026-08-21",
+          "sha256": "78d19b9b8e10bd47a28d13589a4447a457ee5138f46f2c6022e15404f92fee08"
+        },
+        "politifact/raw/new_content_feature.npz": {
+          "bytes": 27202422,
+          "mtime": "2026-08-21",
+          "sha256": "904622a23d2cba81f4d3318a65bfe781b6010e02ddd291c2bb6e2c537aed6b54"
+        },
+        "politifact/raw/new_profile_feature.npz": {
+          "bytes": 936033,
+          "mtime": "2026-08-21",
+          "sha256": "92af02d72abfc50bee0978311400a6e97ec9681bcf3a31952932fcd3701422dd"
+        },
+        "politifact/raw/new_spacy_feature.npz": {
+          "bytes": 46564127,
+          "mtime": "2026-08-21",
+          "sha256": "56a27958c1ed58749478d82a0408723c8396e68f46f16f286de4f536269dc05d"
+        },
+        "politifact/raw/node_graph_id.npy": {
+          "bytes": 328560,
+          "mtime": "2026-08-21",
+          "sha256": "f9d9d00eb2e1f39ce49701be3219cb3b4977732577370b57a58db8a499edf1e9"
+        },
+        "politifact/raw/test_idx.npy": {
+          "bytes": 1896,
+          "mtime": "2026-08-21",
+          "sha256": "d6532f9f7122bf68f60bb9e82a1a971462b4f4004082a68d2d8f272bf8de60d6"
+        },
+        "politifact/raw/train_idx.npy": {
+          "bytes": 624,
+          "mtime": "2026-08-21",
+          "sha256": "c5a6cc78e0fa705699fdcde7edc86b4543ffc3ff2b4a302665ce1fc4e8e0e132"
+        },
+        "politifact/raw/val_idx.npy": {
+          "bytes": 376,
+          "mtime": "2026-08-21",
+          "sha256": "faba77cc807e4788396f1c1e703fd42f76050a8fc3ccfdc88577c2c58df2ca38"
+        }
+      }
+    }
+  ]
+}

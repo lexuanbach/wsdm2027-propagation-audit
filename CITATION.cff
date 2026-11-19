@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code or the stored results, please cite the paper."
+title: "When Do Propagation Models Beat Cascade Summaries? A Released-Signal Audit of Text-Free Misinformation Detection (code and results)"
+type: software
+license: MIT
+repository-code: "https://github.com/lexuanbach/wsdm2027-propagation-audit"
+authors:
+  - family-names: Nguyen
+    given-names: Duy
+  - family-names: Tran-Truong
+    given-names: Phat T.
+  - family-names: Ha Xuan
+    given-names: Son
+  - family-names: Le
+    given-names: Xuan-Bach
+preferred-citation:
+  type: conference-paper
+  title: "When Do Propagation Models Beat Cascade Summaries? A Released-Signal Audit of Text-Free Misinformation Detection"
+  authors:
+    - family-names: Nguyen
+      given-names: Duy
+    - family-names: Tran-Truong
+      given-names: Phat T.
+    - family-names: Ha Xuan
+      given-names: Son
+    - family-names: Le
+      given-names: Xuan-Bach
+  collection-title: "Proceedings of the Twentieth ACM International Conference on Web Search and Data Mining (WSDM '27)"
+  publisher:
+    name: ACM
+  conference:
+    name: "WSDM '27"
+    city: Hong Kong
+    date-start: 2027-02-15
+    date-end: 2027-02-19
+  year: 2027
+  doi: 10.1145/3862322.3863898

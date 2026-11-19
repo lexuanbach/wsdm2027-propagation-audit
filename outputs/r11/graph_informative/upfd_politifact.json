@@ -1,0 +1,192 @@
+{
+  "dataset": "upfd_politifact",
+  "n_classes": 2,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 60,
+  "n_test_per_seed": [
+    221,
+    221,
+    221,
+    221,
+    221
+  ],
+  "official_splits": true,
+  "profile_features": true,
+  "summary_features": [
+    "log_size",
+    "depth",
+    "log_max_width",
+    "mean_branching",
+    "leaf_frac",
+    "log_root_fanout",
+    "mean_depth",
+    "structural_virality",
+    "depth_per_node",
+    "profile_mean(10)",
+    "profile_std(10)",
+    "profile_max(10)"
+  ],
+  "node_features": "UPFD 10-d user profile",
+  "results": {
+    "logreg": {
+      "f1_mean": 0.7873,
+      "f1_std": 0.0,
+      "per_seed": [
+        0.7873,
+        0.7873,
+        0.7873,
+        0.7873,
+        0.7873
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.7654,
+      "f1_std": 0.006,
+      "per_seed": [
+        0.7645,
+        0.7691,
+        0.7645,
+        0.7554,
+        0.7735
+      ]
+    },
+    "histgbt": {
+      "f1_mean": 0.7916,
+      "f1_std": 0.0,
+      "per_seed": [
+        0.7916,
+        0.7916,
+        0.7916,
+        0.7916,
+        0.7916
+      ]
+    },
+    "mlp": {
+      "f1_mean": 0.7929,
+      "f1_std": 0.0055,
+      "per_seed": [
+        0.7956,
+        0.7865,
+        0.7865,
+        0.7958,
+        0.8002
+      ]
+    },
+    "gcn": {
+      "f1_mean": 0.7827,
+      "f1_std": 0.0064,
+      "per_seed": [
+        0.7871,
+        0.7783,
+        0.7738,
+        0.7919,
+        0.7828
+      ]
+    },
+    "gatv2": {
+      "f1_mean": 0.7755,
+      "f1_std": 0.0061,
+      "per_seed": [
+        0.7782,
+        0.7783,
+        0.7647,
+        0.7738,
+        0.7827
+      ]
+    },
+    "bigcn": {
+      "f1_mean": 0.7516,
+      "f1_std": 0.0249,
+      "per_seed": [
+        0.7692,
+        0.7555,
+        0.7557,
+        0.7038,
+        0.7736
+      ]
+    }
+  },
+  "best_graph": "gcn",
+  "best_summary": "mlp",
+  "paired_best_graph_vs_best_summary": {
+    "acc_gain_graph": -0.0109,
+    "p": 0.4318,
+    "ci95": [
+      -0.0371,
+      0.0154
+    ]
+  },
+  "paired_best_graph_vs_histgbt": {
+    "acc_gain_graph": -0.009,
+    "p": 0.4656,
+    "ci95": [
+      -0.0326,
+      0.0145
+    ]
+  },
+  "tost_graph_vs_histgbt": {
+    "0.03": {
+      "margin": 0.03,
+      "ci90": [
+        -0.02895927601809955,
+        0.01085972850678733
+      ],
+      "equivalent": true,
+      "mean": -0.00904977375565611
+    },
+    "0.05": {
+      "margin": 0.05,
+      "ci90": [
+        -0.02895927601809955,
+        0.01085972850678733
+      ],
+      "equivalent": true,
+      "mean": -0.00904977375565611
+    }
+  },
+  "histgbt_selected_hparams": [
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    }
+  ],
+  "timing_s_mean": {
+    "summary_family_s": 0.4,
+    "gcn_s": 0.4,
+    "gatv2_s": 0.7,
+    "bigcn_s": 1.0
+  },
+  "n_graphs": {
+    "train": 62,
+    "val": 31,
+    "test": 221
+  },
+  "wall_s": 20.3
+}

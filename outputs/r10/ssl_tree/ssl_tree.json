@@ -1,0 +1,58 @@
+{
+  "coaid": {
+    "propmlp_plus_f1": 0.61,
+    "histgbt15_f1": 0.704,
+    "neural_minus_tree_acc": -0.088,
+    "cluster_p": 0.078,
+    "ci95": [
+      -0.181,
+      0.009
+    ],
+    "seed_t_p": 0.1216,
+    "neural_wins": false,
+    "doclessfake_f1": 0.654,
+    "dlf_beats_tree": false
+  },
+  "recovery": {
+    "propmlp_plus_f1": 0.699,
+    "histgbt15_f1": 0.67,
+    "neural_minus_tree_acc": 0.0287,
+    "cluster_p": 0.2204,
+    "ci95": [
+      -0.018,
+      0.075
+    ],
+    "seed_t_p": 0.3116,
+    "neural_wins": false,
+    "doclessfake_f1": 0.663,
+    "dlf_beats_tree": false
+  },
+  "politifact": {
+    "propmlp_plus_f1": 0.717,
+    "histgbt15_f1": 0.698,
+    "neural_minus_tree_acc": 0.0132,
+    "cluster_p": 0.601,
+    "ci95": [
+      -0.034,
+      0.06
+    ],
+    "seed_t_p": 0.2138,
+    "neural_wins": false,
+    "doclessfake_f1": 0.678,
+    "dlf_beats_tree": false
+  },
+  "gossipcop": {
+    "propmlp_plus_f1": 0.851,
+    "histgbt15_f1": 0.878,
+    "neural_minus_tree_acc": -0.0269,
+    "cluster_p": 0.0002,
+    "ci95": [
+      -0.041,
+      -0.013
+    ],
+    "seed_t_p": 0.012,
+    "neural_wins": false,
+    "doclessfake_f1": 0.842,
+    "dlf_beats_tree": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "coaid": {
+    "rf_acc": 0.6,
+    "propmlp_acc": 0.625,
+    "mean_loss_diff_propmlp_minus_rf": 0.025,
+    "p_value": 0.6474,
+    "ci_lo": -0.0667,
+    "ci_hi": 0.1167,
+    "n_stories": 120
+  },
+  "recovery": {
+    "rf_acc": 0.6522,
+    "propmlp_acc": 0.663,
+    "mean_loss_diff_propmlp_minus_rf": 0.0109,
+    "p_value": 0.6434,
+    "ci_lo": -0.0304,
+    "ci_hi": 0.0522,
+    "n_stories": 460
+  },
+  "politifact": {
+    "rf_acc": 0.6687,
+    "propmlp_acc": 0.6594,
+    "mean_loss_diff_propmlp_minus_rf": -0.0094,
+    "p_value": 0.743,
+    "ci_lo": -0.0563,
+    "ci_hi": 0.0375,
+    "n_stories": 320
+  },
+  "gossipcop": {
+    "rf_acc": 0.8647,
+    "propmlp_acc": 0.8367,
+    "mean_loss_diff_propmlp_minus_rf": -0.028,
+    "p_value": 0.0,
+    "ci_lo": -0.0413,
+    "ci_hi": -0.0147,
+    "n_stories": 1500
+  }
+}

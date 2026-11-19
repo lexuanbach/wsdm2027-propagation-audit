@@ -1,0 +1,214 @@
+{
+  "coaid": {
+    "logreg": {
+      "f1_mean": 0.508,
+      "f1_std": 0.103,
+      "per_seed": [
+        0.4574,
+        0.4574,
+        0.4991,
+        0.4167,
+        0.7078
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.595,
+      "f1_std": 0.085,
+      "per_seed": [
+        0.5344,
+        0.5833,
+        0.608,
+        0.5,
+        0.7483
+      ]
+    },
+    "gbt": {
+      "f1_mean": 0.547,
+      "f1_std": 0.066,
+      "per_seed": [
+        0.5,
+        0.5344,
+        0.619,
+        0.4574,
+        0.6243
+      ]
+    },
+    "rf_feature_importance_mean": [
+      0.234,
+      0.239,
+      0.0,
+      0.0,
+      0.109,
+      0.085,
+      0.333
+    ],
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ]
+  },
+  "recovery": {
+    "logreg": {
+      "f1_mean": 0.646,
+      "f1_std": 0.066,
+      "per_seed": [
+        0.6944,
+        0.6847,
+        0.663,
+        0.6739,
+        0.516
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.651,
+      "f1_std": 0.057,
+      "per_seed": [
+        0.739,
+        0.6951,
+        0.5955,
+        0.626,
+        0.5978
+      ]
+    },
+    "gbt": {
+      "f1_mean": 0.635,
+      "f1_std": 0.037,
+      "per_seed": [
+        0.6739,
+        0.6739,
+        0.5868,
+        0.5974,
+        0.6409
+      ]
+    },
+    "rf_feature_importance_mean": [
+      0.156,
+      0.153,
+      0.0,
+      0.0,
+      0.123,
+      0.112,
+      0.456
+    ],
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ]
+  },
+  "politifact": {
+    "logreg": {
+      "f1_mean": 0.599,
+      "f1_std": 0.055,
+      "per_seed": [
+        0.5621,
+        0.5146,
+        0.6085,
+        0.6559,
+        0.6549
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.667,
+      "f1_std": 0.04,
+      "per_seed": [
+        0.7185,
+        0.6653,
+        0.6384,
+        0.7013,
+        0.6093
+      ]
+    },
+    "gbt": {
+      "f1_mean": 0.655,
+      "f1_std": 0.052,
+      "per_seed": [
+        0.6699,
+        0.6825,
+        0.6405,
+        0.7176,
+        0.5621
+      ]
+    },
+    "rf_feature_importance_mean": [
+      0.127,
+      0.125,
+      0.0,
+      0.0,
+      0.132,
+      0.134,
+      0.483
+    ],
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ]
+  },
+  "gossipcop": {
+    "logreg": {
+      "f1_mean": 0.827,
+      "f1_std": 0.012,
+      "per_seed": [
+        0.8359,
+        0.8229,
+        0.8461,
+        0.8197,
+        0.8129
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.865,
+      "f1_std": 0.022,
+      "per_seed": [
+        0.8832,
+        0.8366,
+        0.8867,
+        0.8399,
+        0.8767
+      ]
+    },
+    "gbt": {
+      "f1_mean": 0.859,
+      "f1_std": 0.014,
+      "per_seed": [
+        0.88,
+        0.8467,
+        0.8633,
+        0.84,
+        0.8666
+      ]
+    },
+    "rf_feature_importance_mean": [
+      0.186,
+      0.176,
+      0.0,
+      0.0,
+      0.318,
+      0.097,
+      0.223
+    ],
+    "feature_names": [
+      "log_n",
+      "log_users",
+      "log_urls",
+      "log_media",
+      "log_pop",
+      "echo",
+      "log_spread"
+    ]
+  }
+}

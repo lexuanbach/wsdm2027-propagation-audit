@@ -1,0 +1,121 @@
+{
+  "dataset": "gossipcop",
+  "split": "temporal 80/10/10 by earliest event time; test strictly future",
+  "n_test_per_seed": [
+    300,
+    300,
+    300,
+    300,
+    300
+  ],
+  "test_prior_misinfo": 0.597,
+  "results": {
+    "propmlp7": {
+      "f1_mean": 0.7532,
+      "f1_std": 0.0096,
+      "per_seed": [
+        0.7516,
+        0.7617,
+        0.7633,
+        0.7533,
+        0.7363
+      ]
+    },
+    "propmlp15": {
+      "f1_mean": 0.7864,
+      "f1_std": 0.0127,
+      "per_seed": [
+        0.7916,
+        0.805,
+        0.7831,
+        0.7866,
+        0.7658
+      ]
+    },
+    "rf7": {
+      "f1_mean": 0.8506,
+      "f1_std": 0.0133,
+      "per_seed": [
+        0.8514,
+        0.8342,
+        0.8539,
+        0.8406,
+        0.873
+      ]
+    },
+    "rf15": {
+      "f1_mean": 0.8587,
+      "f1_std": 0.0129,
+      "per_seed": [
+        0.8608,
+        0.8534,
+        0.8649,
+        0.8377,
+        0.8766
+      ]
+    },
+    "histgbt7": {
+      "f1_mean": 0.8279,
+      "f1_std": 0.0153,
+      "per_seed": [
+        0.8193,
+        0.8286,
+        0.8551,
+        0.8089,
+        0.8277
+      ]
+    },
+    "histgbt15": {
+      "f1_mean": 0.8559,
+      "f1_std": 0.0164,
+      "per_seed": [
+        0.8852,
+        0.8501,
+        0.8584,
+        0.8353,
+        0.8507
+      ]
+    },
+    "histgbt15_iw": {
+      "f1_mean": 0.853,
+      "f1_std": 0.0078,
+      "per_seed": [
+        0.8646,
+        0.8596,
+        0.8482,
+        0.8486,
+        0.8439
+      ]
+    },
+    "rf15_iw": {
+      "f1_mean": 0.8557,
+      "f1_std": 0.0076,
+      "per_seed": [
+        0.857,
+        0.8501,
+        0.8514,
+        0.8501,
+        0.87
+      ]
+    }
+  },
+  "importance_weighting": {
+    "histgbt15": {
+      "acc_delta_iw_minus_base": -0.0027,
+      "p": 0.6248,
+      "ci95": [
+        -0.012,
+        0.0073
+      ]
+    },
+    "rf15": {
+      "acc_delta_iw_minus_base": -0.0027,
+      "p": 0.4656,
+      "ci95": [
+        -0.0087,
+        0.004
+      ]
+    },
+    "method": "logistic domain classifier train-vs-future features, weights clipped [0.1,10], label-free"
+  }
+}

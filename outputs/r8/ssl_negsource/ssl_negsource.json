@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "dataset": "coaid",
+      "mode": "label_free",
+      "seed": 0,
+      "f1": 0.45739130434782604
+    },
+    {
+      "dataset": "coaid",
+      "mode": "label_free",
+      "seed": 1,
+      "f1": 0.4
+    },
+    {
+      "dataset": "coaid",
+      "mode": "label_free",
+      "seed": 2,
+      "f1": 0.8321678321678322
+    },
+    {
+      "dataset": "coaid",
+      "mode": "label_aware",
+      "seed": 0,
+      "f1": 0.5714285714285714
+    },
+    {
+      "dataset": "coaid",
+      "mode": "label_aware",
+      "seed": 1,
+      "f1": 0.4
+    },
+    {
+      "dataset": "coaid",
+      "mode": "label_aware",
+      "seed": 2,
+      "f1": 0.7883597883597884
+    }
+  ],
+  "wall_s": 298.183443069458
+}

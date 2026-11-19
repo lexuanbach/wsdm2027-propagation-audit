@@ -1,0 +1,78 @@
+{
+  "politifact": {
+    "uncapped": {
+      "propmlp_random": 0.657,
+      "propmlp_temporal": 0.458,
+      "rf_random": 0.645,
+      "rf_temporal": 0.45,
+      "propmlp_drop": 0.199,
+      "rf_drop": 0.195,
+      "n_test_temporal": 64
+    },
+    "7d": {
+      "propmlp_random": 0.661,
+      "propmlp_temporal": 0.418,
+      "rf_random": 0.666,
+      "rf_temporal": 0.458,
+      "propmlp_drop": 0.243,
+      "rf_drop": 0.208,
+      "n_test_temporal": 64
+    },
+    "2d": {
+      "propmlp_random": 0.685,
+      "propmlp_temporal": 0.429,
+      "rf_random": 0.698,
+      "rf_temporal": 0.495,
+      "propmlp_drop": 0.256,
+      "rf_drop": 0.203,
+      "n_test_temporal": 64
+    },
+    "1d": {
+      "propmlp_random": 0.692,
+      "propmlp_temporal": 0.485,
+      "rf_random": 0.72,
+      "rf_temporal": 0.534,
+      "propmlp_drop": 0.207,
+      "rf_drop": 0.186,
+      "n_test_temporal": 64
+    }
+  },
+  "gossipcop": {
+    "uncapped": {
+      "propmlp_random": 0.836,
+      "propmlp_temporal": 0.753,
+      "rf_random": 0.862,
+      "rf_temporal": 0.851,
+      "propmlp_drop": 0.083,
+      "rf_drop": 0.011,
+      "n_test_temporal": 300
+    },
+    "7d": {
+      "propmlp_random": 0.821,
+      "propmlp_temporal": 0.743,
+      "rf_random": 0.853,
+      "rf_temporal": 0.834,
+      "propmlp_drop": 0.078,
+      "rf_drop": 0.019,
+      "n_test_temporal": 300
+    },
+    "2d": {
+      "propmlp_random": 0.821,
+      "propmlp_temporal": 0.747,
+      "rf_random": 0.85,
+      "rf_temporal": 0.83,
+      "propmlp_drop": 0.074,
+      "rf_drop": 0.02,
+      "n_test_temporal": 300
+    },
+    "1d": {
+      "propmlp_random": 0.828,
+      "propmlp_temporal": 0.75,
+      "rf_random": 0.862,
+      "rf_temporal": 0.821,
+      "propmlp_drop": 0.078,
+      "rf_drop": 0.041,
+      "n_test_temporal": 300
+    }
+  }
+}

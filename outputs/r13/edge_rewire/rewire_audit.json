@@ -1,0 +1,110 @@
+{
+  "counters": {
+    "n_items": 7891,
+    "n_rewired": 7780,
+    "n_skipped_small": 111,
+    "n_skipped_swapfail": 0,
+    "degree_sequence_preserved": 7780,
+    "degree_sequence_violated": 0
+  },
+  "statistic_effect": {
+    "upfd_gossipcop": {
+      "n_nodes": {
+        "mean_intact": 55.9875,
+        "mean_rewired": 55.9875,
+        "frac_unchanged": 1.0
+      },
+      "depth": {
+        "mean_intact": 2.475,
+        "mean_rewired": 2.46,
+        "frac_unchanged": 0.7775
+      },
+      "max_width": {
+        "mean_intact": 43.6625,
+        "mean_rewired": 43.495,
+        "frac_unchanged": 0.9475
+      },
+      "mean_branching": {
+        "mean_intact": 15.3725,
+        "mean_rewired": 15.3725,
+        "frac_unchanged": 1.0
+      },
+      "leaf_frac": {
+        "mean_intact": 0.8684,
+        "mean_rewired": 0.8684,
+        "frac_unchanged": 1.0
+      },
+      "root_fanout": {
+        "mean_intact": 41.77,
+        "mean_rewired": 41.77,
+        "frac_unchanged": 1.0
+      },
+      "mean_depth": {
+        "mean_intact": 1.1961,
+        "mean_rewired": 1.1986,
+        "frac_unchanged": 0.72
+      },
+      "structural_virality": {
+        "mean_intact": 2.2398,
+        "mean_rewired": 2.2353,
+        "frac_unchanged": 0.7075
+      },
+      "depth_per_node": {
+        "mean_intact": 0.099,
+        "mean_rewired": 0.0999,
+        "frac_unchanged": 0.7775
+      },
+      "_n_trees_audited": 400
+    },
+    "twitter15": {
+      "n_nodes": {
+        "mean_intact": 50.1175,
+        "mean_rewired": 50.1175,
+        "frac_unchanged": 1.0
+      },
+      "depth": {
+        "mean_intact": 4.6,
+        "mean_rewired": 3.1975,
+        "frac_unchanged": 0.525
+      },
+      "max_width": {
+        "mean_intact": 35.7475,
+        "mean_rewired": 35.7675,
+        "frac_unchanged": 0.9875
+      },
+      "mean_branching": {
+        "mean_intact": 7.2973,
+        "mean_rewired": 7.2973,
+        "frac_unchanged": 1.0
+      },
+      "leaf_frac": {
+        "mean_intact": 0.7902,
+        "mean_rewired": 0.7902,
+        "frac_unchanged": 1.0
+      },
+      "root_fanout": {
+        "mean_intact": 35.1175,
+        "mean_rewired": 35.1175,
+        "frac_unchanged": 1.0
+      },
+      "mean_depth": {
+        "mean_intact": 1.542,
+        "mean_rewired": 1.3094,
+        "frac_unchanged": 0.455
+      },
+      "structural_virality": {
+        "mean_intact": 2.7673,
+        "mean_rewired": 2.488,
+        "frac_unchanged": 0.45
+      },
+      "depth_per_node": {
+        "mean_intact": 0.1364,
+        "mean_rewired": 0.1125,
+        "frac_unchanged": 0.525
+      },
+      "_n_trees_audited": 400
+    }
+  },
+  "method": "networkx.connected_double_edge_swap on the undirected tree, nswap = |E|, re-rooted at the original root, parents re-derived by BFS; cached per story id so every seed sees the same rewired topology",
+  "rewired_side": "graph model edge_index only; summary baselines and node features stay on the intact tree"
+}

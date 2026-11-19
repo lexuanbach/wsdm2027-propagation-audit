@@ -1,0 +1,26 @@
+{
+  "upfd_gossipcop": {
+    "logreg": 0.9056,
+    "rf": 0.9136,
+    "histgbt": 0.931,
+    "mlp": 0.9255,
+    "gcn": 0.8775,
+    "gatv2": 0.8738,
+    "bigcn": 0.8745,
+    "best_graph": "gcn",
+    "best_summary": "histgbt",
+    "selection_rule": "test",
+    "test_selected_best_graph": "gcn",
+    "val_f1": {
+      "logreg": 0.9194,
+      "rf": 0.9241,
+      "histgbt": 1.0,
+      "mlp": 0.9189,
+      "gcn": 0.9087,
+      "gatv2": 0.9069,
+      "bigcn": 0.9033
+    },
+    "p_graph_vs_histgbt": 0.0,
+    "acc_gain_graph_vs_histgbt": -0.0535
+  }
+}

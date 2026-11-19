@@ -1,0 +1,32 @@
+{
+  "recovery": {
+    "propmlp7": 0.2158,
+    "propmlp15": 0.3207,
+    "rf7": 0.222,
+    "rf15": 0.2548,
+    "histgbt7": 0.3635,
+    "histgbt15": 0.3719,
+    "histgbt15_iw": 0.3635,
+    "rf15_iw": 0.2569
+  },
+  "politifact": {
+    "propmlp7": 0.4583,
+    "propmlp15": 0.4828,
+    "rf7": 0.4501,
+    "rf15": 0.4547,
+    "histgbt7": 0.4159,
+    "histgbt15": 0.4717,
+    "histgbt15_iw": 0.4747,
+    "rf15_iw": 0.4729
+  },
+  "gossipcop": {
+    "propmlp7": 0.7532,
+    "propmlp15": 0.7864,
+    "rf7": 0.8506,
+    "rf15": 0.8587,
+    "histgbt7": 0.8279,
+    "histgbt15": 0.8559,
+    "histgbt15_iw": 0.853,
+    "rf15_iw": 0.8557
+  }
+}

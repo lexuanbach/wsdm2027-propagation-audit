@@ -1,0 +1,16 @@
+{
+  "coaid": {
+    "f1_all": 0.59,
+    "tv_abstain_f1kept": 0.555,
+    "tv_coverage": 0.792,
+    "confidence_f1kept": 0.638,
+    "confidence_coverage": 0.875
+  },
+  "recovery": {
+    "f1_all": 0.66,
+    "tv_abstain_f1kept": 0.676,
+    "tv_coverage": 0.785,
+    "confidence_f1kept": 0.692,
+    "confidence_coverage": 0.841
+  }
+}

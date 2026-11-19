@@ -1,0 +1,86 @@
+[
+  {
+    "dataset": "coaid",
+    "budget": 0.5,
+    "coverage_mean": 0.625,
+    "f1_kept_mean": 0.457,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "budget": 0.7,
+    "coverage_mean": 0.722,
+    "f1_kept_mean": 0.504,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "budget": 0.8,
+    "coverage_mean": 0.833,
+    "f1_kept_mean": 0.555,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "budget": 0.9,
+    "coverage_mean": 0.889,
+    "f1_kept_mean": 0.567,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "budget": 0.95,
+    "coverage_mean": 0.917,
+    "f1_kept_mean": 0.568,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "coaid",
+    "budget": 1.0,
+    "coverage_mean": 0.986,
+    "f1_kept_mean": 0.56,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "budget": 0.5,
+    "coverage_mean": 0.467,
+    "f1_kept_mean": 0.566,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "budget": 0.7,
+    "coverage_mean": 0.63,
+    "f1_kept_mean": 0.559,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "budget": 0.8,
+    "coverage_mean": 0.739,
+    "f1_kept_mean": 0.551,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "budget": 0.9,
+    "coverage_mean": 0.822,
+    "f1_kept_mean": 0.552,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "budget": 0.95,
+    "coverage_mean": 0.906,
+    "f1_kept_mean": 0.546,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "budget": 1.0,
+    "coverage_mean": 0.996,
+    "f1_kept_mean": 0.567,
+    "n_seeds": 3
+  }
+]

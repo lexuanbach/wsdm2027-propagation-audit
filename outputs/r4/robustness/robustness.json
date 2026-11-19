@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.0,
+      "f1": 0.5714285714285714
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.1,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.2,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "perturb": "label_noise",
+      "level": 0.3,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "perturb": "pop_shift",
+      "level": 0.5,
+      "f1": 0.34375
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "perturb": "pop_shift",
+      "level": 0.7,
+      "f1": 0.29411764705882354
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "perturb": "pop_shift",
+      "level": 0.9,
+      "f1": 0.3684210526315789
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.0,
+      "f1": 0.29411764705882354
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.1,
+      "f1": 0.34375
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.2,
+      "f1": 0.2727272727272727
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "perturb": "label_noise",
+      "level": 0.3,
+      "f1": 0.34375
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "perturb": "pop_shift",
+      "level": 0.5,
+      "f1": 0.3142857142857143
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "perturb": "pop_shift",
+      "level": 0.7,
+      "f1": 0.4079696394686907
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "perturb": "pop_shift",
+      "level": 0.9,
+      "f1": 0.29411764705882354
+    }
+  ],
+  "wall_s": 91.63781404495239
+}

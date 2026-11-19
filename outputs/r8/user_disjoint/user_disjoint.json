@@ -1,0 +1,114 @@
+{
+  "rows": [
+    {
+      "seed": 0,
+      "n_test": 24,
+      "user_leak": 0,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "coaid",
+      "n_users": 14290,
+      "pct_multi_story_users": 0.035,
+      "max_stories_per_user": 2
+    },
+    {
+      "seed": 1,
+      "n_test": 24,
+      "user_leak": 1,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "coaid",
+      "n_users": 14369,
+      "pct_multi_story_users": 0.216,
+      "max_stories_per_user": 2
+    },
+    {
+      "seed": 2,
+      "n_test": 24,
+      "user_leak": 0,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "coaid",
+      "n_users": 14068,
+      "pct_multi_story_users": 0.028,
+      "max_stories_per_user": 2
+    },
+    {
+      "seed": 3,
+      "n_test": 24,
+      "user_leak": 1,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "coaid",
+      "n_users": 13193,
+      "pct_multi_story_users": 0.03,
+      "max_stories_per_user": 2
+    },
+    {
+      "seed": 4,
+      "n_test": 24,
+      "user_leak": 1,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "coaid",
+      "n_users": 14260,
+      "pct_multi_story_users": 0.028,
+      "max_stories_per_user": 2
+    },
+    {
+      "seed": 0,
+      "n_test": 92,
+      "user_leak": 0,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "recovery",
+      "n_users": 56308,
+      "pct_multi_story_users": 0.0,
+      "max_stories_per_user": 1
+    },
+    {
+      "seed": 1,
+      "n_test": 92,
+      "user_leak": 0,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "recovery",
+      "n_users": 57222,
+      "pct_multi_story_users": 0.0,
+      "max_stories_per_user": 1
+    },
+    {
+      "seed": 2,
+      "n_test": 92,
+      "user_leak": 0,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "recovery",
+      "n_users": 60623,
+      "pct_multi_story_users": 0.0,
+      "max_stories_per_user": 1
+    },
+    {
+      "seed": 3,
+      "n_test": 92,
+      "user_leak": 0,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "recovery",
+      "n_users": 56929,
+      "pct_multi_story_users": 0.0,
+      "max_stories_per_user": 1
+    },
+    {
+      "seed": 4,
+      "n_test": 92,
+      "user_leak": 0,
+      "url_leak": 0,
+      "media_leak": 0,
+      "dataset": "recovery",
+      "n_users": 56543,
+      "pct_multi_story_users": 0.0,
+      "max_stories_per_user": 1
+    }
+  ]
+}

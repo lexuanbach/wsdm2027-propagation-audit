@@ -1,0 +1,22 @@
+{
+  "coaid": {
+    "full": {
+      "f1_mean": 0.59,
+      "f1_std": 0.115
+    },
+    "no_media": {
+      "f1_mean": 0.59,
+      "f1_std": 0.115
+    }
+  },
+  "recovery": {
+    "full": {
+      "f1_mean": 0.66,
+      "f1_std": 0.031
+    },
+    "no_media": {
+      "f1_mean": 0.66,
+      "f1_std": 0.031
+    }
+  }
+}

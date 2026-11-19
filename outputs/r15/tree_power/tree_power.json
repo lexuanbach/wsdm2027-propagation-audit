@@ -1,0 +1,107 @@
+{
+  "method": "MDE_80 = 2.80 * SE, the convention of scripts/rev2_power.py ((z_.975 + z_.80) for a paired two-sided test at 80% power). SE is recovered from the stored story-clustered bootstrap intervals under the normal approximation and averaged over the 95% and 90% recoveries.",
+  "source": "outputs/r11/graph_informative_clustered/<dataset>.json (clustered_best_graph_vs_best_summary)",
+  "selection_caveat": "these intervals condition on test-fold selection of the graph and summary family members, so the MDEs describe the resolution of the fold, not a selection-adjusted procedure",
+  "per_corpus": {
+    "upfd_politifact": {
+      "n_test_per_seed": 221,
+      "n_story_clusters": 221,
+      "acc_delta": -0.0109,
+      "ci95": [
+        -0.067,
+        0.0462
+      ],
+      "ci90": [
+        -0.0579,
+        0.0362
+      ],
+      "se_from_ci95": 0.0289,
+      "se_from_ci90": 0.0286,
+      "se_used": 0.0287,
+      "mde_80": 0.08,
+      "resolves_0.03": false,
+      "best_graph": "gcn",
+      "best_summary": "mlp"
+    },
+    "upfd_gossipcop": {
+      "n_test_per_seed": 3826,
+      "n_story_clusters": 3826,
+      "acc_delta": 0.0094,
+      "ci95": [
+        0.0022,
+        0.0166
+      ],
+      "ci90": [
+        0.0034,
+        0.0154
+      ],
+      "se_from_ci95": 0.0037,
+      "se_from_ci90": 0.0036,
+      "se_used": 0.0037,
+      "mde_80": 0.01,
+      "resolves_0.03": true,
+      "best_graph": "bigcn",
+      "best_summary": "histgbt"
+    },
+    "twitter15": {
+      "n_test_per_seed": 149,
+      "n_story_clusters": 610,
+      "acc_delta": -0.0081,
+      "ci95": [
+        -0.0438,
+        0.0278
+      ],
+      "ci90": [
+        -0.0377,
+        0.0217
+      ],
+      "se_from_ci95": 0.0183,
+      "se_from_ci90": 0.0181,
+      "se_used": 0.0182,
+      "mde_80": 0.051,
+      "resolves_0.03": false,
+      "best_graph": "bigcn",
+      "best_summary": "mlp"
+    },
+    "twitter16": {
+      "n_test_per_seed": 82,
+      "n_story_clusters": 331,
+      "acc_delta": -0.0146,
+      "ci95": [
+        -0.0588,
+        0.0297
+      ],
+      "ci90": [
+        -0.0517,
+        0.0221
+      ],
+      "se_from_ci95": 0.0226,
+      "se_from_ci90": 0.0224,
+      "se_used": 0.0225,
+      "mde_80": 0.063,
+      "resolves_0.03": false,
+      "best_graph": "gatv2",
+      "best_summary": "mlp"
+    },
+    "weibo": {
+      "n_test_per_seed": 453,
+      "n_story_clusters": 1886,
+      "acc_delta": 0.0053,
+      "ci95": [
+        -0.0044,
+        0.0148
+      ],
+      "ci90": [
+        -0.0027,
+        0.0134
+      ],
+      "se_from_ci95": 0.0049,
+      "se_from_ci90": 0.0049,
+      "se_used": 0.0049,
+      "mde_80": 0.014,
+      "resolves_0.03": true,
+      "best_graph": "gcn",
+      "best_summary": "logreg"
+    }
+  }
+}

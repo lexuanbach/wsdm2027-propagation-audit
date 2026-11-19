@@ -1,0 +1,130 @@
+{
+  "coaid": {
+    "propmlp": {
+      "roc": 0.504,
+      "pr": 0.066,
+      "brier": 0.051,
+      "ece": 0.026
+    },
+    "propmlp+": {
+      "roc": 0.539,
+      "pr": 0.074,
+      "brier": 0.051,
+      "ece": 0.028
+    },
+    "rf": {
+      "roc": 0.686,
+      "pr": 0.116,
+      "brier": 0.051,
+      "ece": 0.031
+    },
+    "histgbt": {
+      "roc": 0.611,
+      "pr": 0.1,
+      "brier": 0.052,
+      "ece": 0.035
+    },
+    "histgbt_iso": {
+      "roc": 0.615,
+      "pr": 0.08,
+      "brier": 0.052,
+      "ece": 0.013
+    }
+  },
+  "recovery": {
+    "propmlp": {
+      "roc": 0.655,
+      "pr": 0.43,
+      "brier": 0.194,
+      "ece": 0.065
+    },
+    "propmlp+": {
+      "roc": 0.698,
+      "pr": 0.47,
+      "brier": 0.186,
+      "ece": 0.063
+    },
+    "rf": {
+      "roc": 0.681,
+      "pr": 0.445,
+      "brier": 0.192,
+      "ece": 0.095
+    },
+    "histgbt": {
+      "roc": 0.668,
+      "pr": 0.423,
+      "brier": 0.202,
+      "ece": 0.111
+    },
+    "histgbt_iso": {
+      "roc": 0.665,
+      "pr": 0.399,
+      "brier": 0.198,
+      "ece": 0.062
+    }
+  },
+  "politifact": {
+    "propmlp": {
+      "roc": 0.732,
+      "pr": 0.739,
+      "brier": 0.205,
+      "ece": 0.112
+    },
+    "propmlp+": {
+      "roc": 0.804,
+      "pr": 0.823,
+      "brier": 0.184,
+      "ece": 0.12
+    },
+    "rf": {
+      "roc": 0.772,
+      "pr": 0.815,
+      "brier": 0.202,
+      "ece": 0.138
+    },
+    "histgbt": {
+      "roc": 0.785,
+      "pr": 0.815,
+      "brier": 0.203,
+      "ece": 0.169
+    },
+    "histgbt_iso": {
+      "roc": 0.749,
+      "pr": 0.743,
+      "brier": 0.218,
+      "ece": 0.128
+    }
+  },
+  "gossipcop": {
+    "propmlp": {
+      "roc": 0.9,
+      "pr": 0.763,
+      "brier": 0.092,
+      "ece": 0.032
+    },
+    "propmlp+": {
+      "roc": 0.917,
+      "pr": 0.823,
+      "brier": 0.078,
+      "ece": 0.031
+    },
+    "rf": {
+      "roc": 0.933,
+      "pr": 0.817,
+      "brier": 0.078,
+      "ece": 0.021
+    },
+    "histgbt": {
+      "roc": 0.936,
+      "pr": 0.822,
+      "brier": 0.077,
+      "ece": 0.017
+    },
+    "histgbt_iso": {
+      "roc": 0.935,
+      "pr": 0.802,
+      "brier": 0.079,
+      "ece": 0.021
+    }
+  }
+}

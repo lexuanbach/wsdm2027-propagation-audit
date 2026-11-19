@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "coaid",
+    "method": "propmlp",
+    "regime": "without_text",
+    "f1_mean": 0.618,
+    "f1_std": 0.095,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "method": "propmlp",
+    "regime": "without_text",
+    "f1_mean": 0.659,
+    "f1_std": 0.027,
+    "n_seeds": 5
+  }
+]

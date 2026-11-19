@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "recovery",
+    "frac": 0.25,
+    "f1_mean": 0.499,
+    "f1_std": 0.117,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "frac": 0.5,
+    "f1_mean": 0.458,
+    "f1_std": 0.082,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "frac": 0.75,
+    "f1_mean": 0.489,
+    "f1_std": 0.097,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "frac": 1.0,
+    "f1_mean": 0.467,
+    "f1_std": 0.098,
+    "n_seeds": 5
+  }
+]

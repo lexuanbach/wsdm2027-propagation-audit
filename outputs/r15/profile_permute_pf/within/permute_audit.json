@@ -1,0 +1,20 @@
+{
+  "variant": "within",
+  "per_corpus": {
+    "upfd_politifact": {
+      "n_items": 314,
+      "n_nodes": 41054,
+      "n_user_nodes": 40740,
+      "n_singleton_trees": 0,
+      "n_trees_unpermutable_within": 0,
+      "standardisation": "train-node mean/std, replicated from rev6 run_dataset",
+      "root_held_fixed": true,
+      "rng_seed": 0
+    }
+  },
+  "counters": {
+    "n_graphs_permuted": 1570
+  },
+  "permuted_side": "graph model node features only; summary baselines and the tree topology are unchanged",
+  "note": "under the 'within' variant the summary features (mean/std/max over profile rows) are invariant by construction, so the summary columns are bit-identical to the intact run"
+}

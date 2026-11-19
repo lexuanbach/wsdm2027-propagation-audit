@@ -1,0 +1,205 @@
+{
+  "per_variant": {
+    "within": {
+      "upfd_politifact": {
+        "intact_best_graph": "gcn",
+        "gcn": {
+          "intact_mean": 0.7828,
+          "permuted_mean": 0.7624,
+          "delta": -0.0204,
+          "intact_seed_std": 0.0064,
+          "p_seed_paired": 0.134,
+          "per_seed_delta": [
+            0.0002,
+            -0.0137,
+            -0.0608,
+            -0.0231,
+            -0.0045
+          ]
+        },
+        "gatv2": {
+          "intact_mean": 0.7755,
+          "permuted_mean": 0.7623,
+          "delta": -0.0133,
+          "intact_seed_std": 0.0061,
+          "p_seed_paired": 0.6006,
+          "per_seed_delta": [
+            -0.0656,
+            0.0226,
+            -0.0728,
+            0.0404,
+            0.009
+          ]
+        },
+        "bigcn": {
+          "intact_mean": 0.7516,
+          "permuted_mean": 0.7462,
+          "delta": -0.0053,
+          "intact_seed_std": 0.0249,
+          "p_seed_paired": 0.6052,
+          "per_seed_delta": [
+            0.0136,
+            0.0002,
+            -0.0379,
+            0.0114,
+            -0.0139
+          ]
+        },
+        "summary_invariance": {
+          "logreg": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "rf": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "histgbt": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "mlp": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          }
+        },
+        "summary_bit_identical": true
+      }
+    },
+    "global": {
+      "upfd_gossipcop": {
+        "intact_best_graph": "bigcn",
+        "gcn": {
+          "intact_mean": 0.9023,
+          "permuted_mean": 0.8775,
+          "delta": -0.0248,
+          "intact_seed_std": 0.0057,
+          "p_seed_paired": 0.0047,
+          "per_seed_delta": [
+            -0.0122,
+            -0.034,
+            -0.027,
+            -0.0335,
+            -0.0173
+          ]
+        },
+        "gatv2": {
+          "intact_mean": 0.9174,
+          "permuted_mean": 0.8738,
+          "delta": -0.0437,
+          "intact_seed_std": 0.0063,
+          "p_seed_paired": 0.0001,
+          "per_seed_delta": [
+            -0.0389,
+            -0.045,
+            -0.0508,
+            -0.0374,
+            -0.0463
+          ]
+        },
+        "bigcn": {
+          "intact_mean": 0.9404,
+          "permuted_mean": 0.8746,
+          "delta": -0.0658,
+          "intact_seed_std": 0.0089,
+          "p_seed_paired": 0.0,
+          "per_seed_delta": [
+            -0.0533,
+            -0.0708,
+            -0.0692,
+            -0.0721,
+            -0.0636
+          ]
+        },
+        "summary_invariance": {
+          "logreg": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "rf": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "histgbt": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "mlp": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          }
+        },
+        "summary_bit_identical": true
+      },
+      "upfd_politifact": {
+        "intact_best_graph": "gcn",
+        "gcn": {
+          "intact_mean": 0.7828,
+          "permuted_mean": 0.7452,
+          "delta": -0.0376,
+          "intact_seed_std": 0.0064,
+          "p_seed_paired": 0.003,
+          "per_seed_delta": [
+            -0.0318,
+            -0.0463,
+            -0.0553,
+            -0.0227,
+            -0.0318
+          ]
+        },
+        "gatv2": {
+          "intact_mean": 0.7755,
+          "permuted_mean": 0.7231,
+          "delta": -0.0525,
+          "intact_seed_std": 0.0061,
+          "p_seed_paired": 0.0213,
+          "per_seed_delta": [
+            -0.0094,
+            -0.0964,
+            -0.0661,
+            -0.0454,
+            -0.0451
+          ]
+        },
+        "bigcn": {
+          "intact_mean": 0.7516,
+          "permuted_mean": 0.7201,
+          "delta": -0.0315,
+          "intact_seed_std": 0.0249,
+          "p_seed_paired": 0.039,
+          "per_seed_delta": [
+            -0.0271,
+            -0.036,
+            -0.0458,
+            0.0059,
+            -0.0543
+          ]
+        },
+        "summary_invariance": {
+          "logreg": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "rf": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "histgbt": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          },
+          "mlp": {
+            "max_abs_diff": 0.0,
+            "identical": true
+          }
+        },
+        "summary_bit_identical": true
+      }
+    }
+  },
+  "design": {
+    "within": "non-root profile rows permuted inside each tree; topology, the tree's profile multiset and the news root are preserved, so the summary features are invariant by construction",
+    "global": "non-root profile rows permuted across the whole corpus; topology and the corpus-wide profile marginal survive, per-tree composition does not",
+    "applies_to": "graph-model node features only, on train, val and test alike"
+  }
+}

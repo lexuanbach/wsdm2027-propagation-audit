@@ -1,0 +1,301 @@
+{
+  "protocol": "training labels permuted within the training fold only; splits, seeds, features and test labels untouched",
+  "majority_floor_reported_in_paper": 0.333,
+  "prereg": "expected null: permuted-label macro-F1 in [0.333, ~0.50]; any corpus materially above 0.50 is a main-text threat and must not be re-run",
+  "results": {
+    "coaid": {
+      "n_test_per_seed": [
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "histgbt15": {
+        "real_mean": 0.7039,
+        "real_per_seed": [
+          0.7822,
+          0.5409,
+          0.7429,
+          0.75,
+          0.7037
+        ],
+        "perm_mean": 0.4665,
+        "perm_per_seed": [
+          0.4667,
+          0.4574,
+          0.3739,
+          0.5344,
+          0.5
+        ],
+        "perm_std": 0.0536,
+        "perm_ci95": [
+          0.392,
+          0.5409
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.3739,
+        "perm_max": 0.5344,
+        "collapse": 0.2375,
+        "perm_mean_above_0.50": false
+      },
+      "rf7": {
+        "real_mean": 0.6133,
+        "real_per_seed": [
+          0.5344,
+          0.5833,
+          0.7429,
+          0.4574,
+          0.7483
+        ],
+        "perm_mean": 0.4693,
+        "perm_per_seed": [
+          0.5714,
+          0.6243,
+          0.2448,
+          0.5409,
+          0.3651
+        ],
+        "perm_std": 0.142,
+        "perm_ci95": [
+          0.2722,
+          0.6664
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.2448,
+        "perm_max": 0.6243,
+        "collapse": 0.144,
+        "perm_mean_above_0.50": false
+      }
+    },
+    "recovery": {
+      "n_test_per_seed": [
+        92,
+        92,
+        92,
+        92,
+        92
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "histgbt15": {
+        "real_mean": 0.6705,
+        "real_per_seed": [
+          0.7173,
+          0.6844,
+          0.6582,
+          0.6515,
+          0.6409
+        ],
+        "perm_mean": 0.5056,
+        "perm_per_seed": [
+          0.444,
+          0.4979,
+          0.5543,
+          0.5435,
+          0.4881
+        ],
+        "perm_std": 0.0399,
+        "perm_ci95": [
+          0.4502,
+          0.561
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.444,
+        "perm_max": 0.5543,
+        "collapse": 0.1649,
+        "perm_mean_above_0.50": true
+      },
+      "rf7": {
+        "real_mean": 0.6573,
+        "real_per_seed": [
+          0.739,
+          0.6829,
+          0.5852,
+          0.6598,
+          0.6195
+        ],
+        "perm_mean": 0.4834,
+        "perm_per_seed": [
+          0.4456,
+          0.3913,
+          0.5312,
+          0.5966,
+          0.4524
+        ],
+        "perm_std": 0.0721,
+        "perm_ci95": [
+          0.3834,
+          0.5835
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.3913,
+        "perm_max": 0.5966,
+        "collapse": 0.1739,
+        "perm_mean_above_0.50": false
+      }
+    },
+    "politifact": {
+      "n_test_per_seed": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "histgbt15": {
+        "real_mean": 0.6979,
+        "real_per_seed": [
+          0.6863,
+          0.6847,
+          0.7025,
+          0.7968,
+          0.619
+        ],
+        "perm_mean": 0.4984,
+        "perm_per_seed": [
+          0.5414,
+          0.4217,
+          0.498,
+          0.5934,
+          0.4375
+        ],
+        "perm_std": 0.064,
+        "perm_ci95": [
+          0.4096,
+          0.5872
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.4217,
+        "perm_max": 0.5934,
+        "collapse": 0.1995,
+        "perm_mean_above_0.50": false
+      },
+      "rf7": {
+        "real_mean": 0.6446,
+        "real_per_seed": [
+          0.7185,
+          0.6653,
+          0.578,
+          0.6679,
+          0.5934
+        ],
+        "perm_mean": 0.5285,
+        "perm_per_seed": [
+          0.6015,
+          0.4519,
+          0.4519,
+          0.6872,
+          0.4498
+        ],
+        "perm_std": 0.0984,
+        "perm_ci95": [
+          0.3918,
+          0.6651
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.4498,
+        "perm_max": 0.6872,
+        "collapse": 0.1162,
+        "perm_mean_above_0.50": true
+      }
+    },
+    "gossipcop": {
+      "n_test_per_seed": [
+        300,
+        300,
+        300,
+        300,
+        300
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "histgbt15": {
+        "real_mean": 0.8779,
+        "real_per_seed": [
+          0.8998,
+          0.8698,
+          0.89,
+          0.8467,
+          0.8833
+        ],
+        "perm_mean": 0.5177,
+        "perm_per_seed": [
+          0.4531,
+          0.5793,
+          0.52,
+          0.5565,
+          0.4794
+        ],
+        "perm_std": 0.0468,
+        "perm_ci95": [
+          0.4527,
+          0.5826
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.4531,
+        "perm_max": 0.5793,
+        "collapse": 0.3603,
+        "perm_mean_above_0.50": true
+      },
+      "rf7": {
+        "real_mean": 0.8619,
+        "real_per_seed": [
+          0.8832,
+          0.8366,
+          0.8833,
+          0.8399,
+          0.8667
+        ],
+        "perm_mean": 0.5183,
+        "perm_per_seed": [
+          0.3965,
+          0.5922,
+          0.5742,
+          0.5091,
+          0.5195
+        ],
+        "perm_std": 0.0686,
+        "perm_ci95": [
+          0.4231,
+          0.6135
+        ],
+        "perm_ci95_contains_0.50": true,
+        "perm_min": 0.3965,
+        "perm_max": 0.5922,
+        "collapse": 0.3436,
+        "perm_mean_above_0.50": true
+      }
+    }
+  },
+  "corpora_whose_permuted_ci_excludes_0.50": [],
+  "corpora_whose_permuted_point_estimate_exceeds_0.50": [
+    "recovery",
+    "politifact",
+    "gossipcop"
+  ]
+}

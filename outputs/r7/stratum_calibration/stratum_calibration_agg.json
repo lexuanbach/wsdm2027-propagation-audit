@@ -1,0 +1,14 @@
+[
+  {
+    "dataset": "coaid",
+    "ece_mean": 0.1393,
+    "ece_std": 0.0221,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "ece_mean": 0.1713,
+    "ece_std": 0.0545,
+    "n_seeds": 3
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "coaid",
+    "mean_test": 24.0,
+    "user_leak_total": 3,
+    "url_leak_total": 0,
+    "media_leak_total": 0,
+    "test_total": 120,
+    "pct_multi_story_users": 0.067,
+    "n_seeds": 5
+  },
+  {
+    "dataset": "recovery",
+    "mean_test": 92.0,
+    "user_leak_total": 0,
+    "url_leak_total": 0,
+    "media_leak_total": 0,
+    "test_total": 460,
+    "pct_multi_story_users": 0.0,
+    "n_seeds": 5
+  }
+]

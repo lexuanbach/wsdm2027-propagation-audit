@@ -1,0 +1,40 @@
+{
+  "politifact": {
+    "title_tfidf_lr": {
+      "f1_mean": 0.7898,
+      "f1_std": 0.0187
+    },
+    "title_plus_summary15_lr": {
+      "f1_mean": 0.8105,
+      "f1_std": 0.0365
+    },
+    "summary15_lr": {
+      "f1_mean": 0.7428,
+      "f1_std": 0.0247
+    },
+    "histgbt15_ref": {
+      "f1_mean": 0.7061,
+      "f1_std": 0.0515
+    },
+    "stories_without_title": 0
+  },
+  "gossipcop": {
+    "title_tfidf_lr": {
+      "f1_mean": 0.7646,
+      "f1_std": 0.0187
+    },
+    "title_plus_summary15_lr": {
+      "f1_mean": 0.8746,
+      "f1_std": 0.008
+    },
+    "summary15_lr": {
+      "f1_mean": 0.8476,
+      "f1_std": 0.0088
+    },
+    "histgbt15_ref": {
+      "f1_mean": 0.8719,
+      "f1_std": 0.0225
+    },
+    "stories_without_title": 0
+  }
+}

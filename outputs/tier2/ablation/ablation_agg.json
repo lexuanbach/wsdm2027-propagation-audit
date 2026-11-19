@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "coaid",
+    "variant": "full",
+    "f1_mean": 0.41,
+    "f1_std": 0.108,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_ssl",
+    "f1_mean": 0.369,
+    "f1_std": 0.036,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_causal",
+    "f1_mean": 0.41,
+    "f1_std": 0.108,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "variant": "no_abstain",
+    "f1_mean": 0.41,
+    "f1_std": 0.108,
+    "n_seeds": 2
+  }
+]

@@ -1,0 +1,218 @@
+{
+  "clustered_best_graph_vs_histgbt": {
+    "mean": 0.0056,
+    "ci95": [
+      -0.0016,
+      0.0129
+    ],
+    "p": 0.131,
+    "ci90": [
+      -0.0005,
+      0.0118
+    ],
+    "tost_equivalent_0.03": true,
+    "tost_equivalent_0.05": true,
+    "n_stories": 3826,
+    "n_rows": 19130
+  },
+  "clustered_best_graph_vs_best_summary": {
+    "mean": 0.0056,
+    "ci95": [
+      -0.0016,
+      0.0129
+    ],
+    "p": 0.131,
+    "ci90": [
+      -0.0005,
+      0.0118
+    ],
+    "tost_equivalent_0.03": true,
+    "tost_equivalent_0.05": true,
+    "n_stories": 3826,
+    "n_rows": 19130
+  },
+  "seed_paired_t_graph_vs_histgbt": {
+    "t": 1.175,
+    "p": 0.3053,
+    "per_seed_acc_graph": [
+      0.9205,
+      0.9456,
+      0.9409,
+      0.9451,
+      0.931
+    ],
+    "per_seed_acc_histgbt": [
+      0.931,
+      0.931,
+      0.931,
+      0.931,
+      0.931
+    ]
+  },
+  "dataset": "upfd_gossipcop",
+  "n_classes": 2,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 60,
+  "n_test_per_seed": [
+    3826,
+    3826,
+    3826,
+    3826,
+    3826
+  ],
+  "official_splits": true,
+  "profile_features": true,
+  "summary_features": [
+    "log_size",
+    "depth",
+    "log_max_width",
+    "mean_branching",
+    "leaf_frac",
+    "log_root_fanout",
+    "mean_depth",
+    "structural_virality",
+    "depth_per_node",
+    "profile_mean(10)",
+    "profile_std(10)",
+    "profile_max(10)"
+  ],
+  "node_features": "UPFD 10-d user profile",
+  "results": {
+    "logreg": {
+      "f1_mean": 0.9056,
+      "f1_std": 0.0,
+      "per_seed": [
+        0.9056,
+        0.9056,
+        0.9056,
+        0.9056,
+        0.9056
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.9136,
+      "f1_std": 0.001,
+      "per_seed": [
+        0.9137,
+        0.9119,
+        0.9132,
+        0.9143,
+        0.9148
+      ]
+    },
+    "histgbt": {
+      "f1_mean": 0.931,
+      "f1_std": 0.0,
+      "per_seed": [
+        0.931,
+        0.931,
+        0.931,
+        0.931,
+        0.931
+      ]
+    },
+    "mlp": {
+      "f1_mean": 0.9255,
+      "f1_std": 0.0014,
+      "per_seed": [
+        0.9232,
+        0.9263,
+        0.9255,
+        0.925,
+        0.9273
+      ]
+    },
+    "bigcn": {
+      "f1_mean": 0.9366,
+      "f1_std": 0.0097,
+      "per_seed": [
+        0.9204,
+        0.9456,
+        0.9409,
+        0.9451,
+        0.931
+      ]
+    }
+  },
+  "best_graph": "bigcn",
+  "best_summary": "histgbt",
+  "paired_best_graph_vs_best_summary": {
+    "acc_gain_graph": 0.0056,
+    "p": 0.0022,
+    "ci95": [
+      0.0019,
+      0.0094
+    ]
+  },
+  "paired_best_graph_vs_histgbt": {
+    "acc_gain_graph": 0.0056,
+    "p": 0.0022,
+    "ci95": [
+      0.0019,
+      0.0094
+    ]
+  },
+  "tost_graph_vs_histgbt": {
+    "0.03": {
+      "margin": 0.03,
+      "ci90": [
+        0.002509147935180345,
+        0.008782017773131208
+      ],
+      "equivalent": true,
+      "mean": 0.005645582854155776
+    },
+    "0.05": {
+      "margin": 0.05,
+      "ci90": [
+        0.002509147935180345,
+        0.008782017773131208
+      ],
+      "equivalent": true,
+      "mean": 0.005645582854155776
+    }
+  },
+  "histgbt_selected_hparams": [
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    }
+  ],
+  "timing_s_mean": {
+    "summary_family_s": 6.5,
+    "bigcn_s": 47.3
+  },
+  "n_graphs": {
+    "train": 1092,
+    "val": 546,
+    "test": 3826
+  },
+  "wall_s": 311.1
+}

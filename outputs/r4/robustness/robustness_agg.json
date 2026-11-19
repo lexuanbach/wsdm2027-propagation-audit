@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "coaid",
+    "perturb": "label_noise",
+    "level": 0.0,
+    "f1_mean": 0.4327731092436975,
+    "f1_std": 0.19608843511895852,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "perturb": "label_noise",
+    "level": 0.1,
+    "f1_mean": 0.33854166666666663,
+    "f1_std": 0.007365695637359883,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "perturb": "label_noise",
+    "level": 0.2,
+    "f1_mean": 0.303030303030303,
+    "f1_std": 0.04285495643554834,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "perturb": "label_noise",
+    "level": 0.3,
+    "f1_mean": 0.33854166666666663,
+    "f1_std": 0.007365695637359883,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "perturb": "pop_shift",
+    "level": 0.5,
+    "f1_mean": 0.32901785714285714,
+    "f1_std": 0.02083439623138935,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "perturb": "pop_shift",
+    "level": 0.7,
+    "f1_mean": 0.35104364326375714,
+    "f1_std": 0.08050551588461641,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "perturb": "pop_shift",
+    "level": 0.9,
+    "f1_mean": 0.33126934984520123,
+    "f1_std": 0.05254044194574964,
+    "n_seeds": 2
+  }
+]

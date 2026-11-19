@@ -1,0 +1,242 @@
+{
+  "coaid": {
+    "results": {
+      "histgbt15": {
+        "f1_mean": 0.6287,
+        "f1_std": 0.0363
+      },
+      "histgbt21": {
+        "f1_mean": 0.6146,
+        "f1_std": 0.079
+      },
+      "rf15": {
+        "f1_mean": 0.6689,
+        "f1_std": 0.0963
+      },
+      "rf21": {
+        "f1_mean": 0.6785,
+        "f1_std": 0.1202
+      },
+      "propmlp15": {
+        "f1_mean": 0.6104,
+        "f1_std": 0.0589
+      },
+      "propmlp21": {
+        "f1_mean": 0.6161,
+        "f1_std": 0.0715
+      }
+    },
+    "paired_histgbt_21_minus_15": {
+      "acc_gain": -0.0083,
+      "p": 0.9014,
+      "ci95": [
+        -0.0833,
+        0.0667
+      ]
+    },
+    "paired_rf_21_minus_15": {
+      "acc_gain": 0.0083,
+      "p": 0.8882,
+      "ci95": [
+        -0.0583,
+        0.075
+      ]
+    },
+    "paired_propmlp_21_minus_15": {
+      "acc_gain": 0.0083,
+      "p": 0.8922,
+      "ci95": [
+        -0.0583,
+        0.075
+      ]
+    },
+    "extra_features": [
+      "log1p(mu)",
+      "alpha (branching ratio)",
+      "log(beta)",
+      "log1p(hour of peak rate)",
+      "peak-hour share",
+      "log-log growth slope (first 24h)"
+    ]
+  },
+  "recovery": {
+    "results": {
+      "histgbt15": {
+        "f1_mean": 0.6462,
+        "f1_std": 0.0542
+      },
+      "histgbt21": {
+        "f1_mean": 0.675,
+        "f1_std": 0.0279
+      },
+      "rf15": {
+        "f1_mean": 0.6885,
+        "f1_std": 0.0605
+      },
+      "rf21": {
+        "f1_mean": 0.6967,
+        "f1_std": 0.0384
+      },
+      "propmlp15": {
+        "f1_mean": 0.699,
+        "f1_std": 0.0672
+      },
+      "propmlp21": {
+        "f1_mean": 0.7098,
+        "f1_std": 0.0443
+      }
+    },
+    "paired_histgbt_21_minus_15": {
+      "acc_gain": 0.0283,
+      "p": 0.178,
+      "ci95": [
+        -0.0109,
+        0.0674
+      ]
+    },
+    "paired_rf_21_minus_15": {
+      "acc_gain": 0.0087,
+      "p": 0.6232,
+      "ci95": [
+        -0.0217,
+        0.0391
+      ]
+    },
+    "paired_propmlp_21_minus_15": {
+      "acc_gain": 0.0109,
+      "p": 0.4984,
+      "ci95": [
+        -0.0174,
+        0.0391
+      ]
+    },
+    "extra_features": [
+      "log1p(mu)",
+      "alpha (branching ratio)",
+      "log(beta)",
+      "log1p(hour of peak rate)",
+      "peak-hour share",
+      "log-log growth slope (first 24h)"
+    ]
+  },
+  "politifact": {
+    "results": {
+      "histgbt15": {
+        "f1_mean": 0.706,
+        "f1_std": 0.0315
+      },
+      "histgbt21": {
+        "f1_mean": 0.7412,
+        "f1_std": 0.0604
+      },
+      "rf15": {
+        "f1_mean": 0.7214,
+        "f1_std": 0.0546
+      },
+      "rf21": {
+        "f1_mean": 0.741,
+        "f1_std": 0.0462
+      },
+      "propmlp15": {
+        "f1_mean": 0.7169,
+        "f1_std": 0.0388
+      },
+      "propmlp21": {
+        "f1_mean": 0.7314,
+        "f1_std": 0.0612
+      }
+    },
+    "paired_histgbt_21_minus_15": {
+      "acc_gain": 0.0344,
+      "p": 0.0986,
+      "ci95": [
+        -0.0031,
+        0.0719
+      ]
+    },
+    "paired_rf_21_minus_15": {
+      "acc_gain": 0.0187,
+      "p": 0.3234,
+      "ci95": [
+        -0.0156,
+        0.0531
+      ]
+    },
+    "paired_propmlp_21_minus_15": {
+      "acc_gain": 0.0125,
+      "p": 0.4272,
+      "ci95": [
+        -0.0156,
+        0.0406
+      ]
+    },
+    "extra_features": [
+      "log1p(mu)",
+      "alpha (branching ratio)",
+      "log(beta)",
+      "log1p(hour of peak rate)",
+      "peak-hour share",
+      "log-log growth slope (first 24h)"
+    ]
+  },
+  "gossipcop": {
+    "results": {
+      "histgbt15": {
+        "f1_mean": 0.8766,
+        "f1_std": 0.0188
+      },
+      "histgbt21": {
+        "f1_mean": 0.8819,
+        "f1_std": 0.0189
+      },
+      "rf15": {
+        "f1_mean": 0.8773,
+        "f1_std": 0.0182
+      },
+      "rf21": {
+        "f1_mean": 0.8772,
+        "f1_std": 0.0141
+      },
+      "propmlp15": {
+        "f1_mean": 0.8508,
+        "f1_std": 0.009
+      },
+      "propmlp21": {
+        "f1_mean": 0.8572,
+        "f1_std": 0.0119
+      }
+    },
+    "paired_histgbt_21_minus_15": {
+      "acc_gain": 0.0053,
+      "p": 0.3358,
+      "ci95": [
+        -0.0047,
+        0.0153
+      ]
+    },
+    "paired_rf_21_minus_15": {
+      "acc_gain": -0.0,
+      "p": 1.0,
+      "ci95": [
+        -0.0067,
+        0.0067
+      ]
+    },
+    "paired_propmlp_21_minus_15": {
+      "acc_gain": 0.006,
+      "p": 0.3098,
+      "ci95": [
+        -0.0053,
+        0.0173
+      ]
+    },
+    "extra_features": [
+      "log1p(mu)",
+      "alpha (branching ratio)",
+      "log(beta)",
+      "log1p(hour of peak rate)",
+      "peak-hour share",
+      "log-log growth slope (first 24h)"
+    ]
+  }
+}

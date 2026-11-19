@@ -1,0 +1,275 @@
+{
+  "family_size": 23,
+  "comparisons": {
+    "coaid:propmlp+_vs_propmlp": {
+      "f1_A": 0.61,
+      "f1_B": 0.618,
+      "seed_paired_t_p": 0.8734,
+      "cluster_bootstrap_p": 0.7914,
+      "acc_diff_A_minus_B": -0.0139
+    },
+    "coaid:rf_vs_propmlp": {
+      "f1_A": 0.595,
+      "f1_B": 0.618,
+      "seed_paired_t_p": 0.5594,
+      "cluster_bootstrap_p": 0.5946,
+      "acc_diff_A_minus_B": -0.0278
+    },
+    "coaid:histgbt_vs_propmlp": {
+      "f1_A": 0.571,
+      "f1_B": 0.618,
+      "seed_paired_t_p": 0.4665,
+      "cluster_bootstrap_p": 0.4196,
+      "acc_diff_A_minus_B": -0.037
+    },
+    "recovery:propmlp+_vs_propmlp": {
+      "f1_A": 0.699,
+      "f1_B": 0.659,
+      "seed_paired_t_p": 0.2647,
+      "cluster_bootstrap_p": 0.0274,
+      "acc_diff_A_minus_B": 0.0438
+    },
+    "recovery:rf_vs_propmlp": {
+      "f1_A": 0.651,
+      "f1_B": 0.659,
+      "seed_paired_t_p": 0.6686,
+      "cluster_bootstrap_p": 0.842,
+      "acc_diff_A_minus_B": -0.0041
+    },
+    "recovery:histgbt_vs_propmlp": {
+      "f1_A": 0.665,
+      "f1_B": 0.659,
+      "seed_paired_t_p": 0.6917,
+      "cluster_bootstrap_p": 0.581,
+      "acc_diff_A_minus_B": 0.0123
+    },
+    "politifact:propmlp+_vs_propmlp": {
+      "f1_A": 0.717,
+      "f1_B": 0.657,
+      "seed_paired_t_p": 0.0106,
+      "cluster_bootstrap_p": 0.009,
+      "acc_diff_A_minus_B": 0.0642
+    },
+    "politifact:rf_vs_propmlp": {
+      "f1_A": 0.667,
+      "f1_B": 0.657,
+      "seed_paired_t_p": 0.5328,
+      "cluster_bootstrap_p": 0.9134,
+      "acc_diff_A_minus_B": 0.0038
+    },
+    "politifact:histgbt_vs_propmlp": {
+      "f1_A": 0.67,
+      "f1_B": 0.657,
+      "seed_paired_t_p": 0.592,
+      "cluster_bootstrap_p": 0.7034,
+      "acc_diff_A_minus_B": 0.0107
+    },
+    "gossipcop:propmlp+_vs_propmlp": {
+      "f1_A": 0.851,
+      "f1_B": 0.836,
+      "seed_paired_t_p": 0.1116,
+      "cluster_bootstrap_p": 0.0618,
+      "acc_diff_A_minus_B": 0.0133
+    },
+    "gossipcop:rf_vs_propmlp": {
+      "f1_A": 0.865,
+      "f1_B": 0.836,
+      "seed_paired_t_p": 0.0357,
+      "cluster_bootstrap_p": 0.0,
+      "acc_diff_A_minus_B": 0.0287
+    },
+    "gossipcop:histgbt_vs_propmlp": {
+      "f1_A": 0.871,
+      "f1_B": 0.836,
+      "seed_paired_t_p": 0.017,
+      "cluster_bootstrap_p": 0.0,
+      "acc_diff_A_minus_B": 0.0339
+    }
+  },
+  "multiplicity": [
+    {
+      "test": "gossipcop:rf_vs_propmlp",
+      "raw_p": 0.0,
+      "holm_p": 0.0,
+      "bh_p": 0.0,
+      "holm_sig": true,
+      "bh_sig": true
+    },
+    {
+      "test": "gossipcop:histgbt_vs_propmlp",
+      "raw_p": 0.0,
+      "holm_p": 0.0,
+      "bh_p": 0.0,
+      "holm_sig": true,
+      "bh_sig": true
+    },
+    {
+      "test": "GATv2 vs PropMLP GossipCop",
+      "raw_p": 0.001,
+      "holm_p": 0.021,
+      "bh_p": 0.0077,
+      "holm_sig": true,
+      "bh_sig": true
+    },
+    {
+      "test": "politifact:propmlp+_vs_propmlp",
+      "raw_p": 0.009,
+      "holm_p": 0.18,
+      "bh_p": 0.0517,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "recovery:propmlp+_vs_propmlp",
+      "raw_p": 0.0274,
+      "holm_p": 0.5206,
+      "bh_p": 0.126,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "gossipcop:propmlp+_vs_propmlp",
+      "raw_p": 0.0618,
+      "holm_p": 1.0,
+      "bh_p": 0.2369,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "GATv2 vs PropMLP ReCOVery",
+      "raw_p": 0.1,
+      "holm_p": 1.0,
+      "bh_p": 0.3286,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "DLF>PropMLP PolitiFact",
+      "raw_p": 0.23,
+      "holm_p": 1.0,
+      "bh_p": 0.6389,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "DLF>PropMLP GossipCop",
+      "raw_p": 0.25,
+      "holm_p": 1.0,
+      "bh_p": 0.6389,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "DLF>PropMLP CoAID",
+      "raw_p": 0.41,
+      "holm_p": 1.0,
+      "bh_p": 0.8773,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "coaid:histgbt_vs_propmlp",
+      "raw_p": 0.4196,
+      "holm_p": 1.0,
+      "bh_p": 0.8773,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "recovery:histgbt_vs_propmlp",
+      "raw_p": 0.581,
+      "holm_p": 1.0,
+      "bh_p": 0.8988,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "coaid:rf_vs_propmlp",
+      "raw_p": 0.5946,
+      "holm_p": 1.0,
+      "bh_p": 0.8988,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "DLF>PropMLP ReCOVery",
+      "raw_p": 0.63,
+      "holm_p": 1.0,
+      "bh_p": 0.8988,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "DLF+ vs PropMLP+ PolitiFact",
+      "raw_p": 0.65,
+      "holm_p": 1.0,
+      "bh_p": 0.8988,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "GATv2 vs PropMLP CoAID",
+      "raw_p": 0.68,
+      "holm_p": 1.0,
+      "bh_p": 0.8988,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "DLF+ vs PropMLP+ ReCOVery",
+      "raw_p": 0.69,
+      "holm_p": 1.0,
+      "bh_p": 0.8988,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "politifact:histgbt_vs_propmlp",
+      "raw_p": 0.7034,
+      "holm_p": 1.0,
+      "bh_p": 0.8988,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "coaid:propmlp+_vs_propmlp",
+      "raw_p": 0.7914,
+      "holm_p": 1.0,
+      "bh_p": 0.9529,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "recovery:rf_vs_propmlp",
+      "raw_p": 0.842,
+      "holm_p": 1.0,
+      "bh_p": 0.9529,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "hidden128 struct null",
+      "raw_p": 0.87,
+      "holm_p": 1.0,
+      "bh_p": 0.9529,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "politifact:rf_vs_propmlp",
+      "raw_p": 0.9134,
+      "holm_p": 1.0,
+      "bh_p": 0.9549,
+      "holm_sig": false,
+      "bh_sig": false
+    },
+    {
+      "test": "GATv2 vs PropMLP PolitiFact",
+      "raw_p": 0.96,
+      "holm_p": 1.0,
+      "bh_p": 0.96,
+      "holm_sig": false,
+      "bh_sig": false
+    }
+  ]
+}

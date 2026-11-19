@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "recovery",
+    "perturb": "label_noise",
+    "level": 0.0,
+    "f1_mean": 0.5655362016987552,
+    "f1_std": 0.08499667959957648,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "perturb": "label_noise",
+    "level": 0.1,
+    "f1_mean": 0.3810868809545162,
+    "f1_std": 0.07174766157992747,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "perturb": "label_noise",
+    "level": 0.2,
+    "f1_mean": 0.49449276111875734,
+    "f1_std": 0.05958370725363408,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "perturb": "label_noise",
+    "level": 0.3,
+    "f1_mean": 0.40617252648185714,
+    "f1_std": 0.11062408330023704,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "perturb": "pop_shift",
+    "level": 0.5,
+    "f1_mean": 0.4714130002733022,
+    "f1_std": 0.16263864201661182,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "perturb": "pop_shift",
+    "level": 0.7,
+    "f1_mean": 0.4810171331272249,
+    "f1_std": 0.10918757299390644,
+    "n_seeds": 3
+  },
+  {
+    "dataset": "recovery",
+    "perturb": "pop_shift",
+    "level": 0.9,
+    "f1_mean": 0.488754870943207,
+    "f1_std": 0.10734337808802805,
+    "n_seeds": 3
+  }
+]

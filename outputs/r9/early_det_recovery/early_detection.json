@@ -1,0 +1,125 @@
+{
+  "rows": [
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "frac": 0.25,
+      "f1": 0.6158892997733508
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "frac": 0.5,
+      "f1": 0.5215130023640662
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "frac": 0.75,
+      "f1": 0.5760368663594471
+    },
+    {
+      "dataset": "recovery",
+      "seed": 0,
+      "frac": 1.0,
+      "f1": 0.5740740740740741
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "frac": 0.25,
+      "f1": 0.5180952380952382
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "frac": 0.5,
+      "f1": 0.46428995840760545
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "frac": 0.75,
+      "f1": 0.5643939393939394
+    },
+    {
+      "dataset": "recovery",
+      "seed": 1,
+      "frac": 1.0,
+      "f1": 0.5500417511630681
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "frac": 0.25,
+      "f1": 0.5954842543077837
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "frac": 0.5,
+      "f1": 0.5388471177944862
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "frac": 0.75,
+      "f1": 0.4972677595628415
+    },
+    {
+      "dataset": "recovery",
+      "seed": 2,
+      "frac": 1.0,
+      "f1": 0.4233618233618234
+    },
+    {
+      "dataset": "recovery",
+      "seed": 3,
+      "frac": 0.25,
+      "f1": 0.43435804701627484
+    },
+    {
+      "dataset": "recovery",
+      "seed": 3,
+      "frac": 0.5,
+      "f1": 0.430513411821823
+    },
+    {
+      "dataset": "recovery",
+      "seed": 3,
+      "frac": 0.75,
+      "f1": 0.4720229555236729
+    },
+    {
+      "dataset": "recovery",
+      "seed": 3,
+      "frac": 1.0,
+      "f1": 0.45549242424242425
+    },
+    {
+      "dataset": "recovery",
+      "seed": 4,
+      "frac": 0.25,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "seed": 4,
+      "frac": 0.5,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "seed": 4,
+      "frac": 0.75,
+      "f1": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "seed": 4,
+      "frac": 1.0,
+      "f1": 0.3333333333333333
+    }
+  ],
+  "wall_s": 816.5647101402283
+}

@@ -1,0 +1,10 @@
+{
+  "default": {
+    "histgbt15": 0.877,
+    "rf7": 0.862
+  },
+  "alternate": {
+    "histgbt15": 0.883,
+    "rf7": 0.875
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "clustered_best_graph_vs_histgbt": {
+    "mean": -0.0353,
+    "ci95": [
+      -0.0833,
+      0.0136
+    ],
+    "p": 0.1576,
+    "ci90": [
+      -0.076,
+      0.0054
+    ],
+    "tost_equivalent_0.03": false,
+    "tost_equivalent_0.05": false,
+    "n_stories": 221,
+    "n_rows": 1105
+  },
+  "clustered_best_graph_vs_best_summary": {
+    "mean": -0.0371,
+    "ci95": [
+      -0.0932,
+      0.0199
+    ],
+    "p": 0.2046,
+    "ci90": [
+      -0.0842,
+      0.01
+    ],
+    "tost_equivalent_0.03": false,
+    "tost_equivalent_0.05": false,
+    "n_stories": 221,
+    "n_rows": 1105
+  },
+  "seed_paired_t_graph_vs_histgbt": {
+    "t": -2.879,
+    "p": 0.0451,
+    "per_seed_acc_graph": [
+      0.7828,
+      0.7602,
+      0.7602,
+      0.7104,
+      0.7692
+    ],
+    "per_seed_acc_histgbt": [
+      0.7919,
+      0.7919,
+      0.7919,
+      0.7919,
+      0.7919
+    ]
+  },
+  "dataset": "upfd_politifact",
+  "n_classes": 2,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 60,
+  "n_test_per_seed": [
+    221,
+    221,
+    221,
+    221,
+    221
+  ],
+  "official_splits": true,
+  "profile_features": true,
+  "summary_features": [
+    "log_size",
+    "depth",
+    "log_max_width",
+    "mean_branching",
+    "leaf_frac",
+    "log_root_fanout",
+    "mean_depth",
+    "structural_virality",
+    "depth_per_node",
+    "profile_mean(10)",
+    "profile_std(10)",
+    "profile_max(10)"
+  ],
+  "node_features": "UPFD 10-d user profile",
+  "results": {
+    "logreg": {
+      "f1_mean": 0.7873,
+      "f1_std": 0.0,
+      "per_seed": [
+        0.7873,
+        0.7873,
+        0.7873,
+        0.7873,
+        0.7873
+      ]
+    },
+    "rf": {
+      "f1_mean": 0.7654,
+      "f1_std": 0.006,
+      "per_seed": [
+        0.7645,
+        0.7691,
+        0.7645,
+        0.7554,
+        0.7735
+      ]
+    },
+    "histgbt": {
+      "f1_mean": 0.7916,
+      "f1_std": 0.0,
+      "per_seed": [
+        0.7916,
+        0.7916,
+        0.7916,
+        0.7916,
+        0.7916
+      ]
+    },
+    "mlp": {
+      "f1_mean": 0.7929,
+      "f1_std": 0.0055,
+      "per_seed": [
+        0.7956,
+        0.7865,
+        0.7865,
+        0.7958,
+        0.8002
+      ]
+    },
+    "bigcn": {
+      "f1_mean": 0.7553,
+      "f1_std": 0.0267,
+      "per_seed": [
+        0.7827,
+        0.7601,
+        0.7602,
+        0.7046,
+        0.7691
+      ]
+    }
+  },
+  "best_graph": "bigcn",
+  "best_summary": "mlp",
+  "paired_best_graph_vs_best_summary": {
+    "acc_gain_graph": -0.0371,
+    "p": 0.0126,
+    "ci95": [
+      -0.0661,
+      -0.009
+    ]
+  },
+  "paired_best_graph_vs_histgbt": {
+    "acc_gain_graph": -0.0353,
+    "p": 0.0058,
+    "ci95": [
+      -0.0606,
+      -0.0109
+    ]
+  },
+  "tost_graph_vs_histgbt": {
+    "0.03": {
+      "margin": 0.03,
+      "ci90": [
+        -0.056108597285067875,
+        -0.014479638009049774
+      ],
+      "equivalent": false,
+      "mean": -0.03529411764705882
+    },
+    "0.05": {
+      "margin": 0.05,
+      "ci90": [
+        -0.056108597285067875,
+        -0.014479638009049774
+      ],
+      "equivalent": false,
+      "mean": -0.03529411764705882
+    }
+  },
+  "histgbt_selected_hparams": [
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    }
+  ],
+  "timing_s_mean": {
+    "summary_family_s": 0.6,
+    "bigcn_s": 1.8
+  },
+  "n_graphs": {
+    "train": 62,
+    "val": 31,
+    "test": 221
+  },
+  "wall_s": 24.3
+}

@@ -1,0 +1,164 @@
+{
+  "results": [
+    {
+      "dataset": "coaid",
+      "method": "majority",
+      "seed": 0,
+      "wall_s": 0.94,
+      "peak_rss_mb": 268.1,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "coaid",
+      "method": "majority",
+      "seed": 1,
+      "wall_s": 0.92,
+      "peak_rss_mb": 270.4,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "coaid",
+      "method": "gcnfn",
+      "seed": 0,
+      "wall_s": 3.5,
+      "peak_rss_mb": 328.7,
+      "f1_all": 0.5714285714285714
+    },
+    {
+      "dataset": "coaid",
+      "method": "gcnfn",
+      "seed": 1,
+      "wall_s": 2.78,
+      "peak_rss_mb": 379.5,
+      "f1_all": 0.4
+    },
+    {
+      "dataset": "coaid",
+      "method": "bigcn",
+      "seed": 0,
+      "wall_s": 4.15,
+      "peak_rss_mb": 407.7,
+      "f1_all": 0.6079854809437386
+    },
+    {
+      "dataset": "coaid",
+      "method": "bigcn",
+      "seed": 1,
+      "wall_s": 4.08,
+      "peak_rss_mb": 408.0,
+      "f1_all": 0.4
+    },
+    {
+      "dataset": "coaid",
+      "method": "upfd_prop",
+      "seed": 0,
+      "wall_s": 3.12,
+      "peak_rss_mb": 412.3,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "coaid",
+      "method": "upfd_prop",
+      "seed": 1,
+      "wall_s": 2.8,
+      "peak_rss_mb": 412.3,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "coaid",
+      "method": "docless",
+      "seed": 0,
+      "wall_s": 61.33,
+      "peak_rss_mb": 564.4,
+      "f1_all": 0.5714285714285714
+    },
+    {
+      "dataset": "coaid",
+      "method": "docless",
+      "seed": 1,
+      "wall_s": 61.52,
+      "peak_rss_mb": 566.0,
+      "f1_all": 0.4
+    },
+    {
+      "dataset": "recovery",
+      "method": "majority",
+      "seed": 0,
+      "wall_s": 0.56,
+      "peak_rss_mb": 566.0,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "method": "majority",
+      "seed": 1,
+      "wall_s": 0.53,
+      "peak_rss_mb": 566.0,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "method": "gcnfn",
+      "seed": 0,
+      "wall_s": 19.24,
+      "peak_rss_mb": 691.1,
+      "f1_all": 0.3463340891912321
+    },
+    {
+      "dataset": "recovery",
+      "method": "gcnfn",
+      "seed": 1,
+      "wall_s": 19.01,
+      "peak_rss_mb": 733.0,
+      "f1_all": 0.5619047619047619
+    },
+    {
+      "dataset": "recovery",
+      "method": "bigcn",
+      "seed": 0,
+      "wall_s": 31.57,
+      "peak_rss_mb": 733.0,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "method": "bigcn",
+      "seed": 1,
+      "wall_s": 33.22,
+      "peak_rss_mb": 755.2,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "method": "upfd_prop",
+      "seed": 0,
+      "wall_s": 18.93,
+      "peak_rss_mb": 755.2,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "method": "upfd_prop",
+      "seed": 1,
+      "wall_s": 19.2,
+      "peak_rss_mb": 755.2,
+      "f1_all": 0.3333333333333333
+    },
+    {
+      "dataset": "recovery",
+      "method": "docless",
+      "seed": 0,
+      "wall_s": 804.49,
+      "peak_rss_mb": 1166.4,
+      "f1_all": 0.5650118203309693
+    },
+    {
+      "dataset": "recovery",
+      "method": "docless",
+      "seed": 1,
+      "wall_s": 871.33,
+      "peak_rss_mb": 1553.3,
+      "f1_all": 0.5736185383244207
+    }
+  ]
+}

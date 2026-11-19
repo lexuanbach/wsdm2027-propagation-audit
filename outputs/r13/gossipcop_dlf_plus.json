@@ -1,0 +1,21 @@
+{
+  "arm": "docless_rich",
+  "label": "DLF-Full+ (15d)",
+  "dataset": "gossipcop",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "f1_mean": 0.851,
+  "f1_std": 0.008,
+  "per_seed": [
+    0.8599,
+    0.8529,
+    0.8566,
+    0.8366,
+    0.8499
+  ]
+}

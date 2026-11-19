@@ -1,0 +1,29 @@
+{
+  "source": "outputs/r4/main_table5/main_table.json",
+  "n_resamples": 10000,
+  "seed": 0,
+  "comparisons": [
+    {
+      "dataset": "coaid",
+      "method_a": "docless",
+      "method_b": "gcnfn",
+      "mean_f1_a": 0.545,
+      "mean_f1_b": 0.569,
+      "mean_diff_f1_a_minus_b": -0.023,
+      "p_value": 0.543,
+      "ci95": [-0.095, 0.040],
+      "wins_a_over_b": "1/5"
+    },
+    {
+      "dataset": "recovery",
+      "method_a": "docless",
+      "method_b": "gcnfn",
+      "mean_f1_a": 0.552,
+      "mean_f1_b": 0.472,
+      "mean_diff_f1_a_minus_b": 0.080,
+      "p_value": 0.000,
+      "ci95": [0.039, 0.123],
+      "wins_a_over_b": "5/5"
+    }
+  ]
+}

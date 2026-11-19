@@ -1,0 +1,725 @@
+{
+  "results": [
+    {
+      "seed": 0,
+      "strata": {
+        "p0_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e2": {
+          "n": 10,
+          "pred_pos_rate": 0.2,
+          "actual_pos_rate": 0.5,
+          "error_rate": 0.5,
+          "mean_prob": 0.4574
+        },
+        "p0_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p2_e0": {
+          "n": 1,
+          "pred_pos_rate": 0.0,
+          "actual_pos_rate": 1.0,
+          "error_rate": 1.0,
+          "mean_prob": 0.4101
+        },
+        "p2_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p2_e2": {
+          "n": 2,
+          "pred_pos_rate": 1.0,
+          "actual_pos_rate": 0.5,
+          "error_rate": 0.5,
+          "mean_prob": 0.5671
+        },
+        "p2_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p3_e0": {
+          "n": 8,
+          "pred_pos_rate": 0.375,
+          "actual_pos_rate": 0.375,
+          "error_rate": 0.0,
+          "mean_prob": 0.5116
+        },
+        "p3_e1": {
+          "n": 3,
+          "pred_pos_rate": 0.3333,
+          "actual_pos_rate": 0.6667,
+          "error_rate": 1.0,
+          "mean_prob": 0.5046
+        },
+        "p3_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p3_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        }
+      },
+      "ece": 0.1137,
+      "n_test": 24,
+      "dataset": "coaid"
+    },
+    {
+      "seed": 1,
+      "strata": {
+        "p0_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e2": {
+          "n": 11,
+          "pred_pos_rate": 0.2727,
+          "actual_pos_rate": 0.6364,
+          "error_rate": 0.7273,
+          "mean_prob": 0.4814
+        },
+        "p0_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p2_e0": {
+          "n": 2,
+          "pred_pos_rate": 0.5,
+          "actual_pos_rate": 0.5,
+          "error_rate": 0.0,
+          "mean_prob": 0.4939
+        },
+        "p2_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p2_e2": {
+          "n": 4,
+          "pred_pos_rate": 0.25,
+          "actual_pos_rate": 0.25,
+          "error_rate": 0.5,
+          "mean_prob": 0.5382
+        },
+        "p2_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p3_e0": {
+          "n": 6,
+          "pred_pos_rate": 0.3333,
+          "actual_pos_rate": 0.5,
+          "error_rate": 0.5,
+          "mean_prob": 0.4972
+        },
+        "p3_e1": {
+          "n": 1,
+          "pred_pos_rate": 1.0,
+          "actual_pos_rate": 0.0,
+          "error_rate": 1.0,
+          "mean_prob": 0.7695
+        },
+        "p3_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p3_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        }
+      },
+      "ece": 0.1523,
+      "n_test": 24,
+      "dataset": "coaid"
+    },
+    {
+      "seed": 2,
+      "strata": {
+        "p0_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e2": {
+          "n": 14,
+          "pred_pos_rate": 0.2857,
+          "actual_pos_rate": 0.3571,
+          "error_rate": 0.2143,
+          "mean_prob": 0.4756
+        },
+        "p0_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p1_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p2_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p2_e1": {
+          "n": 4,
+          "pred_pos_rate": 0.25,
+          "actual_pos_rate": 0.75,
+          "error_rate": 0.5,
+          "mean_prob": 0.4836
+        },
+        "p2_e2": {
+          "n": 2,
+          "pred_pos_rate": 0.5,
+          "actual_pos_rate": 0.5,
+          "error_rate": 0.0,
+          "mean_prob": 0.489
+        },
+        "p2_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p3_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p3_e1": {
+          "n": 4,
+          "pred_pos_rate": 0.75,
+          "actual_pos_rate": 0.75,
+          "error_rate": 0.0,
+          "mean_prob": 0.5261
+        },
+        "p3_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p3_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        }
+      },
+      "ece": 0.1518,
+      "n_test": 24,
+      "dataset": "coaid"
+    },
+    {
+      "seed": 0,
+      "strata": {
+        "p0_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e3": {
+          "n": 14,
+          "pred_pos_rate": 0.7857,
+          "actual_pos_rate": 0.6429,
+          "error_rate": 0.4286,
+          "mean_prob": 0.5435
+        },
+        "p1_e0": {
+          "n": 2,
+          "pred_pos_rate": 1.0,
+          "actual_pos_rate": 1.0,
+          "error_rate": 0.0,
+          "mean_prob": 0.5568
+        },
+        "p1_e1": {
+          "n": 9,
+          "pred_pos_rate": 0.5556,
+          "actual_pos_rate": 0.6667,
+          "error_rate": 0.5556,
+          "mean_prob": 0.5226
+        },
+        "p1_e2": {
+          "n": 7,
+          "pred_pos_rate": 0.8571,
+          "actual_pos_rate": 0.5714,
+          "error_rate": 0.5714,
+          "mean_prob": 0.5441
+        },
+        "p1_e3": {
+          "n": 11,
+          "pred_pos_rate": 0.9091,
+          "actual_pos_rate": 0.8182,
+          "error_rate": 0.2727,
+          "mean_prob": 0.5607
+        },
+        "p2_e0": {
+          "n": 3,
+          "pred_pos_rate": 0.0,
+          "actual_pos_rate": 0.3333,
+          "error_rate": 0.3333,
+          "mean_prob": 0.4683
+        },
+        "p2_e1": {
+          "n": 4,
+          "pred_pos_rate": 0.25,
+          "actual_pos_rate": 0.5,
+          "error_rate": 0.75,
+          "mean_prob": 0.4948
+        },
+        "p2_e2": {
+          "n": 5,
+          "pred_pos_rate": 0.6,
+          "actual_pos_rate": 0.6,
+          "error_rate": 0.8,
+          "mean_prob": 0.5057
+        },
+        "p2_e3": {
+          "n": 2,
+          "pred_pos_rate": 0.0,
+          "actual_pos_rate": 1.0,
+          "error_rate": 1.0,
+          "mean_prob": 0.4923
+        },
+        "p3_e0": {
+          "n": 11,
+          "pred_pos_rate": 0.0909,
+          "actual_pos_rate": 0.0909,
+          "error_rate": 0.1818,
+          "mean_prob": 0.4591
+        },
+        "p3_e1": {
+          "n": 9,
+          "pred_pos_rate": 0.2222,
+          "actual_pos_rate": 0.2222,
+          "error_rate": 0.2222,
+          "mean_prob": 0.4664
+        },
+        "p3_e2": {
+          "n": 13,
+          "pred_pos_rate": 0.1538,
+          "actual_pos_rate": 0.3846,
+          "error_rate": 0.5385,
+          "mean_prob": 0.4646
+        },
+        "p3_e3": {
+          "n": 2,
+          "pred_pos_rate": 0.5,
+          "actual_pos_rate": 0.0,
+          "error_rate": 0.5,
+          "mean_prob": 0.4859
+        }
+      },
+      "ece": 0.1823,
+      "n_test": 92,
+      "dataset": "recovery"
+    },
+    {
+      "seed": 1,
+      "strata": {
+        "p0_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e3": {
+          "n": 16,
+          "pred_pos_rate": 0.875,
+          "actual_pos_rate": 0.5625,
+          "error_rate": 0.4375,
+          "mean_prob": 0.5371
+        },
+        "p1_e0": {
+          "n": 3,
+          "pred_pos_rate": 0.6667,
+          "actual_pos_rate": 0.3333,
+          "error_rate": 1.0,
+          "mean_prob": 0.4996
+        },
+        "p1_e1": {
+          "n": 11,
+          "pred_pos_rate": 0.9091,
+          "actual_pos_rate": 0.7273,
+          "error_rate": 0.1818,
+          "mean_prob": 0.5393
+        },
+        "p1_e2": {
+          "n": 8,
+          "pred_pos_rate": 0.5,
+          "actual_pos_rate": 0.625,
+          "error_rate": 0.625,
+          "mean_prob": 0.4835
+        },
+        "p1_e3": {
+          "n": 4,
+          "pred_pos_rate": 0.75,
+          "actual_pos_rate": 0.75,
+          "error_rate": 0.5,
+          "mean_prob": 0.5145
+        },
+        "p2_e0": {
+          "n": 3,
+          "pred_pos_rate": 1.0,
+          "actual_pos_rate": 0.6667,
+          "error_rate": 0.3333,
+          "mean_prob": 0.5273
+        },
+        "p2_e1": {
+          "n": 7,
+          "pred_pos_rate": 0.7143,
+          "actual_pos_rate": 0.5714,
+          "error_rate": 0.4286,
+          "mean_prob": 0.5027
+        },
+        "p2_e2": {
+          "n": 4,
+          "pred_pos_rate": 1.0,
+          "actual_pos_rate": 0.25,
+          "error_rate": 0.75,
+          "mean_prob": 0.5385
+        },
+        "p2_e3": {
+          "n": 2,
+          "pred_pos_rate": 1.0,
+          "actual_pos_rate": 0.5,
+          "error_rate": 0.5,
+          "mean_prob": 0.5261
+        },
+        "p3_e0": {
+          "n": 8,
+          "pred_pos_rate": 0.25,
+          "actual_pos_rate": 0.125,
+          "error_rate": 0.375,
+          "mean_prob": 0.4561
+        },
+        "p3_e1": {
+          "n": 11,
+          "pred_pos_rate": 0.2727,
+          "actual_pos_rate": 0.4545,
+          "error_rate": 0.3636,
+          "mean_prob": 0.4709
+        },
+        "p3_e2": {
+          "n": 15,
+          "pred_pos_rate": 0.0667,
+          "actual_pos_rate": 0.4,
+          "error_rate": 0.3333,
+          "mean_prob": 0.4221
+        },
+        "p3_e3": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        }
+      },
+      "ece": 0.1121,
+      "n_test": 92,
+      "dataset": "recovery"
+    },
+    {
+      "seed": 2,
+      "strata": {
+        "p0_e0": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e1": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e2": {
+          "n": 0,
+          "pred_pos_rate": null,
+          "actual_pos_rate": null,
+          "error_rate": null,
+          "mean_prob": null
+        },
+        "p0_e3": {
+          "n": 10,
+          "pred_pos_rate": 0.7,
+          "actual_pos_rate": 0.7,
+          "error_rate": 0.4,
+          "mean_prob": 0.5174
+        },
+        "p1_e0": {
+          "n": 6,
+          "pred_pos_rate": 0.6667,
+          "actual_pos_rate": 0.3333,
+          "error_rate": 0.6667,
+          "mean_prob": 0.4798
+        },
+        "p1_e1": {
+          "n": 11,
+          "pred_pos_rate": 0.8182,
+          "actual_pos_rate": 0.7273,
+          "error_rate": 0.2727,
+          "mean_prob": 0.5214
+        },
+        "p1_e2": {
+          "n": 7,
+          "pred_pos_rate": 0.4286,
+          "actual_pos_rate": 0.8571,
+          "error_rate": 0.7143,
+          "mean_prob": 0.4934
+        },
+        "p1_e3": {
+          "n": 14,
+          "pred_pos_rate": 0.8571,
+          "actual_pos_rate": 0.5714,
+          "error_rate": 0.4286,
+          "mean_prob": 0.5132
+        },
+        "p2_e0": {
+          "n": 4,
+          "pred_pos_rate": 0.75,
+          "actual_pos_rate": 0.75,
+          "error_rate": 0.5,
+          "mean_prob": 0.5034
+        },
+        "p2_e1": {
+          "n": 1,
+          "pred_pos_rate": 1.0,
+          "actual_pos_rate": 1.0,
+          "error_rate": 0.0,
+          "mean_prob": 0.5053
+        },
+        "p2_e2": {
+          "n": 3,
+          "pred_pos_rate": 0.3333,
+          "actual_pos_rate": 0.3333,
+          "error_rate": 0.6667,
+          "mean_prob": 0.4909
+        },
+        "p2_e3": {
+          "n": 2,
+          "pred_pos_rate": 0.5,
+          "actual_pos_rate": 1.0,
+          "error_rate": 0.5,
+          "mean_prob": 0.5026
+        },
+        "p3_e0": {
+          "n": 9,
+          "pred_pos_rate": 0.0,
+          "actual_pos_rate": 0.0,
+          "error_rate": 0.0,
+          "mean_prob": 0.4537
+        },
+        "p3_e1": {
+          "n": 11,
+          "pred_pos_rate": 0.1818,
+          "actual_pos_rate": 0.1818,
+          "error_rate": 0.1818,
+          "mean_prob": 0.4774
+        },
+        "p3_e2": {
+          "n": 11,
+          "pred_pos_rate": 0.1818,
+          "actual_pos_rate": 0.3636,
+          "error_rate": 0.3636,
+          "mean_prob": 0.4426
+        },
+        "p3_e3": {
+          "n": 3,
+          "pred_pos_rate": 0.0,
+          "actual_pos_rate": 0.6667,
+          "error_rate": 0.6667,
+          "mean_prob": 0.4333
+        }
+      },
+      "ece": 0.2194,
+      "n_test": 92,
+      "dataset": "recovery"
+    }
+  ],
+  "wall_s": 1792.7067370414734
+}

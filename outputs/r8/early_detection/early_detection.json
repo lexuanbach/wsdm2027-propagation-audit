@@ -1,0 +1,77 @@
+{
+  "rows": [
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "frac": 0.25,
+      "f1": 0.45739130434782604
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "frac": 0.5,
+      "f1": 0.5833333333333334
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "frac": 0.75,
+      "f1": 0.5408695652173914
+    },
+    {
+      "dataset": "coaid",
+      "seed": 0,
+      "frac": 1.0,
+      "f1": 0.5714285714285714
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "frac": 0.25,
+      "f1": 0.4
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "frac": 0.5,
+      "f1": 0.4125874125874126
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "frac": 0.75,
+      "f1": 0.4
+    },
+    {
+      "dataset": "coaid",
+      "seed": 1,
+      "frac": 1.0,
+      "f1": 0.4
+    },
+    {
+      "dataset": "coaid",
+      "seed": 2,
+      "frac": 0.25,
+      "f1": 0.5901328273244781
+    },
+    {
+      "dataset": "coaid",
+      "seed": 2,
+      "frac": 0.5,
+      "f1": 0.6950998185117967
+    },
+    {
+      "dataset": "coaid",
+      "seed": 2,
+      "frac": 0.75,
+      "f1": 0.6950998185117967
+    },
+    {
+      "dataset": "coaid",
+      "seed": 2,
+      "frac": 1.0,
+      "f1": 0.6950998185117967
+    }
+  ],
+  "wall_s": 30.33772611618042
+}

@@ -1,0 +1,324 @@
+{
+  "politifact": {
+    "propmlp": {
+      "n_test": 64,
+      "base_f1": 0.458,
+      "selected": "impwt",
+      "selected_f1": 0.463,
+      "oracle": "impwt",
+      "oracle_f1": 0.463,
+      "val_means": {
+        "base": 0.396,
+        "test_t": 0.299,
+        "quant": 0.285,
+        "impwt": 0.399,
+        "coral": 0.378
+      },
+      "deltas": {
+        "test_t": {
+          "test_f1": 0.313,
+          "delta": -0.1531,
+          "ci95": [
+            -0.219,
+            -0.084
+          ],
+          "excludes0": true
+        },
+        "quant": {
+          "test_f1": 0.387,
+          "delta": -0.05,
+          "ci95": [
+            -0.128,
+            0.028
+          ],
+          "excludes0": false
+        },
+        "impwt": {
+          "test_f1": 0.463,
+          "delta": 0.0,
+          "ci95": [
+            -0.022,
+            0.022
+          ],
+          "excludes0": false
+        },
+        "coral": {
+          "test_f1": 0.45,
+          "delta": -0.0156,
+          "ci95": [
+            -0.041,
+            0.009
+          ],
+          "excludes0": false
+        }
+      }
+    },
+    "propmlp_rich": {
+      "n_test": 64,
+      "base_f1": 0.483,
+      "selected": "coral",
+      "selected_f1": 0.457,
+      "oracle": "impwt",
+      "oracle_f1": 0.505,
+      "val_means": {
+        "base": 0.459,
+        "test_t": 0.38,
+        "quant": 0.438,
+        "impwt": 0.449,
+        "coral": 0.465
+      },
+      "deltas": {
+        "test_t": {
+          "test_f1": 0.424,
+          "delta": -0.1125,
+          "ci95": [
+            -0.178,
+            -0.047
+          ],
+          "excludes0": true
+        },
+        "quant": {
+          "test_f1": 0.356,
+          "delta": -0.1156,
+          "ci95": [
+            -0.166,
+            -0.066
+          ],
+          "excludes0": true
+        },
+        "impwt": {
+          "test_f1": 0.505,
+          "delta": 0.0031,
+          "ci95": [
+            -0.025,
+            0.031
+          ],
+          "excludes0": false
+        },
+        "coral": {
+          "test_f1": 0.457,
+          "delta": -0.0375,
+          "ci95": [
+            -0.066,
+            -0.009
+          ],
+          "excludes0": true
+        }
+      }
+    },
+    "rf": {
+      "n_test": 64,
+      "base_f1": 0.45,
+      "selected": "impwt",
+      "selected_f1": 0.43,
+      "oracle": "coral",
+      "oracle_f1": 0.501,
+      "val_means": {
+        "base": 0.438,
+        "test_t": 0.322,
+        "quant": 0.332,
+        "impwt": 0.445,
+        "coral": 0.393
+      },
+      "deltas": {
+        "test_t": {
+          "test_f1": 0.299,
+          "delta": -0.1812,
+          "ci95": [
+            -0.253,
+            -0.109
+          ],
+          "excludes0": true
+        },
+        "quant": {
+          "test_f1": 0.369,
+          "delta": -0.0938,
+          "ci95": [
+            -0.163,
+            -0.025
+          ],
+          "excludes0": true
+        },
+        "impwt": {
+          "test_f1": 0.43,
+          "delta": -0.0219,
+          "ci95": [
+            -0.047,
+            0.0
+          ],
+          "excludes0": false
+        },
+        "coral": {
+          "test_f1": 0.501,
+          "delta": 0.025,
+          "ci95": [
+            -0.028,
+            0.078
+          ],
+          "excludes0": false
+        }
+      }
+    }
+  },
+  "gossipcop": {
+    "propmlp": {
+      "n_test": 300,
+      "base_f1": 0.753,
+      "selected": "test_t",
+      "selected_f1": 0.748,
+      "oracle": "impwt",
+      "oracle_f1": 0.781,
+      "val_means": {
+        "base": 0.86,
+        "test_t": 0.87,
+        "quant": 0.741,
+        "impwt": 0.859,
+        "coral": 0.867
+      },
+      "deltas": {
+        "test_t": {
+          "test_f1": 0.748,
+          "delta": -0.0047,
+          "ci95": [
+            -0.016,
+            0.007
+          ],
+          "excludes0": false
+        },
+        "quant": {
+          "test_f1": 0.661,
+          "delta": -0.0767,
+          "ci95": [
+            -0.098,
+            -0.055
+          ],
+          "excludes0": true
+        },
+        "impwt": {
+          "test_f1": 0.781,
+          "delta": 0.028,
+          "ci95": [
+            0.019,
+            0.039
+          ],
+          "excludes0": true
+        },
+        "coral": {
+          "test_f1": 0.76,
+          "delta": 0.0067,
+          "ci95": [
+            -0.001,
+            0.015
+          ],
+          "excludes0": false
+        }
+      }
+    },
+    "propmlp_rich": {
+      "n_test": 300,
+      "base_f1": 0.786,
+      "selected": "test_t",
+      "selected_f1": 0.791,
+      "oracle": "impwt",
+      "oracle_f1": 0.809,
+      "val_means": {
+        "base": 0.893,
+        "test_t": 0.9,
+        "quant": 0.802,
+        "impwt": 0.888,
+        "coral": 0.898
+      },
+      "deltas": {
+        "test_t": {
+          "test_f1": 0.791,
+          "delta": 0.0047,
+          "ci95": [
+            -0.004,
+            0.014
+          ],
+          "excludes0": false
+        },
+        "quant": {
+          "test_f1": 0.744,
+          "delta": -0.0353,
+          "ci95": [
+            -0.051,
+            -0.019
+          ],
+          "excludes0": true
+        },
+        "impwt": {
+          "test_f1": 0.809,
+          "delta": 0.0233,
+          "ci95": [
+            0.013,
+            0.033
+          ],
+          "excludes0": true
+        },
+        "coral": {
+          "test_f1": 0.792,
+          "delta": 0.0053,
+          "ci95": [
+            -0.002,
+            0.013
+          ],
+          "excludes0": false
+        }
+      }
+    },
+    "rf": {
+      "n_test": 300,
+      "base_f1": 0.851,
+      "selected": "coral",
+      "selected_f1": 0.755,
+      "oracle": "impwt",
+      "oracle_f1": 0.855,
+      "val_means": {
+        "base": 0.865,
+        "test_t": 0.865,
+        "quant": 0.804,
+        "impwt": 0.866,
+        "coral": 0.867
+      },
+      "deltas": {
+        "test_t": {
+          "test_f1": 0.738,
+          "delta": -0.114,
+          "ci95": [
+            -0.135,
+            -0.093
+          ],
+          "excludes0": true
+        },
+        "quant": {
+          "test_f1": 0.79,
+          "delta": -0.0487,
+          "ci95": [
+            -0.066,
+            -0.031
+          ],
+          "excludes0": true
+        },
+        "impwt": {
+          "test_f1": 0.855,
+          "delta": 0.004,
+          "ci95": [
+            -0.004,
+            0.012
+          ],
+          "excludes0": false
+        },
+        "coral": {
+          "test_f1": 0.755,
+          "delta": -0.1,
+          "ci95": [
+            -0.119,
+            -0.081
+          ],
+          "excludes0": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "main": {
+    "propmlp": {
+      "f1_mean": 0.659,
+      "f1_std": 0.024,
+      "per_seed": [
+        0.6847,
+        0.6802,
+        0.6315,
+        0.67,
+        0.6303
+      ]
+    },
+    "propmlp_rich": {
+      "f1_mean": 0.699,
+      "f1_std": 0.067,
+      "per_seed": [
+        0.7933,
+        0.6838,
+        0.7485,
+        0.6714,
+        0.5978
+      ]
+    },
+    "docless": {
+      "f1_mean": 0.663,
+      "f1_std": 0.034,
+      "per_seed": [
+        0.7282,
+        0.6582,
+        0.6511,
+        0.6538,
+        0.626
+      ]
+    },
+    "docless_rich": {
+      "f1_mean": 0.689,
+      "f1_std": 0.047,
+      "per_seed": [
+        0.7476,
+        0.6495,
+        0.7464,
+        0.6413,
+        0.6627
+      ]
+    }
+  },
+  "paired_propmlp_rich_vs_propmlp": {
+    "mean_diff_b_minus_a": -0.037,
+    "p_value": 0.0628,
+    "ci_lo": -0.0761,
+    "ci_hi": 0.0,
+    "n": 460
+  },
+  "paired_docless_rich_vs_propmlp_rich": {
+    "mean_diff_b_minus_a": 0.0065,
+    "p_value": 0.6874,
+    "ci_lo": -0.0217,
+    "ci_hi": 0.0348,
+    "n": 460
+  },
+  "paired_docless_rich_vs_propmlp": {
+    "mean_diff_b_minus_a": -0.0304,
+    "p_value": 0.1222,
+    "ci_lo": -0.0674,
+    "ci_hi": 0.0065,
+    "n": 460
+  }
+}

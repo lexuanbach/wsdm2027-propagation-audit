@@ -1,0 +1,52 @@
+[
+  {
+    "dataset": "coaid",
+    "lambda_kl_max": 0.0,
+    "f1_mean": 0.4857142857142857,
+    "f1_std": 0.12121830534626525,
+    "coverage_mean": 0.875,
+    "f1_kept_mean": 0.5055285272003538,
+    "selective_gain_mean": 0.019814241486068085,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "lambda_kl_max": 0.05,
+    "f1_mean": 0.4857142857142857,
+    "f1_std": 0.12121830534626525,
+    "coverage_mean": 0.875,
+    "f1_kept_mean": 0.5055285272003538,
+    "selective_gain_mean": 0.019814241486068085,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "lambda_kl_max": 0.1,
+    "f1_mean": 0.4857142857142857,
+    "f1_std": 0.12121830534626525,
+    "coverage_mean": 0.875,
+    "f1_kept_mean": 0.5055285272003538,
+    "selective_gain_mean": 0.019814241486068085,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "lambda_kl_max": 0.3,
+    "f1_mean": 0.4857142857142857,
+    "f1_std": 0.12121830534626525,
+    "coverage_mean": 0.875,
+    "f1_kept_mean": 0.5055285272003538,
+    "selective_gain_mean": 0.019814241486068085,
+    "n_seeds": 2
+  },
+  {
+    "dataset": "coaid",
+    "lambda_kl_max": 0.5,
+    "f1_mean": 0.4857142857142857,
+    "f1_std": 0.12121830534626525,
+    "coverage_mean": 0.875,
+    "f1_kept_mean": 0.5055285272003538,
+    "selective_gain_mean": 0.019814241486068085,
+    "n_seeds": 2
+  }
+]

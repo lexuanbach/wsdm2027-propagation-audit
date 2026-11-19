@@ -1,0 +1,100 @@
+{
+  "identity_free": {
+    "coaid": {
+      "n_cascades": 2275,
+      "distinct_url_counts": {
+        "1": 2275
+      },
+      "distinct_media_counts": {
+        "0": 2275
+      }
+    },
+    "recovery": {
+      "n_cascades": 1603,
+      "distinct_url_counts": {
+        "1": 1603
+      },
+      "distinct_media_counts": {
+        "0": 1603
+      }
+    },
+    "_fakenewsnet_note": "PolitiFact/GossipCop URL and media degeneracy is audited in outputs/r12/example/example.json (population_audit): 677 and 17,977 cascades, all with exactly 1 URL and 0 media",
+    "timestamps": "recovered from the Twitter snowflake encoding of the released ids",
+    "cross_cascade_identity": "none: the loader sets user_id = tweet id, so u ~= n and no sharer appears in two cascades",
+    "reply_tree": "not released; the per-cascade graph is constructed from the event list"
+  },
+  "graph_informative": {
+    "upfd_politifact": {
+      "n_graphs": 314,
+      "label_counts": {
+        "0": 157,
+        "1": 157
+      },
+      "frac_label1": 0.5,
+      "split_sizes": {
+        "train": 62,
+        "val": 31,
+        "test": 221
+      },
+      "files_in_release": [
+        "A.txt",
+        "graph_labels.npy",
+        "new_bert_feature.npz",
+        "new_content_feature.npz",
+        "new_profile_feature.npz",
+        "new_spacy_feature.npz",
+        "node_graph_id.npy",
+        "test_idx.npy",
+        "train_idx.npy",
+        "val_idx.npy"
+      ],
+      "timestamp_file_present": false
+    },
+    "upfd_gossipcop": {
+      "n_graphs": 5464,
+      "label_counts": {
+        "0": 2732,
+        "1": 2732
+      },
+      "frac_label1": 0.5,
+      "split_sizes": {
+        "train": 1092,
+        "val": 546,
+        "test": 3826
+      },
+      "files_in_release": [
+        "A.txt",
+        "graph_labels.npy",
+        "new_bert_feature.npz",
+        "new_content_feature.npz",
+        "new_profile_feature.npz",
+        "new_spacy_feature.npz",
+        "node_graph_id.npy",
+        "test_idx.npy",
+        "train_idx.npy",
+        "val_idx.npy"
+      ],
+      "timestamp_file_present": false
+    },
+    "twitter15": {
+      "file": "external/BiGCN/data/Twitter15/data.TD_RvNN.vol_5000.txt",
+      "n_tab_columns_first_row": 6,
+      "column_meaning": "eid, parentIdx, childIdx, maxDegree, maxL, bag-of-words",
+      "timestamp_column": false
+    },
+    "twitter16": {
+      "file": "external/BiGCN/data/Twitter16/data.TD_RvNN.vol_5000.txt",
+      "n_tab_columns_first_row": 6,
+      "column_meaning": "eid, parentIdx, childIdx, maxDegree, maxL, bag-of-words",
+      "timestamp_column": false
+    },
+    "weibo": {
+      "file": "external/BiGCN/data/Weibo/weibotree.txt",
+      "n_tab_columns_first_row": 4,
+      "column_meaning": "eid, parentIdx, childIdx, bag-of-words",
+      "timestamp_column": false
+    },
+    "timestamps": "no event-time field in any of these five releases as distributed here",
+    "upfd_cross_cascade_identity": "outputs/r11/upfd_profile_recurrence/upfd_profile_recurrence.json"
+  }
+}

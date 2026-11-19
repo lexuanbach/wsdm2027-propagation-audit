@@ -1,0 +1,86 @@
+{
+  "corpus": "FakeNewsNet PolitiFact (public CSV release, tweet ids only)",
+  "loader": "docless.data.loaders.load_fakenewsnet",
+  "max_events_per_story_cap": 200,
+  "population_audit": {
+    "politifact": {
+      "n_cascades": 677,
+      "max_n": 200,
+      "n_equals_312_exists": false,
+      "distinct_url_counts": {
+        "1": 677
+      },
+      "distinct_media_counts": {
+        "0": 677
+      },
+      "n_at_cap": 271
+    },
+    "gossipcop": {
+      "n_cascades": 17977,
+      "max_n": 200,
+      "n_equals_312_exists": false,
+      "distinct_url_counts": {
+        "1": 17977
+      },
+      "distinct_media_counts": {
+        "0": 17977
+      },
+      "n_at_cap": 836
+    }
+  },
+  "example": {
+    "story_id": "politifact:01e21af5a8d19ce7",
+    "label": 1,
+    "n_events": 103,
+    "truncated_at_cap": false,
+    "distinct_users": 103,
+    "distinct_urls": 1,
+    "distinct_media": 0,
+    "popularity_P": 3,
+    "echo_E": 1.0,
+    "spread_seconds": 4027091.1,
+    "spread_days": 46.61,
+    "time_to_10th_event_seconds": 70588.1,
+    "time_to_10th_event_minutes": 1176.5,
+    "frac_events_within_1h": 0.0291,
+    "c_s_7d": [
+      4.6444,
+      4.6444,
+      0.6931,
+      0.0,
+      1.3863,
+      1.0,
+      15.2086
+    ],
+    "c_s_7d_order": [
+      "log1p_n",
+      "log1p_u",
+      "log1p_r",
+      "log1p_m",
+      "log1p_P",
+      "E",
+      "log1p_spread_seconds"
+    ],
+    "selection_rule": "misinformation cascade nearest the coordinate-wise median of the misinformation half in z-scored (log n, log P, E, log spread) space; ties broken by story_id",
+    "n_misinformation_cascades": 363,
+    "median_of_misinformation_half": {
+      "log1p_n": 4.8122,
+      "log1p_P": 1.0986,
+      "E": 1.0,
+      "log1p_spread_seconds": 15.2086
+    },
+    "runners_up": [
+      "politifact:2dd621b4d2328cae",
+      "politifact:43ff1a73772f7812",
+      "politifact:0ef1cb23a5da4055"
+    ],
+    "split_membership_balanced_5seeds": {
+      "seed0": "train",
+      "seed1": "train",
+      "seed2": "train",
+      "seed3": "test",
+      "seed4": "train"
+    }
+  },
+  "note": "u == n by construction: the loader sets user_id = tweet id, so every event is its own sharer proxy. r == 1 by construction: one url_id per story. m == 0 by construction: media_id is always -1 in this release."
+}

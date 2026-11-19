@@ -1,0 +1,26 @@
+{
+  "upfd_politifact": {
+    "logreg": 0.7873,
+    "rf": 0.7654,
+    "histgbt": 0.7916,
+    "mlp": 0.7929,
+    "gcn": 0.7452,
+    "gatv2": 0.723,
+    "bigcn": 0.7201,
+    "best_graph": "gcn",
+    "best_summary": "mlp",
+    "selection_rule": "test",
+    "test_selected_best_graph": "gcn",
+    "val_f1": {
+      "logreg": 0.7417,
+      "rf": 0.812,
+      "histgbt": 1.0,
+      "mlp": 0.7097,
+      "gcn": 0.7545,
+      "gatv2": 0.7416,
+      "bigcn": 0.7664
+    },
+    "p_graph_vs_histgbt": 0.0002,
+    "acc_gain_graph_vs_histgbt": -0.0462
+  }
+}

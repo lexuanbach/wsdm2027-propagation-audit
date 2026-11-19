@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
+# downloaded inputs (see DATA.md)
+data/raw/*
+!data/raw/README.md
+external/
+# regenerated files
+generated/
+outputs/demo/
+outputs/smoke.json
+*.log
+!outputs/r15/official_bigcn/twitter15_asreleased.log
+.DS_Store

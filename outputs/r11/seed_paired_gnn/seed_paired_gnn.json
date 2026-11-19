@@ -1,0 +1,237 @@
+{
+  "test": "two-sided paired t-test over 5 seeds, macro-F1, PropMLP minus GNN",
+  "family": "seed-level secondary test; NOT part of the 23-test Holm/BH family of the identity-free regime",
+  "determinism_check": {
+    "coaid": {
+      "r4_docless": [
+        0.5714,
+        0.4,
+        0.7884,
+        0.5,
+        0.4667
+      ],
+      "r7_docless": [
+        0.5714,
+        0.4,
+        0.7884,
+        0.5,
+        0.4667
+      ],
+      "identical": true
+    },
+    "recovery": {
+      "r4_docless": [
+        0.565,
+        0.5736,
+        0.6195,
+        0.4844,
+        0.5158
+      ],
+      "r7_docless": [
+        0.565,
+        0.5736,
+        0.6195,
+        0.4844,
+        0.5158
+      ],
+      "identical": true
+    }
+  },
+  "means_reproduce_table2": {
+    "coaid_propmlp": {
+      "computed": 0.618,
+      "table2": 0.618,
+      "match": true
+    },
+    "coaid_gcnfn": {
+      "computed": 0.442,
+      "table2": 0.442,
+      "match": true
+    },
+    "coaid_bigcn": {
+      "computed": 0.539,
+      "table2": 0.539,
+      "match": true
+    },
+    "recovery_propmlp": {
+      "computed": 0.659,
+      "table2": 0.659,
+      "match": true
+    },
+    "recovery_gcnfn": {
+      "computed": 0.39,
+      "table2": 0.39,
+      "match": true
+    },
+    "recovery_bigcn": {
+      "computed": 0.338,
+      "table2": 0.338,
+      "match": true
+    },
+    "politifact_propmlp": {
+      "computed": 0.657,
+      "table2": 0.657,
+      "match": true
+    },
+    "politifact_gcnfn": {
+      "computed": 0.55,
+      "table2": 0.55,
+      "match": true
+    },
+    "politifact_bigcn": {
+      "computed": 0.536,
+      "table2": 0.536,
+      "match": true
+    },
+    "gossipcop_propmlp": {
+      "computed": 0.836,
+      "table2": 0.836,
+      "match": true
+    },
+    "gossipcop_gcnfn": {
+      "computed": 0.692,
+      "table2": 0.692,
+      "match": true
+    },
+    "gossipcop_bigcn": {
+      "computed": 0.787,
+      "table2": 0.787,
+      "match": true
+    }
+  },
+  "tests": {
+    "coaid_propmlp_vs_gcnfn": {
+      "propmlp_mean": 0.6177,
+      "gcnfn_mean": 0.4419,
+      "mean_diff": 0.1758,
+      "per_seed_diff": [
+        -0.0749,
+        0.1714,
+        0.0366,
+        0.331,
+        0.4149
+      ],
+      "t_stat": 1.9441,
+      "p_value": 0.1238,
+      "positive": true,
+      "significant_at_05": false
+    },
+    "coaid_propmlp_vs_bigcn": {
+      "propmlp_mean": 0.6177,
+      "bigcn_mean": 0.5387,
+      "mean_diff": 0.079,
+      "per_seed_diff": [
+        -0.1115,
+        0.1714,
+        -0.0998,
+        0.0199,
+        0.4149
+      ],
+      "t_stat": 0.8037,
+      "p_value": 0.4666,
+      "positive": true,
+      "significant_at_05": false
+    },
+    "recovery_propmlp_vs_gcnfn": {
+      "propmlp_mean": 0.6593,
+      "gcnfn_mean": 0.39,
+      "mean_diff": 0.2694,
+      "per_seed_diff": [
+        0.3384,
+        0.1183,
+        0.2798,
+        0.3367,
+        0.2736
+      ],
+      "t_stat": 6.7085,
+      "p_value": 0.00257,
+      "positive": true,
+      "significant_at_05": true
+    },
+    "recovery_propmlp_vs_bigcn": {
+      "propmlp_mean": 0.6593,
+      "bigcn_mean": 0.338,
+      "mean_diff": 0.3214,
+      "per_seed_diff": [
+        0.3514,
+        0.3469,
+        0.2982,
+        0.3367,
+        0.2736
+      ],
+      "t_stat": 21.1756,
+      "p_value": 2.94e-05,
+      "positive": true,
+      "significant_at_05": true
+    },
+    "politifact_propmlp_vs_gcnfn": {
+      "propmlp_mean": 0.657,
+      "gcnfn_mean": 0.5504,
+      "mean_diff": 0.1065,
+      "per_seed_diff": [
+        0.1986,
+        0.0323,
+        0.1032,
+        0.1162,
+        0.0824
+      ],
+      "t_stat": 3.9333,
+      "p_value": 0.01706,
+      "positive": true,
+      "significant_at_05": true
+    },
+    "politifact_propmlp_vs_bigcn": {
+      "propmlp_mean": 0.657,
+      "bigcn_mean": 0.5362,
+      "mean_diff": 0.1208,
+      "per_seed_diff": [
+        0.2228,
+        0.0568,
+        0.1163,
+        0.1257,
+        0.0824
+      ],
+      "t_stat": 4.2684,
+      "p_value": 0.01297,
+      "positive": true,
+      "significant_at_05": true
+    },
+    "gossipcop_propmlp_vs_gcnfn": {
+      "propmlp_mean": 0.8363,
+      "gcnfn_mean": 0.6922,
+      "mean_diff": 0.1442,
+      "per_seed_diff": [
+        0.0739,
+        0.0468,
+        0.1005,
+        0.4798,
+        0.0198
+      ],
+      "t_stat": 1.6963,
+      "p_value": 0.1651,
+      "positive": true,
+      "significant_at_05": false
+    },
+    "gossipcop_propmlp_vs_bigcn": {
+      "propmlp_mean": 0.8363,
+      "bigcn_mean": 0.7873,
+      "mean_diff": 0.049,
+      "per_seed_diff": [
+        0.0661,
+        0.033,
+        0.0721,
+        0.0165,
+        0.0573
+      ],
+      "t_stat": 4.6644,
+      "p_value": 0.009558,
+      "positive": true,
+      "significant_at_05": true
+    }
+  },
+  "summary": {
+    "n_cells": 8,
+    "n_positive": 8,
+    "n_significant_at_05": 5
+  }
+}

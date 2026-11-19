@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docless-fake"
+version = "1.0.0"
+description = "Strong cascade-summary baselines and a cross-domain audit harness for text-free misinformation detection"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Duy Nguyen"},
+    {name = "Phat T. Tran-Truong"},
+    {name = "Son Ha Xuan"},
+    {name = "Xuan-Bach Le"},
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "torch>=2.1",
+    "scikit-learn>=1.3",
+    "networkx>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+# Retweet-tree experiments (Table 3, graph-input controls) and UPFD download.
+graph = ["torch-geometric>=2.4"]
+# Legacy plotting helper src/docless/eval/make_figures.py.
+plots = ["matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"

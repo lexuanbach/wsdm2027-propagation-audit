@@ -1,0 +1,197 @@
+{
+  "design": "degree-preserving connected double-edge swap of the graph model's edges only; summary baselines, node features, labels, splits and seeds unchanged",
+  "intact_source": "outputs/r11/graph_informative_clustered",
+  "rewired_source": "outputs/r13/edge_rewire",
+  "per_corpus": {
+    "upfd_gossipcop": {
+      "bigcn_intact_mean": 0.9404,
+      "bigcn_rewired_mean": 0.9366,
+      "bigcn_intact_per_seed": [
+        0.9234,
+        0.9407,
+        0.9464,
+        0.9485,
+        0.9428
+      ],
+      "bigcn_rewired_per_seed": [
+        0.9204,
+        0.9456,
+        0.9409,
+        0.9451,
+        0.931
+      ],
+      "bigcn_intact_seed_std": 0.0089,
+      "histgbt": 0.931,
+      "best_summary_intact": 0.931,
+      "seed_paired_rewired_vs_intact": {
+        "t": -1.404,
+        "p": 0.2329,
+        "mean_delta": -0.0038,
+        "per_seed_delta": [
+          -0.003,
+          0.0049,
+          -0.0055,
+          -0.0034,
+          -0.0118
+        ],
+        "n_seeds": 5
+      },
+      "summary_family_bit_identical": true
+    },
+    "upfd_politifact": {
+      "bigcn_intact_mean": 0.7516,
+      "bigcn_rewired_mean": 0.7553,
+      "bigcn_intact_per_seed": [
+        0.7692,
+        0.7555,
+        0.7557,
+        0.7038,
+        0.7736
+      ],
+      "bigcn_rewired_per_seed": [
+        0.7827,
+        0.7601,
+        0.7602,
+        0.7046,
+        0.7691
+      ],
+      "bigcn_intact_seed_std": 0.0249,
+      "histgbt": 0.7916,
+      "best_summary_intact": 0.7929,
+      "seed_paired_rewired_vs_intact": {
+        "t": 1.285,
+        "p": 0.2682,
+        "mean_delta": 0.0038,
+        "per_seed_delta": [
+          0.0135,
+          0.0046,
+          0.0045,
+          0.0008,
+          -0.0045
+        ],
+        "n_seeds": 5
+      },
+      "summary_family_bit_identical": true
+    },
+    "twitter15": {
+      "bigcn_intact_mean": 0.3418,
+      "bigcn_rewired_mean": 0.3243,
+      "bigcn_intact_per_seed": [
+        0.3386,
+        0.3449,
+        0.3115,
+        0.3521,
+        0.3621
+      ],
+      "bigcn_rewired_per_seed": [
+        0.3505,
+        0.3019,
+        0.3093,
+        0.3062,
+        0.3536
+      ],
+      "bigcn_intact_seed_std": 0.0171,
+      "histgbt": 0.2844,
+      "best_summary_intact": 0.3506,
+      "seed_paired_rewired_vs_intact": {
+        "t": -1.528,
+        "p": 0.2013,
+        "mean_delta": -0.0175,
+        "per_seed_delta": [
+          0.0119,
+          -0.043,
+          -0.0022,
+          -0.0459,
+          -0.0085
+        ],
+        "n_seeds": 5
+      },
+      "summary_family_bit_identical": true
+    },
+    "twitter16": {
+      "bigcn_intact_mean": 0.3114,
+      "bigcn_rewired_mean": 0.2747,
+      "bigcn_intact_per_seed": [
+        0.3445,
+        0.273,
+        0.3187,
+        0.3017,
+        0.3192
+      ],
+      "bigcn_rewired_per_seed": [
+        0.215,
+        0.2306,
+        0.2828,
+        0.2872,
+        0.3577
+      ],
+      "bigcn_intact_seed_std": 0.0236,
+      "histgbt": 0.2909,
+      "best_summary_intact": 0.3358,
+      "seed_paired_rewired_vs_intact": {
+        "t": -1.352,
+        "p": 0.2479,
+        "mean_delta": -0.0368,
+        "per_seed_delta": [
+          -0.1295,
+          -0.0424,
+          -0.0359,
+          -0.0145,
+          0.0385
+        ],
+        "n_seeds": 5
+      },
+      "summary_family_bit_identical": true
+    }
+  },
+  "tree_shape": {
+    "upfd_gossipcop": {
+      "n_trees": 3826,
+      "mean_frac_nodes_attached_to_root": 0.752,
+      "depth": {
+        "mean_intact": 2.5097,
+        "mean_abs_change_under_rewire": 0.2799,
+        "frac_trees_changed": 0.2337
+      },
+      "mean_depth": {
+        "mean_intact": 1.1973,
+        "mean_abs_change_under_rewire": 0.0291,
+        "frac_trees_changed": 0.3055
+      },
+      "structural_virality": {
+        "mean_intact": 2.2466,
+        "mean_abs_change_under_rewire": 0.0299,
+        "frac_trees_changed": 0.3157
+      },
+      "max_width": {
+        "mean_intact": 44.9493,
+        "mean_abs_change_under_rewire": 0.3312,
+        "frac_trees_changed": 0.0575
+      }
+    },
+    "twitter15": {
+      "n_trees": 1470,
+      "mean_frac_nodes_attached_to_root": 0.7509,
+      "depth": {
+        "mean_intact": 4.3769,
+        "mean_abs_change_under_rewire": 1.3714,
+        "frac_trees_changed": 0.4333
+      },
+      "mean_depth": {
+        "mean_intact": 1.4874,
+        "mean_abs_change_under_rewire": 0.2146,
+        "frac_trees_changed": 0.5048
+      },
+      "structural_virality": {
+        "mean_intact": 2.7068,
+        "mean_abs_change_under_rewire": 0.2726,
+        "frac_trees_changed": 0.5122
+      },
+      "max_width": {
+        "mean_intact": 36.3354,
+        "mean_abs_change_under_rewire": 0.1231,
+        "frac_trees_changed": 0.0156
+      }
+    }
+  }
+}

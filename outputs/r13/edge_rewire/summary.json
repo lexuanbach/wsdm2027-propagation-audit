@@ -1,0 +1,46 @@
+{
+  "upfd_gossipcop": {
+    "logreg": 0.9056,
+    "rf": 0.9136,
+    "histgbt": 0.931,
+    "mlp": 0.9255,
+    "bigcn": 0.9366,
+    "best_graph": "bigcn",
+    "best_summary": "histgbt",
+    "p_graph_vs_histgbt": 0.0022,
+    "acc_gain_graph_vs_histgbt": 0.0056
+  },
+  "upfd_politifact": {
+    "logreg": 0.7873,
+    "rf": 0.7654,
+    "histgbt": 0.7916,
+    "mlp": 0.7929,
+    "bigcn": 0.7553,
+    "best_graph": "bigcn",
+    "best_summary": "mlp",
+    "p_graph_vs_histgbt": 0.0058,
+    "acc_gain_graph_vs_histgbt": -0.0353
+  },
+  "twitter15": {
+    "logreg": 0.3247,
+    "rf": 0.3288,
+    "histgbt": 0.2844,
+    "mlp": 0.3506,
+    "bigcn": 0.3243,
+    "best_graph": "bigcn",
+    "best_summary": "mlp",
+    "p_graph_vs_histgbt": 0.0384,
+    "acc_gain_graph_vs_histgbt": 0.0443
+  },
+  "twitter16": {
+    "logreg": 0.2944,
+    "rf": 0.2916,
+    "histgbt": 0.2909,
+    "mlp": 0.3358,
+    "bigcn": 0.2747,
+    "best_graph": "bigcn",
+    "best_summary": "mlp",
+    "p_graph_vs_histgbt": 0.6244,
+    "acc_gain_graph_vs_histgbt": 0.0146
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "f1_mean": 0.597,
+  "f1_std": 0.076,
+  "per_seed": [
+    0.5687,
+    0.5104,
+    0.7152,
+    0.538,
+    0.6507
+  ],
+  "paired_vs_propmlp": {
+    "mean_acc_diff_propmlp_minus_gatv2": 0.05,
+    "p_value": 0.1006,
+    "ci": [
+      -0.0109,
+      0.1087
+    ],
+    "n_pairs": 460,
+    "note": "positive mean_diff => PropMLP lower loss (wins)"
+  }
+}

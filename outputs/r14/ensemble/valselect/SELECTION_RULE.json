@@ -1,0 +1,45 @@
+{
+  "key": "valselect",
+  "frozen_at": "2026-08-24 (before any test fold was scored for this combiner)",
+  "statement": "Per-corpus model selection on the validation fold. For each corpus, pick the single component with the best validation macro-F1 and use its test predictions unchanged. No blending, no weights, no free parameters beyond the argmax.",
+  "component_pool_preference_order_simplest_first": [
+    "rf",
+    "propmlp",
+    "propmlp15",
+    "histgbt15",
+    "ebgcn",
+    "gatv2",
+    "dlf",
+    "dlf15"
+  ],
+  "variant_A_primary": {
+    "granularity": "one component per corpus",
+    "criterion": "mean over seeds 0-4 of validation macro-F1",
+    "tiebreak": "1) higher mean val macro-F1; 2) lower val std across seeds; 3) earliest position in component_pool_preference_order (prefer the simpler model)"
+  },
+  "variant_B_secondary": {
+    "granularity": "one component per (corpus, seed) -- what a practitioner with a single split would actually do",
+    "criterion": "validation macro-F1 on that seed's own val fold",
+    "tiebreak": "same, with std replaced by validation accuracy"
+  },
+  "component_fitting_protocol": {
+    "invariant": "every component is fitted on the TRAIN fold only; the val fold is scored exactly once per (corpus, component, seed) and is never in any fit",
+    "propmlp": "unchanged from rich_summary_eval.py / gossipcop_eval.py: _MLP(hidden=64), Adam lr=1e-2, 25 epochs, train-standardised 7-dim features",
+    "propmlp15": "unchanged, rich=True (15-dim)",
+    "rf": "unchanged from tabular_baselines.py: RandomForest(n_estimators=200, max_depth=8, random_state=0) on StandardScaler(train) 7-dim features",
+    "histgbt15": "MODIFIED. The published protocol (stanford2_baselines.py::_tuned_histgbt) selects hyperparameters on val and then refits on vstack(train,val), which makes its val predictions in-sample. Replaced by 5-fold stratified CV inside the TRAIN fold over the identical 8-point grid, then a single fit on train only.",
+    "ebgcn": "MODIFIED. Published protocol selects (epochs,lr) by maximising val macro-F1. Replaced by an inner 85/15 stratified holdout carved out of TRAIN; winner refit on the full train fold. Same grid (rev1_gnn.CONFIGS) and same number of fits. One runner for all four corpora, resolving the CoAID-vs-rest provenance split noted in the inventory.",
+    "gatv2": "MODIFIED the same way, with gatv2_baseline.CONFIGS.",
+    "dlf": "unchanged from rich_summary_eval.py: ModelConfig(hidden_dim=64, rich_summary=False), TrainConfig(pretrain_epochs=4, finetune_epochs=25). The val fold is already used inside train_one_seed to calibrate the abstention threshold tau; that is a published part of the model, not a selection channel, and tau does not change the argmax predictions used here.",
+    "dlf15": "unchanged, rich_summary=True"
+  },
+  "test_use": "The test fold is used for exactly two things, both AFTER selection is frozen: (a) emitting the selected component's test predictions for the judge, and (b) a post-hoc diagnostic measuring how often validation selection recovers the test leader. No selection decision depends on any test number.",
+  "primary_pool": {
+    "choice": "full_pool",
+    "definition": "every component with a complete 5-seed val+test dump on that corpus",
+    "declared": "2026-08-24, before the PolitiFact/ReCOVery DLF runs finished and before any pool-level test comparison was made",
+    "rationale": "The task is 'use the best baselines AS COMPONENTS', so the honest default is to give selection everything available rather than a hand-picked subset. Two robustness pools are reported alongside and are NOT alternatives to be chosen between on test: (a) unmodified_protocol_pool = only components whose regenerated test macro-F1 reproduces the published main-table cell exactly {rf, propmlp, propmlp15, dlf, dlf15}; (b) common_pool = components present on all four corpora.",
+    "note": "At the time of declaration the full pool was already known to be the WORSE of the three on CoAID test (regret 0.086 vs 0.037), so this choice is not favourable cherry-picking."
+  },
+  "primary_variant": "variant_A_primary (per-corpus, mean val macro-F1 over seeds 0-4)"
+}

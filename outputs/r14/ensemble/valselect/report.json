@@ -1,0 +1,2038 @@
+{
+  "rule": "outputs/r14/ensemble/valselect/SELECTION_RULE.json",
+  "fidelity_vs_published": {
+    "coaid": {
+      "rf": {
+        "regen_test_mean": 0.5948,
+        "published_test_mean": 0.595,
+        "matches": true
+      },
+      "propmlp": {
+        "regen_test_mean": 0.6177,
+        "published_test_mean": 0.618,
+        "matches": true
+      },
+      "propmlp15": {
+        "regen_test_mean": 0.6104,
+        "published_test_mean": 0.61,
+        "matches": true
+      },
+      "histgbt15": {
+        "regen_test_mean": 0.7034,
+        "published_test_mean": 0.629,
+        "matches": false
+      },
+      "ebgcn": {
+        "regen_test_mean": 0.6061,
+        "published_test_mean": 0.611,
+        "matches": false
+      },
+      "gatv2": {
+        "regen_test_mean": 0.5598,
+        "published_test_mean": 0.598,
+        "matches": false
+      },
+      "dlf": {
+        "regen_test_mean": 0.6543,
+        "published_test_mean": 0.654,
+        "matches": true
+      },
+      "dlf15": {
+        "regen_test_mean": 0.621,
+        "published_test_mean": 0.621,
+        "matches": true
+      }
+    },
+    "recovery": {
+      "rf": {
+        "regen_test_mean": 0.6507,
+        "published_test_mean": 0.651,
+        "matches": true
+      },
+      "propmlp": {
+        "regen_test_mean": 0.6593,
+        "published_test_mean": 0.659,
+        "matches": true
+      },
+      "propmlp15": {
+        "regen_test_mean": 0.699,
+        "published_test_mean": 0.699,
+        "matches": true
+      },
+      "histgbt15": {
+        "regen_test_mean": 0.6275,
+        "published_test_mean": 0.646,
+        "matches": false
+      },
+      "ebgcn": {
+        "regen_test_mean": 0.662,
+        "published_test_mean": 0.675,
+        "matches": false
+      },
+      "gatv2": {
+        "regen_test_mean": 0.5612,
+        "published_test_mean": 0.597,
+        "matches": false
+      },
+      "dlf": {
+        "regen_test_mean": 0.6635,
+        "published_test_mean": 0.663,
+        "matches": true
+      },
+      "dlf15": {
+        "regen_test_mean": 0.6895,
+        "published_test_mean": 0.689,
+        "matches": true
+      }
+    },
+    "politifact": {
+      "rf": {
+        "regen_test_mean": 0.6665,
+        "published_test_mean": 0.667,
+        "matches": true
+      },
+      "propmlp": {
+        "regen_test_mean": 0.657,
+        "published_test_mean": 0.657,
+        "matches": true
+      },
+      "propmlp15": {
+        "regen_test_mean": 0.7169,
+        "published_test_mean": 0.717,
+        "matches": true
+      },
+      "histgbt15": {
+        "regen_test_mean": 0.6946,
+        "published_test_mean": 0.706,
+        "matches": false
+      },
+      "ebgcn": {
+        "regen_test_mean": 0.6539,
+        "published_test_mean": 0.66,
+        "matches": false
+      },
+      "gatv2": {
+        "regen_test_mean": 0.6679,
+        "published_test_mean": 0.627,
+        "matches": false
+      },
+      "dlf": {
+        "regen_test_mean": 0.6778,
+        "published_test_mean": 0.678,
+        "matches": true
+      },
+      "dlf15": {
+        "regen_test_mean": 0.7238,
+        "published_test_mean": 0.724,
+        "matches": true
+      }
+    },
+    "gossipcop": {
+      "rf": {
+        "regen_test_mean": 0.8646,
+        "published_test_mean": 0.865,
+        "matches": true
+      },
+      "propmlp": {
+        "regen_test_mean": 0.8363,
+        "published_test_mean": 0.836,
+        "matches": true
+      },
+      "propmlp15": {
+        "regen_test_mean": 0.8508,
+        "published_test_mean": 0.851,
+        "matches": true
+      },
+      "histgbt15": {
+        "regen_test_mean": 0.8773,
+        "published_test_mean": 0.877,
+        "matches": true
+      }
+    }
+  },
+  "val_table": {
+    "coaid": {
+      "rf": {
+        "per_seed": [
+          0.6419,
+          0.6491,
+          0.4949,
+          0.5833,
+          0.5
+        ],
+        "mean": 0.5739,
+        "std": 0.0664
+      },
+      "propmlp": {
+        "per_seed": [
+          0.6875,
+          0.5489,
+          0.6491,
+          0.6419,
+          0.697
+        ],
+        "mean": 0.6449,
+        "std": 0.0525
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.375,
+          0.5489,
+          0.596,
+          0.5489,
+          0.5489
+        ],
+        "mean": 0.5235,
+        "std": 0.0765
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.4949,
+          0.596,
+          0.6,
+          0.6,
+          0.596
+        ],
+        "mean": 0.5774,
+        "std": 0.0413
+      },
+      "ebgcn": {
+        "per_seed": [
+          0.596,
+          0.5396,
+          0.6419,
+          0.6267,
+          0.52
+        ],
+        "mean": 0.5848,
+        "std": 0.0477
+      },
+      "gatv2": {
+        "per_seed": [
+          0.4792,
+          0.4949,
+          0.6419,
+          0.6267,
+          0.5833
+        ],
+        "mean": 0.5652,
+        "std": 0.0668
+      },
+      "dlf": {
+        "per_seed": [
+          0.5396,
+          0.4949,
+          0.6875,
+          0.6419,
+          0.697
+        ],
+        "mean": 0.6122,
+        "std": 0.0809
+      },
+      "dlf15": {
+        "per_seed": [
+          0.335,
+          0.5489,
+          0.6491,
+          0.6,
+          0.5
+        ],
+        "mean": 0.5266,
+        "std": 0.108
+      }
+    },
+    "recovery": {
+      "rf": {
+        "per_seed": [
+          0.7088,
+          0.6503,
+          0.7219,
+          0.6777,
+          0.7285
+        ],
+        "mean": 0.6975,
+        "std": 0.0293
+      },
+      "propmlp": {
+        "per_seed": [
+          0.7332,
+          0.6129,
+          0.6443,
+          0.6311,
+          0.6535
+        ],
+        "mean": 0.655,
+        "std": 0.0414
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.7219,
+          0.6545,
+          0.7219,
+          0.7,
+          0.6936
+        ],
+        "mean": 0.6984,
+        "std": 0.0247
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.7105,
+          0.6437,
+          0.6777,
+          0.6887,
+          0.6768
+        ],
+        "mean": 0.6795,
+        "std": 0.0216
+      },
+      "ebgcn": {
+        "per_seed": [
+          0.5543,
+          0.5992,
+          0.6652,
+          0.6416,
+          0.5652
+        ],
+        "mean": 0.6051,
+        "std": 0.0428
+      },
+      "gatv2": {
+        "per_seed": [
+          0.4823,
+          0.3333,
+          0.6774,
+          0.5249,
+          0.6457
+        ],
+        "mean": 0.5327,
+        "std": 0.1233
+      },
+      "dlf": {
+        "per_seed": [
+          0.7,
+          0.6356,
+          0.6311,
+          0.6154,
+          0.6745
+        ],
+        "mean": 0.6513,
+        "std": 0.0311
+      },
+      "dlf15": {
+        "per_seed": [
+          0.7442,
+          0.6982,
+          0.6887,
+          0.6768,
+          0.718
+        ],
+        "mean": 0.7052,
+        "std": 0.0237
+      }
+    },
+    "politifact": {
+      "rf": {
+        "per_seed": [
+          0.6289,
+          0.7575,
+          0.7419,
+          0.758,
+          0.7409
+        ],
+        "mean": 0.7254,
+        "std": 0.0488
+      },
+      "propmlp": {
+        "per_seed": [
+          0.6761,
+          0.6761,
+          0.6092,
+          0.6289,
+          0.7395
+        ],
+        "mean": 0.666,
+        "std": 0.0452
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.7903,
+          0.8065,
+          0.735,
+          0.7575,
+          0.8013
+        ],
+        "mean": 0.7781,
+        "std": 0.0275
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.6928,
+          0.7575,
+          0.7742,
+          0.7094,
+          0.7417
+        ],
+        "mean": 0.7351,
+        "std": 0.0301
+      },
+      "ebgcn": {
+        "per_seed": [
+          0.5617,
+          0.6457,
+          0.5853,
+          0.606,
+          0.6338
+        ],
+        "mean": 0.6065,
+        "std": 0.0308
+      },
+      "gatv2": {
+        "per_seed": [
+          0.5441,
+          0.6314,
+          0.5853,
+          0.606,
+          0.6338
+        ],
+        "mean": 0.6001,
+        "std": 0.0332
+      },
+      "dlf": {
+        "per_seed": [
+          0.7409,
+          0.7419,
+          0.6242,
+          0.7252,
+          0.7019
+        ],
+        "mean": 0.7068,
+        "std": 0.0438
+      },
+      "dlf15": {
+        "per_seed": [
+          0.8063,
+          0.8225,
+          0.7169,
+          0.7409,
+          0.7835
+        ],
+        "mean": 0.774,
+        "std": 0.0396
+      }
+    },
+    "gossipcop": {
+      "rf": {
+        "per_seed": [
+          0.9033,
+          0.8733,
+          0.8767,
+          0.8667,
+          0.9133
+        ],
+        "mean": 0.8867,
+        "std": 0.0182
+      },
+      "propmlp": {
+        "per_seed": [
+          0.8798,
+          0.8531,
+          0.8399,
+          0.8058,
+          0.8766
+        ],
+        "mean": 0.851,
+        "std": 0.027
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.883,
+          0.8765,
+          0.8733,
+          0.8524,
+          0.8966
+        ],
+        "mean": 0.8764,
+        "std": 0.0144
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.9033,
+          0.8833,
+          0.8799,
+          0.88,
+          0.9067
+        ],
+        "mean": 0.8906,
+        "std": 0.0118
+      }
+    }
+  },
+  "test_table": {
+    "coaid": {
+      "rf": {
+        "per_seed": [
+          0.5344,
+          0.5833,
+          0.608,
+          0.5,
+          0.7483
+        ],
+        "mean": 0.5948,
+        "std": 0.0854
+      },
+      "propmlp": {
+        "per_seed": [
+          0.4965,
+          0.5714,
+          0.608,
+          0.6643,
+          0.7483
+        ],
+        "mean": 0.6177,
+        "std": 0.085
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.5804,
+          0.5714,
+          0.6951,
+          0.5409,
+          0.6643
+        ],
+        "mean": 0.6104,
+        "std": 0.0589
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.7822,
+          0.5804,
+          0.7037,
+          0.7078,
+          0.7429
+        ],
+        "mean": 0.7034,
+        "std": 0.0677
+      },
+      "ebgcn": {
+        "per_seed": [
+          0.5714,
+          0.4,
+          0.8322,
+          0.608,
+          0.619
+        ],
+        "mean": 0.6061,
+        "std": 0.1378
+      },
+      "gatv2": {
+        "per_seed": [
+          0.4375,
+          0.3739,
+          0.7884,
+          0.5804,
+          0.619
+        ],
+        "mean": 0.5598,
+        "std": 0.1454
+      },
+      "dlf": {
+        "per_seed": [
+          0.5344,
+          0.5344,
+          0.75,
+          0.6643,
+          0.7884
+        ],
+        "mean": 0.6543,
+        "std": 0.1058
+      },
+      "dlf15": {
+        "per_seed": [
+          0.619,
+          0.5409,
+          0.7429,
+          0.5833,
+          0.619
+        ],
+        "mean": 0.621,
+        "std": 0.0674
+      }
+    },
+    "recovery": {
+      "rf": {
+        "per_seed": [
+          0.739,
+          0.6951,
+          0.5955,
+          0.626,
+          0.5978
+        ],
+        "mean": 0.6507,
+        "std": 0.057
+      },
+      "propmlp": {
+        "per_seed": [
+          0.6847,
+          0.6802,
+          0.6315,
+          0.67,
+          0.6303
+        ],
+        "mean": 0.6593,
+        "std": 0.0237
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.7933,
+          0.6838,
+          0.7485,
+          0.6714,
+          0.5978
+        ],
+        "mean": 0.699,
+        "std": 0.0672
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.6955,
+          0.6515,
+          0.5955,
+          0.5978,
+          0.5974
+        ],
+        "mean": 0.6275,
+        "std": 0.04
+      },
+      "ebgcn": {
+        "per_seed": [
+          0.6662,
+          0.648,
+          0.7256,
+          0.6562,
+          0.614
+        ],
+        "mean": 0.662,
+        "std": 0.0363
+      },
+      "gatv2": {
+        "per_seed": [
+          0.5687,
+          0.3333,
+          0.7152,
+          0.538,
+          0.6507
+        ],
+        "mean": 0.5612,
+        "std": 0.1298
+      },
+      "dlf": {
+        "per_seed": [
+          0.7282,
+          0.6582,
+          0.6511,
+          0.6538,
+          0.626
+        ],
+        "mean": 0.6635,
+        "std": 0.0343
+      },
+      "dlf15": {
+        "per_seed": [
+          0.7476,
+          0.6495,
+          0.7464,
+          0.6413,
+          0.6627
+        ],
+        "mean": 0.6895,
+        "std": 0.0474
+      }
+    },
+    "politifact": {
+      "rf": {
+        "per_seed": [
+          0.7185,
+          0.6653,
+          0.6384,
+          0.7013,
+          0.6093
+        ],
+        "mean": 0.6665,
+        "std": 0.0399
+      },
+      "propmlp": {
+        "per_seed": [
+          0.7025,
+          0.619,
+          0.6699,
+          0.6718,
+          0.6217
+        ],
+        "mean": 0.657,
+        "std": 0.0321
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.7327,
+          0.6859,
+          0.7185,
+          0.7793,
+          0.6679
+        ],
+        "mean": 0.7169,
+        "std": 0.0388
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.7338,
+          0.6508,
+          0.7651,
+          0.7185,
+          0.6046
+        ],
+        "mean": 0.6946,
+        "std": 0.0585
+      },
+      "ebgcn": {
+        "per_seed": [
+          0.6619,
+          0.6333,
+          0.6825,
+          0.6197,
+          0.6718
+        ],
+        "mean": 0.6539,
+        "std": 0.0236
+      },
+      "gatv2": {
+        "per_seed": [
+          0.6718,
+          0.639,
+          0.6995,
+          0.639,
+          0.6903
+        ],
+        "mean": 0.6679,
+        "std": 0.0253
+      },
+      "dlf": {
+        "per_seed": [
+          0.7327,
+          0.6941,
+          0.6235,
+          0.7025,
+          0.6363
+        ],
+        "mean": 0.6778,
+        "std": 0.0414
+      },
+      "dlf15": {
+        "per_seed": [
+          0.749,
+          0.7374,
+          0.7031,
+          0.7642,
+          0.6653
+        ],
+        "mean": 0.7238,
+        "std": 0.0355
+      }
+    },
+    "gossipcop": {
+      "rf": {
+        "per_seed": [
+          0.8832,
+          0.8366,
+          0.8867,
+          0.8399,
+          0.8767
+        ],
+        "mean": 0.8646,
+        "std": 0.0218
+      },
+      "propmlp": {
+        "per_seed": [
+          0.8594,
+          0.8363,
+          0.8531,
+          0.8131,
+          0.8197
+        ],
+        "mean": 0.8363,
+        "std": 0.018
+      },
+      "propmlp15": {
+        "per_seed": [
+          0.8664,
+          0.8491,
+          0.8461,
+          0.8394,
+          0.8532
+        ],
+        "mean": 0.8508,
+        "std": 0.009
+      },
+      "histgbt15": {
+        "per_seed": [
+          0.9,
+          0.8732,
+          0.8833,
+          0.8399,
+          0.89
+        ],
+        "mean": 0.8773,
+        "std": 0.0206
+      }
+    }
+  },
+  "full_pool": {
+    "pool": {
+      "coaid": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15",
+        "ebgcn",
+        "gatv2",
+        "dlf",
+        "dlf15"
+      ],
+      "recovery": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15",
+        "ebgcn",
+        "gatv2",
+        "dlf",
+        "dlf15"
+      ],
+      "politifact": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15",
+        "ebgcn",
+        "gatv2",
+        "dlf",
+        "dlf15"
+      ],
+      "gossipcop": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ]
+    },
+    "selection": {
+      "coaid": {
+        "variant_A_component": "propmlp",
+        "variant_A_pretty": "PropMLP (7d)",
+        "variant_A_val_mean": 0.6449,
+        "variant_A_val_per_seed": [
+          0.6875,
+          0.5489,
+          0.6491,
+          0.6419,
+          0.697
+        ],
+        "variant_A_test_per_seed": [
+          0.4965,
+          0.5714,
+          0.608,
+          0.6643,
+          0.7483
+        ],
+        "variant_A_test_mean": 0.6177,
+        "variant_A_test_std": 0.085,
+        "variant_B_components": [
+          "propmlp",
+          "rf",
+          "dlf",
+          "propmlp",
+          "propmlp"
+        ],
+        "variant_B_test_per_seed": [
+          0.4965,
+          0.5833,
+          0.75,
+          0.6643,
+          0.7483
+        ],
+        "variant_B_test_mean": 0.6485,
+        "variant_B_test_std": 0.0978
+      },
+      "recovery": {
+        "variant_A_component": "dlf15",
+        "variant_A_pretty": "DLF-Full+ (15d)",
+        "variant_A_val_mean": 0.7052,
+        "variant_A_val_per_seed": [
+          0.7442,
+          0.6982,
+          0.6887,
+          0.6768,
+          0.718
+        ],
+        "variant_A_test_per_seed": [
+          0.7476,
+          0.6495,
+          0.7464,
+          0.6413,
+          0.6627
+        ],
+        "variant_A_test_mean": 0.6895,
+        "variant_A_test_std": 0.0474,
+        "variant_B_components": [
+          "dlf15",
+          "dlf15",
+          "rf",
+          "propmlp15",
+          "rf"
+        ],
+        "variant_B_test_per_seed": [
+          0.7476,
+          0.6495,
+          0.5955,
+          0.6714,
+          0.5978
+        ],
+        "variant_B_test_mean": 0.6524,
+        "variant_B_test_std": 0.056
+      },
+      "politifact": {
+        "variant_A_component": "propmlp15",
+        "variant_A_pretty": "PropMLP+ (15d)",
+        "variant_A_val_mean": 0.7781,
+        "variant_A_val_per_seed": [
+          0.7903,
+          0.8065,
+          0.735,
+          0.7575,
+          0.8013
+        ],
+        "variant_A_test_per_seed": [
+          0.7327,
+          0.6859,
+          0.7185,
+          0.7793,
+          0.6679
+        ],
+        "variant_A_test_mean": 0.7169,
+        "variant_A_test_std": 0.0388,
+        "variant_B_components": [
+          "dlf15",
+          "dlf15",
+          "histgbt15",
+          "rf",
+          "propmlp15"
+        ],
+        "variant_B_test_per_seed": [
+          0.749,
+          0.7374,
+          0.7651,
+          0.7013,
+          0.6679
+        ],
+        "variant_B_test_mean": 0.7242,
+        "variant_B_test_std": 0.0351
+      },
+      "gossipcop": {
+        "variant_A_component": "histgbt15",
+        "variant_A_pretty": "HistGBT (15d)",
+        "variant_A_val_mean": 0.8906,
+        "variant_A_val_per_seed": [
+          0.9033,
+          0.8833,
+          0.8799,
+          0.88,
+          0.9067
+        ],
+        "variant_A_test_per_seed": [
+          0.9,
+          0.8732,
+          0.8833,
+          0.8399,
+          0.89
+        ],
+        "variant_A_test_mean": 0.8773,
+        "variant_A_test_std": 0.0206,
+        "variant_B_components": [
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "rf"
+        ],
+        "variant_B_test_per_seed": [
+          0.9,
+          0.8732,
+          0.8833,
+          0.8399,
+          0.8767
+        ],
+        "variant_B_test_mean": 0.8746,
+        "variant_B_test_std": 0.0196
+      }
+    },
+    "diagnostics": {
+      "coaid": {
+        "oracle_component_on_test_mean": "histgbt15",
+        "oracle_test_mean": 0.7034,
+        "variant_A_picked_test_leader": false,
+        "variant_A_regret_vs_oracle": 0.0857,
+        "variant_B_seedwise_hits": 1,
+        "variant_B_regret_vs_seed_oracle": 0.0903,
+        "spearman_val_vs_test_ranking": 0.286,
+        "kendall_val_vs_test_ranking": 0.214,
+        "val_leader_margin": 0.0327,
+        "test_leader_margin": 0.0491,
+        "test_leader_by_seed": [
+          "histgbt15",
+          "rf",
+          "ebgcn",
+          "histgbt15",
+          "dlf"
+        ],
+        "n_distinct_test_leaders_across_seeds": 4,
+        "variant_A_leave_one_seed_out_picks": [
+          "propmlp",
+          "propmlp",
+          "propmlp",
+          "propmlp",
+          "propmlp"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0229,
+          "propmlp": 0.0,
+          "propmlp15": 0.0073,
+          "histgbt15": -0.0857,
+          "ebgcn": 0.0116,
+          "gatv2": 0.0579,
+          "dlf": -0.0366,
+          "dlf15": -0.0033
+        }
+      },
+      "recovery": {
+        "oracle_component_on_test_mean": "propmlp15",
+        "oracle_test_mean": 0.699,
+        "variant_A_picked_test_leader": false,
+        "variant_A_regret_vs_oracle": 0.0095,
+        "variant_B_seedwise_hits": 1,
+        "variant_B_regret_vs_seed_oracle": 0.0618,
+        "spearman_val_vs_test_ranking": 0.548,
+        "kendall_val_vs_test_ranking": 0.357,
+        "val_leader_margin": 0.0068,
+        "test_leader_margin": 0.0095,
+        "test_leader_by_seed": [
+          "propmlp15",
+          "rf",
+          "propmlp15",
+          "propmlp15",
+          "dlf15"
+        ],
+        "n_distinct_test_leaders_across_seeds": 3,
+        "variant_A_leave_one_seed_out_picks": [
+          "dlf15",
+          "propmlp15",
+          "dlf15",
+          "dlf15",
+          "dlf15"
+        ],
+        "variant_A_loo_stable": false,
+        "variant_A_test_minus_component": {
+          "rf": 0.0388,
+          "propmlp": 0.0302,
+          "propmlp15": -0.0095,
+          "histgbt15": 0.062,
+          "ebgcn": 0.0275,
+          "gatv2": 0.1283,
+          "dlf": 0.026,
+          "dlf15": 0.0
+        }
+      },
+      "politifact": {
+        "oracle_component_on_test_mean": "dlf15",
+        "oracle_test_mean": 0.7238,
+        "variant_A_picked_test_leader": false,
+        "variant_A_regret_vs_oracle": 0.0069,
+        "variant_B_seedwise_hits": 3,
+        "variant_B_regret_vs_seed_oracle": 0.0201,
+        "spearman_val_vs_test_ranking": 0.786,
+        "kendall_val_vs_test_ranking": 0.643,
+        "val_leader_margin": 0.0041,
+        "test_leader_margin": 0.0069,
+        "test_leader_by_seed": [
+          "dlf15",
+          "dlf15",
+          "histgbt15",
+          "propmlp15",
+          "gatv2"
+        ],
+        "n_distinct_test_leaders_across_seeds": 4,
+        "variant_A_leave_one_seed_out_picks": [
+          "propmlp15",
+          "propmlp15",
+          "propmlp15",
+          "propmlp15",
+          "propmlp15"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0503,
+          "propmlp": 0.0599,
+          "propmlp15": 0.0,
+          "histgbt15": 0.0223,
+          "ebgcn": 0.063,
+          "gatv2": 0.0489,
+          "dlf": 0.039,
+          "dlf15": -0.0069
+        }
+      },
+      "gossipcop": {
+        "oracle_component_on_test_mean": "histgbt15",
+        "oracle_test_mean": 0.8773,
+        "variant_A_picked_test_leader": true,
+        "variant_A_regret_vs_oracle": 0.0,
+        "variant_B_seedwise_hits": 3,
+        "variant_B_regret_vs_seed_oracle": 0.0033,
+        "spearman_val_vs_test_ranking": 1.0,
+        "kendall_val_vs_test_ranking": 1.0,
+        "val_leader_margin": 0.004,
+        "test_leader_margin": 0.0127,
+        "test_leader_by_seed": [
+          "histgbt15",
+          "histgbt15",
+          "rf",
+          "rf",
+          "histgbt15"
+        ],
+        "n_distinct_test_leaders_across_seeds": 2,
+        "variant_A_leave_one_seed_out_picks": [
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "histgbt15"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0127,
+          "propmlp": 0.041,
+          "propmlp15": 0.0265,
+          "histgbt15": 0.0
+        }
+      }
+    },
+    "beats_best_single_on_val": {
+      "coaid": {
+        "best_single_val_mean": 0.6449,
+        "variant_A_val_mean": 0.6449,
+        "variant_B_val_mean": 0.6726,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "recovery": {
+        "best_single_val_mean": 0.7052,
+        "variant_A_val_mean": 0.7052,
+        "variant_B_val_mean": 0.7185,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "politifact": {
+        "best_single_val_mean": 0.7781,
+        "variant_A_val_mean": 0.7781,
+        "variant_B_val_mean": 0.7925,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "gossipcop": {
+        "best_single_val_mean": 0.8906,
+        "variant_A_val_mean": 0.8906,
+        "variant_B_val_mean": 0.892,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      }
+    },
+    "uniform_single_baseline": {
+      "components_available_on_all_corpora": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ],
+      "val_means": {
+        "rf": 0.7209,
+        "propmlp": 0.7042,
+        "propmlp15": 0.7191,
+        "histgbt15": 0.7207
+      },
+      "test_means": {
+        "rf": 0.6942,
+        "propmlp": 0.6926,
+        "propmlp15": 0.7193,
+        "histgbt15": 0.7257
+      },
+      "best_uniform_chosen_on_val": "rf",
+      "best_uniform_val_mean": 0.7209,
+      "best_uniform_test_mean": 0.6942,
+      "per_corpus_selection_val_mean": 0.7547,
+      "per_corpus_selection_test_mean": 0.7253,
+      "per_corpus_selection_beats_uniform_on_val": true,
+      "per_corpus_selection_beats_uniform_on_test": true,
+      "note": "best_uniform is picked by mean VAL macro-F1 across corpora, never by test."
+    },
+    "headline": {
+      "pool_tag": "full_pool",
+      "corpora": [
+        "coaid",
+        "gossipcop",
+        "politifact",
+        "recovery"
+      ],
+      "variant_A_components": {
+        "coaid": "propmlp",
+        "gossipcop": "histgbt15",
+        "politifact": "propmlp15",
+        "recovery": "dlf15"
+      },
+      "variant_A_hits_on_test_leader": 1,
+      "variant_A_n_corpora": 4,
+      "variant_B_hits_on_test_leader": 8,
+      "variant_B_cells": 20,
+      "variant_A_test_means": {
+        "coaid": 0.6177,
+        "gossipcop": 0.8773,
+        "politifact": 0.7169,
+        "recovery": 0.6895
+      },
+      "variant_B_test_means": {
+        "coaid": 0.6485,
+        "gossipcop": 0.8746,
+        "politifact": 0.7242,
+        "recovery": 0.6524
+      },
+      "mean_regret_A": 0.0255,
+      "mean_regret_B": 0.0439,
+      "A_beats_best_single_on_val_anywhere": false
+    }
+  },
+  "unmodified_protocol_pool": {
+    "pool": {
+      "coaid": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "dlf",
+        "dlf15"
+      ],
+      "recovery": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "dlf",
+        "dlf15"
+      ],
+      "politifact": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "dlf",
+        "dlf15"
+      ],
+      "gossipcop": [
+        "rf",
+        "propmlp",
+        "propmlp15"
+      ]
+    },
+    "selection": {
+      "coaid": {
+        "variant_A_component": "propmlp",
+        "variant_A_pretty": "PropMLP (7d)",
+        "variant_A_val_mean": 0.6449,
+        "variant_A_val_per_seed": [
+          0.6875,
+          0.5489,
+          0.6491,
+          0.6419,
+          0.697
+        ],
+        "variant_A_test_per_seed": [
+          0.4965,
+          0.5714,
+          0.608,
+          0.6643,
+          0.7483
+        ],
+        "variant_A_test_mean": 0.6177,
+        "variant_A_test_std": 0.085,
+        "variant_B_components": [
+          "propmlp",
+          "rf",
+          "dlf",
+          "propmlp",
+          "propmlp"
+        ],
+        "variant_B_test_per_seed": [
+          0.4965,
+          0.5833,
+          0.75,
+          0.6643,
+          0.7483
+        ],
+        "variant_B_test_mean": 0.6485,
+        "variant_B_test_std": 0.0978
+      },
+      "recovery": {
+        "variant_A_component": "dlf15",
+        "variant_A_pretty": "DLF-Full+ (15d)",
+        "variant_A_val_mean": 0.7052,
+        "variant_A_val_per_seed": [
+          0.7442,
+          0.6982,
+          0.6887,
+          0.6768,
+          0.718
+        ],
+        "variant_A_test_per_seed": [
+          0.7476,
+          0.6495,
+          0.7464,
+          0.6413,
+          0.6627
+        ],
+        "variant_A_test_mean": 0.6895,
+        "variant_A_test_std": 0.0474,
+        "variant_B_components": [
+          "dlf15",
+          "dlf15",
+          "rf",
+          "propmlp15",
+          "rf"
+        ],
+        "variant_B_test_per_seed": [
+          0.7476,
+          0.6495,
+          0.5955,
+          0.6714,
+          0.5978
+        ],
+        "variant_B_test_mean": 0.6524,
+        "variant_B_test_std": 0.056
+      },
+      "politifact": {
+        "variant_A_component": "propmlp15",
+        "variant_A_pretty": "PropMLP+ (15d)",
+        "variant_A_val_mean": 0.7781,
+        "variant_A_val_per_seed": [
+          0.7903,
+          0.8065,
+          0.735,
+          0.7575,
+          0.8013
+        ],
+        "variant_A_test_per_seed": [
+          0.7327,
+          0.6859,
+          0.7185,
+          0.7793,
+          0.6679
+        ],
+        "variant_A_test_mean": 0.7169,
+        "variant_A_test_std": 0.0388,
+        "variant_B_components": [
+          "dlf15",
+          "dlf15",
+          "rf",
+          "rf",
+          "propmlp15"
+        ],
+        "variant_B_test_per_seed": [
+          0.749,
+          0.7374,
+          0.6384,
+          0.7013,
+          0.6679
+        ],
+        "variant_B_test_mean": 0.6988,
+        "variant_B_test_std": 0.0415
+      },
+      "gossipcop": {
+        "variant_A_component": "rf",
+        "variant_A_pretty": "RandomForest (7d)",
+        "variant_A_val_mean": 0.8867,
+        "variant_A_val_per_seed": [
+          0.9033,
+          0.8733,
+          0.8767,
+          0.8667,
+          0.9133
+        ],
+        "variant_A_test_per_seed": [
+          0.8832,
+          0.8366,
+          0.8867,
+          0.8399,
+          0.8767
+        ],
+        "variant_A_test_mean": 0.8646,
+        "variant_A_test_std": 0.0218,
+        "variant_B_components": [
+          "rf",
+          "propmlp15",
+          "rf",
+          "rf",
+          "rf"
+        ],
+        "variant_B_test_per_seed": [
+          0.8832,
+          0.8491,
+          0.8867,
+          0.8399,
+          0.8767
+        ],
+        "variant_B_test_mean": 0.8671,
+        "variant_B_test_std": 0.019
+      }
+    },
+    "diagnostics": {
+      "coaid": {
+        "oracle_component_on_test_mean": "dlf",
+        "oracle_test_mean": 0.6543,
+        "variant_A_picked_test_leader": false,
+        "variant_A_regret_vs_oracle": 0.0366,
+        "variant_B_seedwise_hits": 3,
+        "variant_B_regret_vs_seed_oracle": 0.0325,
+        "spearman_val_vs_test_ranking": 0.3,
+        "kendall_val_vs_test_ranking": 0.2,
+        "val_leader_margin": 0.0327,
+        "test_leader_margin": 0.0333,
+        "test_leader_by_seed": [
+          "dlf15",
+          "rf",
+          "dlf",
+          "propmlp",
+          "dlf"
+        ],
+        "n_distinct_test_leaders_across_seeds": 4,
+        "variant_A_leave_one_seed_out_picks": [
+          "propmlp",
+          "propmlp",
+          "propmlp",
+          "propmlp",
+          "propmlp"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0229,
+          "propmlp": 0.0,
+          "propmlp15": 0.0073,
+          "dlf": -0.0366,
+          "dlf15": -0.0033
+        }
+      },
+      "recovery": {
+        "oracle_component_on_test_mean": "propmlp15",
+        "oracle_test_mean": 0.699,
+        "variant_A_picked_test_leader": false,
+        "variant_A_regret_vs_oracle": 0.0095,
+        "variant_B_seedwise_hits": 1,
+        "variant_B_regret_vs_seed_oracle": 0.0618,
+        "spearman_val_vs_test_ranking": 0.5,
+        "kendall_val_vs_test_ranking": 0.2,
+        "val_leader_margin": 0.0068,
+        "test_leader_margin": 0.0095,
+        "test_leader_by_seed": [
+          "propmlp15",
+          "rf",
+          "propmlp15",
+          "propmlp15",
+          "dlf15"
+        ],
+        "n_distinct_test_leaders_across_seeds": 3,
+        "variant_A_leave_one_seed_out_picks": [
+          "dlf15",
+          "propmlp15",
+          "dlf15",
+          "dlf15",
+          "dlf15"
+        ],
+        "variant_A_loo_stable": false,
+        "variant_A_test_minus_component": {
+          "rf": 0.0388,
+          "propmlp": 0.0302,
+          "propmlp15": -0.0095,
+          "dlf": 0.026,
+          "dlf15": 0.0
+        }
+      },
+      "politifact": {
+        "oracle_component_on_test_mean": "dlf15",
+        "oracle_test_mean": 0.7238,
+        "variant_A_picked_test_leader": false,
+        "variant_A_regret_vs_oracle": 0.0069,
+        "variant_B_seedwise_hits": 3,
+        "variant_B_regret_vs_seed_oracle": 0.0316,
+        "spearman_val_vs_test_ranking": 0.8,
+        "kendall_val_vs_test_ranking": 0.6,
+        "val_leader_margin": 0.0041,
+        "test_leader_margin": 0.0069,
+        "test_leader_by_seed": [
+          "dlf15",
+          "dlf15",
+          "propmlp15",
+          "propmlp15",
+          "propmlp15"
+        ],
+        "n_distinct_test_leaders_across_seeds": 2,
+        "variant_A_leave_one_seed_out_picks": [
+          "propmlp15",
+          "propmlp15",
+          "propmlp15",
+          "propmlp15",
+          "propmlp15"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0503,
+          "propmlp": 0.0599,
+          "propmlp15": 0.0,
+          "dlf": 0.039,
+          "dlf15": -0.0069
+        }
+      },
+      "gossipcop": {
+        "oracle_component_on_test_mean": "rf",
+        "oracle_test_mean": 0.8646,
+        "variant_A_picked_test_leader": true,
+        "variant_A_regret_vs_oracle": 0.0,
+        "variant_B_seedwise_hits": 5,
+        "variant_B_regret_vs_seed_oracle": 0.0,
+        "spearman_val_vs_test_ranking": 1.0,
+        "kendall_val_vs_test_ranking": 1.0,
+        "val_leader_margin": 0.0103,
+        "test_leader_margin": 0.0138,
+        "test_leader_by_seed": [
+          "rf",
+          "propmlp15",
+          "rf",
+          "rf",
+          "rf"
+        ],
+        "n_distinct_test_leaders_across_seeds": 2,
+        "variant_A_leave_one_seed_out_picks": [
+          "rf",
+          "rf",
+          "rf",
+          "rf",
+          "rf"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0,
+          "propmlp": 0.0283,
+          "propmlp15": 0.0138
+        }
+      }
+    },
+    "beats_best_single_on_val": {
+      "coaid": {
+        "best_single_val_mean": 0.6449,
+        "variant_A_val_mean": 0.6449,
+        "variant_B_val_mean": 0.6726,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "recovery": {
+        "best_single_val_mean": 0.7052,
+        "variant_A_val_mean": 0.7052,
+        "variant_B_val_mean": 0.7185,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "politifact": {
+        "best_single_val_mean": 0.7781,
+        "variant_A_val_mean": 0.7781,
+        "variant_B_val_mean": 0.786,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "gossipcop": {
+        "best_single_val_mean": 0.8867,
+        "variant_A_val_mean": 0.8867,
+        "variant_B_val_mean": 0.8873,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      }
+    },
+    "uniform_single_baseline": {
+      "components_available_on_all_corpora": [
+        "rf",
+        "propmlp",
+        "propmlp15"
+      ],
+      "val_means": {
+        "rf": 0.7209,
+        "propmlp": 0.7042,
+        "propmlp15": 0.7191
+      },
+      "test_means": {
+        "rf": 0.6942,
+        "propmlp": 0.6926,
+        "propmlp15": 0.7193
+      },
+      "best_uniform_chosen_on_val": "rf",
+      "best_uniform_val_mean": 0.7209,
+      "best_uniform_test_mean": 0.6942,
+      "per_corpus_selection_val_mean": 0.7537,
+      "per_corpus_selection_test_mean": 0.7222,
+      "per_corpus_selection_beats_uniform_on_val": true,
+      "per_corpus_selection_beats_uniform_on_test": true,
+      "note": "best_uniform is picked by mean VAL macro-F1 across corpora, never by test."
+    },
+    "headline": {
+      "pool_tag": "unmodified_protocol_pool",
+      "corpora": [
+        "coaid",
+        "gossipcop",
+        "politifact",
+        "recovery"
+      ],
+      "variant_A_components": {
+        "coaid": "propmlp",
+        "gossipcop": "rf",
+        "politifact": "propmlp15",
+        "recovery": "dlf15"
+      },
+      "variant_A_hits_on_test_leader": 1,
+      "variant_A_n_corpora": 4,
+      "variant_B_hits_on_test_leader": 12,
+      "variant_B_cells": 20,
+      "variant_A_test_means": {
+        "coaid": 0.6177,
+        "gossipcop": 0.8646,
+        "politifact": 0.7169,
+        "recovery": 0.6895
+      },
+      "variant_B_test_means": {
+        "coaid": 0.6485,
+        "gossipcop": 0.8671,
+        "politifact": 0.6988,
+        "recovery": 0.6524
+      },
+      "mean_regret_A": 0.0132,
+      "mean_regret_B": 0.0315,
+      "A_beats_best_single_on_val_anywhere": false
+    }
+  },
+  "common_pool": {
+    "pool": {
+      "coaid": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ],
+      "recovery": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ],
+      "politifact": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ],
+      "gossipcop": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ]
+    },
+    "selection": {
+      "coaid": {
+        "variant_A_component": "propmlp",
+        "variant_A_pretty": "PropMLP (7d)",
+        "variant_A_val_mean": 0.6449,
+        "variant_A_val_per_seed": [
+          0.6875,
+          0.5489,
+          0.6491,
+          0.6419,
+          0.697
+        ],
+        "variant_A_test_per_seed": [
+          0.4965,
+          0.5714,
+          0.608,
+          0.6643,
+          0.7483
+        ],
+        "variant_A_test_mean": 0.6177,
+        "variant_A_test_std": 0.085,
+        "variant_B_components": [
+          "propmlp",
+          "rf",
+          "propmlp",
+          "propmlp",
+          "propmlp"
+        ],
+        "variant_B_test_per_seed": [
+          0.4965,
+          0.5833,
+          0.608,
+          0.6643,
+          0.7483
+        ],
+        "variant_B_test_mean": 0.6201,
+        "variant_B_test_std": 0.0839
+      },
+      "recovery": {
+        "variant_A_component": "propmlp15",
+        "variant_A_pretty": "PropMLP+ (15d)",
+        "variant_A_val_mean": 0.6984,
+        "variant_A_val_per_seed": [
+          0.7219,
+          0.6545,
+          0.7219,
+          0.7,
+          0.6936
+        ],
+        "variant_A_test_per_seed": [
+          0.7933,
+          0.6838,
+          0.7485,
+          0.6714,
+          0.5978
+        ],
+        "variant_A_test_mean": 0.699,
+        "variant_A_test_std": 0.0672,
+        "variant_B_components": [
+          "propmlp",
+          "propmlp15",
+          "rf",
+          "propmlp15",
+          "rf"
+        ],
+        "variant_B_test_per_seed": [
+          0.6847,
+          0.6838,
+          0.5955,
+          0.6714,
+          0.5978
+        ],
+        "variant_B_test_mean": 0.6467,
+        "variant_B_test_std": 0.0411
+      },
+      "politifact": {
+        "variant_A_component": "propmlp15",
+        "variant_A_pretty": "PropMLP+ (15d)",
+        "variant_A_val_mean": 0.7781,
+        "variant_A_val_per_seed": [
+          0.7903,
+          0.8065,
+          0.735,
+          0.7575,
+          0.8013
+        ],
+        "variant_A_test_per_seed": [
+          0.7327,
+          0.6859,
+          0.7185,
+          0.7793,
+          0.6679
+        ],
+        "variant_A_test_mean": 0.7169,
+        "variant_A_test_std": 0.0388,
+        "variant_B_components": [
+          "propmlp15",
+          "propmlp15",
+          "histgbt15",
+          "rf",
+          "propmlp15"
+        ],
+        "variant_B_test_per_seed": [
+          0.7327,
+          0.6859,
+          0.7651,
+          0.7013,
+          0.6679
+        ],
+        "variant_B_test_mean": 0.7106,
+        "variant_B_test_std": 0.0346
+      },
+      "gossipcop": {
+        "variant_A_component": "histgbt15",
+        "variant_A_pretty": "HistGBT (15d)",
+        "variant_A_val_mean": 0.8906,
+        "variant_A_val_per_seed": [
+          0.9033,
+          0.8833,
+          0.8799,
+          0.88,
+          0.9067
+        ],
+        "variant_A_test_per_seed": [
+          0.9,
+          0.8732,
+          0.8833,
+          0.8399,
+          0.89
+        ],
+        "variant_A_test_mean": 0.8773,
+        "variant_A_test_std": 0.0206,
+        "variant_B_components": [
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "rf"
+        ],
+        "variant_B_test_per_seed": [
+          0.9,
+          0.8732,
+          0.8833,
+          0.8399,
+          0.8767
+        ],
+        "variant_B_test_mean": 0.8746,
+        "variant_B_test_std": 0.0196
+      }
+    },
+    "diagnostics": {
+      "coaid": {
+        "oracle_component_on_test_mean": "histgbt15",
+        "oracle_test_mean": 0.7034,
+        "variant_A_picked_test_leader": false,
+        "variant_A_regret_vs_oracle": 0.0857,
+        "variant_B_seedwise_hits": 2,
+        "variant_B_regret_vs_seed_oracle": 0.085,
+        "spearman_val_vs_test_ranking": 0.6,
+        "kendall_val_vs_test_ranking": 0.333,
+        "val_leader_margin": 0.0675,
+        "test_leader_margin": 0.0857,
+        "test_leader_by_seed": [
+          "histgbt15",
+          "rf",
+          "histgbt15",
+          "histgbt15",
+          "rf"
+        ],
+        "n_distinct_test_leaders_across_seeds": 2,
+        "variant_A_leave_one_seed_out_picks": [
+          "propmlp",
+          "propmlp",
+          "propmlp",
+          "propmlp",
+          "propmlp"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0229,
+          "propmlp": 0.0,
+          "propmlp15": 0.0073,
+          "histgbt15": -0.0857
+        }
+      },
+      "recovery": {
+        "oracle_component_on_test_mean": "propmlp15",
+        "oracle_test_mean": 0.699,
+        "variant_A_picked_test_leader": true,
+        "variant_A_regret_vs_oracle": 0.0,
+        "variant_B_seedwise_hits": 1,
+        "variant_B_regret_vs_seed_oracle": 0.0611,
+        "spearman_val_vs_test_ranking": 0.4,
+        "kendall_val_vs_test_ranking": 0.333,
+        "val_leader_margin": 0.0009,
+        "test_leader_margin": 0.0396,
+        "test_leader_by_seed": [
+          "propmlp15",
+          "rf",
+          "propmlp15",
+          "propmlp15",
+          "propmlp"
+        ],
+        "n_distinct_test_leaders_across_seeds": 3,
+        "variant_A_leave_one_seed_out_picks": [
+          "rf",
+          "propmlp15",
+          "propmlp15",
+          "rf",
+          "propmlp15"
+        ],
+        "variant_A_loo_stable": false,
+        "variant_A_test_minus_component": {
+          "rf": 0.0483,
+          "propmlp": 0.0396,
+          "propmlp15": 0.0,
+          "histgbt15": 0.0714
+        }
+      },
+      "politifact": {
+        "oracle_component_on_test_mean": "propmlp15",
+        "oracle_test_mean": 0.7169,
+        "variant_A_picked_test_leader": true,
+        "variant_A_regret_vs_oracle": 0.0,
+        "variant_B_seedwise_hits": 3,
+        "variant_B_regret_vs_seed_oracle": 0.0158,
+        "spearman_val_vs_test_ranking": 1.0,
+        "kendall_val_vs_test_ranking": 1.0,
+        "val_leader_margin": 0.043,
+        "test_leader_margin": 0.0223,
+        "test_leader_by_seed": [
+          "histgbt15",
+          "propmlp15",
+          "histgbt15",
+          "propmlp15",
+          "propmlp15"
+        ],
+        "n_distinct_test_leaders_across_seeds": 2,
+        "variant_A_leave_one_seed_out_picks": [
+          "propmlp15",
+          "propmlp15",
+          "propmlp15",
+          "propmlp15",
+          "propmlp15"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0503,
+          "propmlp": 0.0599,
+          "propmlp15": 0.0,
+          "histgbt15": 0.0223
+        }
+      },
+      "gossipcop": {
+        "oracle_component_on_test_mean": "histgbt15",
+        "oracle_test_mean": 0.8773,
+        "variant_A_picked_test_leader": true,
+        "variant_A_regret_vs_oracle": 0.0,
+        "variant_B_seedwise_hits": 3,
+        "variant_B_regret_vs_seed_oracle": 0.0033,
+        "spearman_val_vs_test_ranking": 1.0,
+        "kendall_val_vs_test_ranking": 1.0,
+        "val_leader_margin": 0.004,
+        "test_leader_margin": 0.0127,
+        "test_leader_by_seed": [
+          "histgbt15",
+          "histgbt15",
+          "rf",
+          "rf",
+          "histgbt15"
+        ],
+        "n_distinct_test_leaders_across_seeds": 2,
+        "variant_A_leave_one_seed_out_picks": [
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "histgbt15",
+          "histgbt15"
+        ],
+        "variant_A_loo_stable": true,
+        "variant_A_test_minus_component": {
+          "rf": 0.0127,
+          "propmlp": 0.041,
+          "propmlp15": 0.0265,
+          "histgbt15": 0.0
+        }
+      }
+    },
+    "beats_best_single_on_val": {
+      "coaid": {
+        "best_single_val_mean": 0.6449,
+        "variant_A_val_mean": 0.6449,
+        "variant_B_val_mean": 0.6649,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "recovery": {
+        "best_single_val_mean": 0.6984,
+        "variant_A_val_mean": 0.6984,
+        "variant_B_val_mean": 0.7076,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "politifact": {
+        "best_single_val_mean": 0.7781,
+        "variant_A_val_mean": 0.7781,
+        "variant_B_val_mean": 0.786,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      },
+      "gossipcop": {
+        "best_single_val_mean": 0.8906,
+        "variant_A_val_mean": 0.8906,
+        "variant_B_val_mean": 0.892,
+        "A_strictly_beats": false,
+        "B_strictly_beats": true
+      }
+    },
+    "uniform_single_baseline": {
+      "components_available_on_all_corpora": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ],
+      "val_means": {
+        "rf": 0.7209,
+        "propmlp": 0.7042,
+        "propmlp15": 0.7191,
+        "histgbt15": 0.7207
+      },
+      "test_means": {
+        "rf": 0.6942,
+        "propmlp": 0.6926,
+        "propmlp15": 0.7193,
+        "histgbt15": 0.7257
+      },
+      "best_uniform_chosen_on_val": "rf",
+      "best_uniform_val_mean": 0.7209,
+      "best_uniform_test_mean": 0.6942,
+      "per_corpus_selection_val_mean": 0.753,
+      "per_corpus_selection_test_mean": 0.7277,
+      "per_corpus_selection_beats_uniform_on_val": true,
+      "per_corpus_selection_beats_uniform_on_test": true,
+      "note": "best_uniform is picked by mean VAL macro-F1 across corpora, never by test."
+    },
+    "headline": {
+      "pool_tag": "common_pool",
+      "corpora": [
+        "coaid",
+        "gossipcop",
+        "politifact",
+        "recovery"
+      ],
+      "variant_A_components": {
+        "coaid": "propmlp",
+        "gossipcop": "histgbt15",
+        "politifact": "propmlp15",
+        "recovery": "propmlp15"
+      },
+      "variant_A_hits_on_test_leader": 3,
+      "variant_A_n_corpora": 4,
+      "variant_B_hits_on_test_leader": 9,
+      "variant_B_cells": 20,
+      "variant_A_test_means": {
+        "coaid": 0.6177,
+        "gossipcop": 0.8773,
+        "politifact": 0.7169,
+        "recovery": 0.699
+      },
+      "variant_B_test_means": {
+        "coaid": 0.6201,
+        "gossipcop": 0.8746,
+        "politifact": 0.7106,
+        "recovery": 0.6467
+      },
+      "mean_regret_A": 0.0214,
+      "mean_regret_B": 0.0413,
+      "A_beats_best_single_on_val_anywhere": false
+    }
+  }
+}

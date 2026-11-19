@@ -1,0 +1,91 @@
+{
+  "key": "valselect",
+  "name": "Per-corpus model selection on the validation fold",
+  "primary": {
+    "pool": "full_pool",
+    "variant": "A (per-corpus, mean val macro-F1 over seeds 0-4)",
+    "selected_component_per_corpus": {
+      "coaid": "propmlp",
+      "gossipcop": "histgbt15",
+      "politifact": "propmlp15",
+      "recovery": "dlf15"
+    },
+    "pool_per_corpus": {
+      "coaid": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15",
+        "ebgcn",
+        "gatv2",
+        "dlf",
+        "dlf15"
+      ],
+      "recovery": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15",
+        "ebgcn",
+        "gatv2",
+        "dlf",
+        "dlf15"
+      ],
+      "politifact": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15",
+        "ebgcn",
+        "gatv2",
+        "dlf",
+        "dlf15"
+      ],
+      "gossipcop": [
+        "rf",
+        "propmlp",
+        "propmlp15",
+        "histgbt15"
+      ]
+    },
+    "val_mean_per_corpus": {
+      "coaid": 0.6449,
+      "recovery": 0.7052,
+      "politifact": 0.7781,
+      "gossipcop": 0.8906
+    },
+    "test_predictions_file": "outputs/r14/ensemble/valselect/combiner/test_preds_full_pool.json",
+    "test_predictions_layout": "{corpus: {'A'|'B': {seed: {selected_component, story_ids, labels, preds, p1}}}}"
+  },
+  "robustness": {
+    "unmodified_protocol_pool": {
+      "selected": {
+        "coaid": "propmlp",
+        "gossipcop": "rf",
+        "politifact": "propmlp15",
+        "recovery": "dlf15"
+      },
+      "file": "outputs/r14/ensemble/valselect/combiner/test_preds_unmodified_pool.json"
+    },
+    "common_pool": {
+      "selected": {
+        "coaid": "propmlp",
+        "gossipcop": "histgbt15",
+        "politifact": "propmlp15",
+        "recovery": "propmlp15"
+      },
+      "file": "outputs/r14/ensemble/valselect/combiner/test_preds_common_pool.json"
+    }
+  },
+  "rule_file": "outputs/r14/ensemble/valselect/SELECTION_RULE.json",
+  "report_file": "outputs/r14/ensemble/valselect/report.json",
+  "leader_stability_file": "outputs/r14/ensemble/valselect/leader_stability.json",
+  "val_resolution_file": "outputs/r14/ensemble/valselect/val_resolution.json",
+  "per_story_dumps": "outputs/r14/ensemble/valselect/preds/<corpus>/<model>__seed<0-4>.json",
+  "invariants": [
+    "every component fitted on the TRAIN fold only",
+    "selection reads val_* fields only; the rule was frozen in SELECTION_RULE.json first",
+    "test fold read only to emit predictions and post-hoc diagnostics",
+    "seeds 0-4, paired: every component's fold membership verified story-for-story against outputs/r14/ensemble/inventory/fold_manifest.json"
+  ]
+}

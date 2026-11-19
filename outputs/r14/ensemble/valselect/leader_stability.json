@@ -1,0 +1,142 @@
+{
+  "coaid": {
+    "pool": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15",
+      "ebgcn",
+      "gatv2",
+      "dlf",
+      "dlf15"
+    ],
+    "B": 4000,
+    "p_leads_on_test": {
+      "rf": 0.004,
+      "propmlp": 0.011,
+      "propmlp15": 0.006,
+      "histgbt15": 0.785,
+      "ebgcn": 0.022,
+      "gatv2": 0.001,
+      "dlf": 0.15,
+      "dlf15": 0.021
+    },
+    "p_leads_on_val": {
+      "rf": 0.03,
+      "propmlp": 0.628,
+      "propmlp15": 0.001,
+      "histgbt15": 0.076,
+      "ebgcn": 0.123,
+      "gatv2": 0.036,
+      "dlf": 0.105,
+      "dlf15": 0.001
+    },
+    "modal_test_leader": "histgbt15",
+    "modal_test_leader_prob": 0.785,
+    "modal_val_leader": "propmlp",
+    "modal_val_leader_prob": 0.628,
+    "p_val_leader_also_leads_test": 0.011
+  },
+  "gossipcop": {
+    "pool": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15"
+    ],
+    "B": 4000,
+    "p_leads_on_test": {
+      "rf": 0.04,
+      "propmlp": 0.0,
+      "propmlp15": 0.0,
+      "histgbt15": 0.96
+    },
+    "p_leads_on_val": {
+      "rf": 0.266,
+      "propmlp": 0.0,
+      "propmlp15": 0.016,
+      "histgbt15": 0.718
+    },
+    "modal_test_leader": "histgbt15",
+    "modal_test_leader_prob": 0.96,
+    "modal_val_leader": "histgbt15",
+    "modal_val_leader_prob": 0.718,
+    "p_val_leader_also_leads_test": 0.96
+  },
+  "politifact": {
+    "pool": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15",
+      "ebgcn",
+      "gatv2",
+      "dlf",
+      "dlf15"
+    ],
+    "B": 4000,
+    "p_leads_on_test": {
+      "rf": 0.006,
+      "propmlp": 0.001,
+      "propmlp15": 0.231,
+      "histgbt15": 0.083,
+      "ebgcn": 0.001,
+      "gatv2": 0.022,
+      "dlf": 0.007,
+      "dlf15": 0.649
+    },
+    "p_leads_on_val": {
+      "rf": 0.018,
+      "propmlp": 0.0,
+      "propmlp15": 0.624,
+      "histgbt15": 0.018,
+      "ebgcn": 0.0,
+      "gatv2": 0.0,
+      "dlf": 0.0,
+      "dlf15": 0.34
+    },
+    "modal_test_leader": "dlf15",
+    "modal_test_leader_prob": 0.649,
+    "modal_val_leader": "propmlp15",
+    "modal_val_leader_prob": 0.624,
+    "p_val_leader_also_leads_test": 0.231
+  },
+  "recovery": {
+    "pool": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15",
+      "ebgcn",
+      "gatv2",
+      "dlf",
+      "dlf15"
+    ],
+    "B": 4000,
+    "p_leads_on_test": {
+      "rf": 0.011,
+      "propmlp": 0.007,
+      "propmlp15": 0.693,
+      "histgbt15": 0.001,
+      "ebgcn": 0.049,
+      "gatv2": 0.0,
+      "dlf": 0.01,
+      "dlf15": 0.229
+    },
+    "p_leads_on_val": {
+      "rf": 0.311,
+      "propmlp": 0.001,
+      "propmlp15": 0.188,
+      "histgbt15": 0.049,
+      "ebgcn": 0.0,
+      "gatv2": 0.0,
+      "dlf": 0.001,
+      "dlf15": 0.45
+    },
+    "modal_test_leader": "propmlp15",
+    "modal_test_leader_prob": 0.693,
+    "modal_val_leader": "dlf15",
+    "modal_val_leader_prob": 0.45,
+    "p_val_leader_also_leads_test": 0.229
+  }
+}

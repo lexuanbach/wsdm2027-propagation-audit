@@ -1,0 +1,31 @@
+{
+  "B": 3000,
+  "corpora": [
+    "coaid",
+    "gossipcop",
+    "politifact",
+    "recovery"
+  ],
+  "common_pool": [
+    "rf",
+    "propmlp",
+    "propmlp15",
+    "histgbt15"
+  ],
+  "per_corpus_selection": {
+    "coaid": "propmlp",
+    "gossipcop": "histgbt15",
+    "politifact": "propmlp15",
+    "recovery": "dlf15"
+  },
+  "best_uniform_single_on_val": "rf",
+  "val_mean_selection": 0.7547,
+  "val_mean_uniform": 0.7209,
+  "observed_val_gain": 0.0338,
+  "ci95": [
+    0.0048,
+    0.0633
+  ],
+  "p_two_sided": 0.0253,
+  "note": "VAL fold only. Positive gain = per-corpus selection beats the single best uniform model on the fold selection was made on -- which is partly guaranteed by construction and is NOT evidence about test."
+}

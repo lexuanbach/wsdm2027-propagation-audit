@@ -1,0 +1,155 @@
+{
+  "design": "leave-one-seed-out over the 5 paired val folds; test fold never read",
+  "corpora": [
+    "coaid",
+    "gossipcop",
+    "politifact",
+    "recovery"
+  ],
+  "pool": {
+    "coaid": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15"
+    ],
+    "gossipcop": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15"
+    ],
+    "politifact": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15"
+    ],
+    "recovery": [
+      "rf",
+      "propmlp",
+      "propmlp15",
+      "histgbt15"
+    ]
+  },
+  "common_pool": [
+    "rf",
+    "propmlp",
+    "propmlp15",
+    "histgbt15"
+  ],
+  "loso_picks_per_seed": {
+    "0": {
+      "coaid": "propmlp",
+      "gossipcop": "histgbt15",
+      "politifact": "propmlp15",
+      "recovery": "rf"
+    },
+    "1": {
+      "coaid": "propmlp",
+      "gossipcop": "histgbt15",
+      "politifact": "propmlp15",
+      "recovery": "propmlp15"
+    },
+    "2": {
+      "coaid": "propmlp",
+      "gossipcop": "histgbt15",
+      "politifact": "propmlp15",
+      "recovery": "propmlp15"
+    },
+    "3": {
+      "coaid": "propmlp",
+      "gossipcop": "histgbt15",
+      "politifact": "propmlp15",
+      "recovery": "rf"
+    },
+    "4": {
+      "coaid": "propmlp",
+      "gossipcop": "histgbt15",
+      "politifact": "propmlp15",
+      "recovery": "propmlp15"
+    }
+  },
+  "loso_pick_stable_per_corpus": {
+    "coaid": true,
+    "gossipcop": true,
+    "politifact": true,
+    "recovery": false
+  },
+  "loso_uniform_picks": [
+    "propmlp15",
+    "histgbt15",
+    "rf",
+    "histgbt15",
+    "rf"
+  ],
+  "held_out_val_selection_per_seed": [
+    0.7725,
+    0.7233,
+    0.7465,
+    0.7393,
+    0.7746
+  ],
+  "held_out_val_selection_mean": 0.7512,
+  "held_out_val_uniform_per_seed": [
+    0.6926,
+    0.7201,
+    0.7089,
+    0.7195,
+    0.7207
+  ],
+  "held_out_val_uniform_mean": 0.7124,
+  "selection_minus_uniform": 0.0389,
+  "selection_beats_uniform_on_k": 5,
+  "vs_every_fixed_common_component": {
+    "rf": {
+      "held_out_val_mean": 0.7209,
+      "selection_minus": 0.0304,
+      "selection_wins_on_k": 4
+    },
+    "propmlp": {
+      "held_out_val_mean": 0.7042,
+      "selection_minus": 0.047,
+      "selection_wins_on_k": 5
+    },
+    "propmlp15": {
+      "held_out_val_mean": 0.7191,
+      "selection_minus": 0.0321,
+      "selection_wins_on_k": 5
+    },
+    "histgbt15": {
+      "held_out_val_mean": 0.7207,
+      "selection_minus": 0.0306,
+      "selection_wins_on_k": 5
+    }
+  },
+  "selection_beats_every_fixed_component_in_mean": true,
+  "per_corpus_held_out_val": {
+    "coaid": {
+      "selection_mean": 0.6449,
+      "best_fixed_component_on_this_corpus": "propmlp",
+      "best_fixed_mean": 0.6449,
+      "selection_minus_best_fixed": 0.0
+    },
+    "gossipcop": {
+      "selection_mean": 0.8906,
+      "best_fixed_component_on_this_corpus": "histgbt15",
+      "best_fixed_mean": 0.8906,
+      "selection_minus_best_fixed": 0.0
+    },
+    "politifact": {
+      "selection_mean": 0.7781,
+      "best_fixed_component_on_this_corpus": "propmlp15",
+      "best_fixed_mean": 0.7781,
+      "selection_minus_best_fixed": 0.0
+    },
+    "recovery": {
+      "selection_mean": 0.6913,
+      "best_fixed_component_on_this_corpus": "propmlp15",
+      "best_fixed_mean": 0.6984,
+      "selection_minus_best_fixed": -0.0071
+    }
+  },
+  "note": "Held-out val means are NOT comparable to the main table's test numbers; they are a val-fold-internal measure of whether the selection rule generalises across seeds.",
+  "selection_pool_tag": "common"
+}

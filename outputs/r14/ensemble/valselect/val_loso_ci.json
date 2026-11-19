@@ -1,0 +1,71 @@
+{
+  "B": 3000,
+  "corpora": [
+    "coaid",
+    "gossipcop",
+    "politifact",
+    "recovery"
+  ],
+  "common_pool": [
+    "rf",
+    "propmlp",
+    "propmlp15",
+    "histgbt15"
+  ],
+  "design": "story-clustered paired bootstrap of the held-out val folds; LOSO picks fixed",
+  "observed": {
+    "selection": 0.7525,
+    "uniform": 0.7124,
+    "rf": 0.7209,
+    "propmlp": 0.7042,
+    "propmlp15": 0.7191,
+    "histgbt15": 0.7207
+  },
+  "contrasts": {
+    "uniform": {
+      "observed_gain": 0.0402,
+      "ci95": [
+        0.012,
+        0.0711
+      ],
+      "p_two_sided": 0.008,
+      "excludes_zero": true
+    },
+    "rf": {
+      "observed_gain": 0.0317,
+      "ci95": [
+        0.0027,
+        0.0632
+      ],
+      "p_two_sided": 0.0307,
+      "excludes_zero": true
+    },
+    "propmlp": {
+      "observed_gain": 0.0483,
+      "ci95": [
+        0.0317,
+        0.066
+      ],
+      "p_two_sided": 0.0,
+      "excludes_zero": true
+    },
+    "propmlp15": {
+      "observed_gain": 0.0334,
+      "ci95": [
+        0.0095,
+        0.0595
+      ],
+      "p_two_sided": 0.006,
+      "excludes_zero": true
+    },
+    "histgbt15": {
+      "observed_gain": 0.0319,
+      "ci95": [
+        -0.0002,
+        0.0651
+      ],
+      "p_two_sided": 0.052,
+      "excludes_zero": false
+    }
+  }
+}

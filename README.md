@@ -27,7 +27,7 @@ Everything runs on CPU. No GPU and no model checkpoints are needed.
 | --- | --- |
 | `src/docless/` | Python package: data loaders and cascade schema, hypergraph encoder, next-slice pretraining, adjustment head, abstention, all baselines, evaluation and paired statistics |
 | `scripts/` | One script per experiment; each writes JSON under `outputs/` (see the map below) |
-| `outputs/` | Stored results behind every number in the paper and supplement (JSON, about 7 MB) |
+| `outputs/` | Stored results behind every number in the paper and supplement (JSON, about 10 MB) |
 | `tests/` | Unit tests (`pytest`) |
 | `Makefile` | Named targets for every experiment, check and download (`make help`) |
 | `DATA.md` | Where each corpus comes from, the pinned versions, SHA-256 checks and terms of use |
@@ -125,8 +125,11 @@ story IDs of every split so that a rerun can be checked against ours.
 | Section 5.4 (power and equivalence) | `make power tree-power` | `outputs/r10/power/`, `outputs/r15/tree_power/` |
 | Section 5.5 (early detection, leakage, observation windows) | `make early-det censoring censoring-fine size-only`; leakage: `PYTHONPATH=src python -m docless.eval.user_disjoint` | `outputs/r9/early_det_fused/`, `outputs/r8/user_disjoint/`, `outputs/r10/censoring/`, `outputs/r15/censoring_fine/`, `outputs/r15/size_only/` |
 | Section 5.6 (title-text reference point) | `make text-bound` | `outputs/r11/text_bound/` |
+| Section 5.1 (validation-only selection) | `PYTHONPATH=src python outputs/r14/ensemble/valselect/verify_no_leakage.py` re-derives every pick with all test fields blanked; the per-seed dumps come from `run_cheap.py`, `run_gnn.py` and `run_dlf.py` in the same folder | `outputs/r14/ensemble/valselect/` (`SELECTION_RULE.json`, `MANIFEST.json`, per-seed dumps in `preds/`, regrets in `published_leader_check.json`); folds in `outputs/r14/ensemble/inventory/fold_manifest.json` |
 | Publisher-disjoint and size-stratified splits | `make source-disjoint size-split` | `outputs/r9/source_disjoint/`, `outputs/r11/size_split/` |
 | Official BiGCN code, as released | `make official-bigcn` (runs the authors' unmodified code through a one-symbol shim) | `outputs/r15/official_bigcn/twitter15_asreleased.log` |
+
+The validation-only selection in Section 5.1 used eight components on CoAID, ReCOVery and PolitiFact and four on GossipCop (140 corpus, model and seed outputs). `preds/gossipcop` also holds DLF-Full and DLF-Full+ dumps that finished later, so rerunning `published_leader_check.py` lists six GossipCop components; the GossipCop pick and its regret (0.000) do not change. The stored `published_leader_check.json` is the version the paper reports.
 
 ### Supplement
 

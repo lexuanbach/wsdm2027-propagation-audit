@@ -220,3 +220,13 @@ Code and stored results: MIT License (see [LICENSE](LICENSE)). The corpora keep
 their own terms (see [DATA.md](DATA.md)). Questions: please open a GitHub issue or
 contact the corresponding author, Xuan-Bach Le (Ho Chi Minh City University of
 Technology, VNU-HCM).
+
+## Implementation fidelity
+
+[IMPLEMENTATION-FIDELITY.md](IMPLEMENTATION-FIDELITY.md) maps the pinned
+BiGCN source to the tree and event-list adaptations, including root readout,
+regularization, optimizer and selection differences. Source settings are
+separate from historical trial metadata. Official mappings for the other
+adaptations, historical per-trial settings and matched-input official runs
+remain incomplete. Verify the local source ledger with
+`python scripts/verify_fidelity_sources.py`. No training results changed.

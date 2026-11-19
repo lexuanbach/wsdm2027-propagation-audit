@@ -1,11 +1,9 @@
-"""UPFD-prop (Dou et al. 2021) — propagation-only variant.
+"""UPFD-prop-style comparator for the event-list diagnostic.
 
-The full UPFD model conditions on user-profile preferences via an additional
-projection; the paper's Table I reports a "prop" variant where the user-pref
-head is zeroed. That variant is exactly: GCN over the propagation graph +
-mean-pooled story readout. We implement it by reusing GCNFN's two-stage
-aggregation but replacing the ReLU MLP with a (LayerNorm + linear) head,
-which mirrors UPFD's preprocessing more faithfully.
+The local model uses LayerNorm, two residual mean-aggregation passes with GELU,
+and a normalized linear head over burst-member means. It is not a verified
+implementation of the official UPFD architecture with a branch removed.
+See IMPLEMENTATION-FIDELITY.md for source and historical provenance limits.
 """
 from __future__ import annotations
 

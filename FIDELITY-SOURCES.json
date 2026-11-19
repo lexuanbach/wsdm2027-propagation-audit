@@ -1,0 +1,62 @@
+{
+  "scope": "Source comparison, not a new training run or proof of historical per-trial settings",
+  "upstream": {
+    "commit": "5779f2cf86a4649651f2466b43c73caa6ed7463e",
+    "files": [
+      {
+        "path": "Process/dataset.py",
+        "url": "https://raw.githubusercontent.com/TianBian95/BiGCN/5779f2cf86a4649651f2466b43c73caa6ed7463e/Process/dataset.py",
+        "git_blob": "a8d961ad1aad4ffca1f0828412f6ea208b895ddd",
+        "sha256": "a90feba95b3082e37dd757326085220383ba948d7f43d2fdf4b0db546e5b9850"
+      },
+      {
+        "path": "Process/getTwittergraph.py",
+        "url": "https://raw.githubusercontent.com/TianBian95/BiGCN/5779f2cf86a4649651f2466b43c73caa6ed7463e/Process/getTwittergraph.py",
+        "git_blob": "2887445a00d3c617dde00ef78228102675f2db69",
+        "sha256": "25e4fe95c903060c7c8ab98b8c33f777f311e34037c0d5386020c4336ede214d"
+      },
+      {
+        "path": "Process/rand5fold.py",
+        "url": "https://raw.githubusercontent.com/TianBian95/BiGCN/5779f2cf86a4649651f2466b43c73caa6ed7463e/Process/rand5fold.py",
+        "git_blob": "0b1ff49e19baf37efd737d8bf90982affdf93793",
+        "sha256": "377a6504d708be0227d586518193cc40c156bd6b9a9f72cfbc7b3bf7ed99b65f"
+      },
+      {
+        "path": "model/Twitter/BiGCN_Twitter.py",
+        "url": "https://raw.githubusercontent.com/TianBian95/BiGCN/5779f2cf86a4649651f2466b43c73caa6ed7463e/model/Twitter/BiGCN_Twitter.py",
+        "git_blob": "108bd98b96c338b991bf7fc55f2f3ac9de948e7a",
+        "sha256": "84ef49341246e32a65736bbb2992c21c51c1e22c7d88b1795e0ddf9a569f9c32"
+      },
+      {
+        "path": "requirements.txt",
+        "url": "https://raw.githubusercontent.com/TianBian95/BiGCN/5779f2cf86a4649651f2466b43c73caa6ed7463e/requirements.txt",
+        "git_blob": "824aaa00ad822dd14cc69795dc1354aee7ccca15",
+        "sha256": "a89fb64aa1a4d01131c9cfa493df7e37162cda54ed3772b107843464893d7b98"
+      },
+      {
+        "path": "tools/earlystopping.py",
+        "url": "https://raw.githubusercontent.com/TianBian95/BiGCN/5779f2cf86a4649651f2466b43c73caa6ed7463e/tools/earlystopping.py",
+        "git_blob": "33268e9e7c2c184b61cdaa2db10a835db3c3c92a",
+        "sha256": "6ce7f6ee7103c227b0516b9a0d65cd1c016ff5dd51a878028a84297f01c8dc83"
+      }
+    ]
+  },
+  "local_files": {
+    "src/docless/baselines/gcnfn.py": "9f44dfdfcf35b43f4a4cbb47cb902f706dc489e9750b73a1a2851a1e48d52a9e",
+    "src/docless/baselines/bigcn.py": "18fbc6de19b8b490a18015eecbe6723a4bca511bd37c5f20a36f3f311e976e43",
+    "src/docless/baselines/upfd_prop.py": "054e1d059d429a8f83d579750ee7bb49199474499990db1f6db46123260c67ee",
+    "src/docless/baselines/ebgcn.py": "d42812a03735ea0b806243aeb7cf209febe6c978527c23135951cd48d81c1559",
+    "scripts/rev1_gnn.py": "30214159a2227041694746a4c0a652fee93103a86e017f25e227976a4bd8159b",
+    "scripts/rev6_graph_informative.py": "79efeb8cebda73f3316c6370017d7badfe7ec5333890746d6e454280b0446a76",
+    "scripts/rev6_ebgcn_all.py": "99b392f1a858121eb9d2ecaf083b49735b2969f0f1125827c6bcd8e894434247",
+    "scripts/official_bigcn_shim.py": "bf69e0c9dcabbe535651819ae17dfc725a55c63fdfae6574c247fd9c12f8850c",
+    "outputs/r15/graph_valselect/upfd_gossipcop.json": "acad1a51c6600d9af629f2fb46f888083c2c9c4056c0197d8c6ece772f31426d",
+    "outputs/r15/graph_valselect/upfd_politifact.json": "e259898aa7766983d3971e2ae9199c7484699c4c75f0852a5408009e29a0b683"
+  },
+  "unknown": [
+    "Exact official revision mappings for GCNFN, UPFD, EBGCN",
+    "Chosen per-trial learning rates and stopping epochs absent from saved UPFD summaries",
+    "Main-table DLF negative-sampler flags",
+    "Historical source-to-output identity beyond retained hashes and metadata"
+  ]
+}

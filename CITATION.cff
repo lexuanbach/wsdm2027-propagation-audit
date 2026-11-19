@@ -1,35 +1,54 @@
 cff-version: 1.2.0
-message: "If you use this code or the stored results, please cite the paper."
-title: "When Do Propagation Models Beat Cascade Summaries? A Released-Signal Audit of Text-Free Misinformation Detection (code and results)"
+message: If you use this code or the stored results, please cite the paper.
+title: When Do Propagation Models Beat Cascade Summaries? A Released-Signal Audit of Text-Free Misinformation
+  Detection (code and results)
 type: software
 license: MIT
-repository-code: "https://github.com/lexuanbach/wsdm2027-propagation-audit"
+repository-code: https://github.com/lexuanbach/wsdm2027-propagation-audit
 authors:
-  - family-names: Nguyen
-    given-names: Duy
-  - family-names: Tran-Truong
-    given-names: Phat T.
-  - family-names: Ha Xuan
-    given-names: Son
-  - family-names: Le
-    given-names: Xuan-Bach
+- family-names: Nguyen
+  given-names: Duy
+  orcid: https://orcid.org/0009-0000-6348-8830
+  affiliation: University of Economics Ho Chi Minh City
+- family-names: Tran-Truong
+  given-names: Phat T.
+  orcid: https://orcid.org/0000-0003-3199-6333
+  affiliation: Ho Chi Minh City University of Technology (HCMUT), VNU-HCM
+- family-names: Ha Xuan
+  given-names: Son
+  orcid: https://orcid.org/0000-0002-5336-0566
+  affiliation: RMIT University
+- family-names: Le
+  given-names: Xuan-Bach
+  orcid: https://orcid.org/0009-0003-6848-5403
+  affiliation: Ho Chi Minh City University of Technology (HCMUT), VNU-HCM
 preferred-citation:
   type: conference-paper
-  title: "When Do Propagation Models Beat Cascade Summaries? A Released-Signal Audit of Text-Free Misinformation Detection"
+  title: When Do Propagation Models Beat Cascade Summaries? A Released-Signal Audit of Text-Free Misinformation
+    Detection
   authors:
-    - family-names: Nguyen
-      given-names: Duy
-    - family-names: Tran-Truong
-      given-names: Phat T.
-    - family-names: Ha Xuan
-      given-names: Son
-    - family-names: Le
-      given-names: Xuan-Bach
-  collection-title: "Proceedings of the Twentieth ACM International Conference on Web Search and Data Mining (WSDM '27)"
+  - family-names: Nguyen
+    given-names: Duy
+    orcid: https://orcid.org/0009-0000-6348-8830
+    affiliation: University of Economics Ho Chi Minh City
+  - family-names: Tran-Truong
+    given-names: Phat T.
+    orcid: https://orcid.org/0000-0003-3199-6333
+    affiliation: Ho Chi Minh City University of Technology (HCMUT), VNU-HCM
+  - family-names: Ha Xuan
+    given-names: Son
+    orcid: https://orcid.org/0000-0002-5336-0566
+    affiliation: RMIT University
+  - family-names: Le
+    given-names: Xuan-Bach
+    orcid: https://orcid.org/0009-0003-6848-5403
+    affiliation: Ho Chi Minh City University of Technology (HCMUT), VNU-HCM
+  collection-title: Proceedings of the Twentieth ACM International Conference on Web Search and Data Mining
+    (WSDM '27)
   publisher:
     name: ACM
   conference:
-    name: "WSDM '27"
+    name: WSDM '27
     city: Hong Kong
     date-start: 2027-02-15
     date-end: 2027-02-19

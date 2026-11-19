@@ -1,14 +1,11 @@
-"""EBGCN-style edge-enhanced bidirectional GCN (no text).
+"""EBGCN-style comparator for the event-list diagnostic.
 
-A faithful CPU reimplementation, in the spirit of EBGCN (Wei et al., 2021), of a
-dedicated rumor-detection propagation model, added as a
-stronger / more domain-specific comparator than the generic GCNFN/BiGCN/RGCN/GATv2.
-Like BiGCN it propagates in two directions -- top-down (share/burst edges) and
-bottom-up (reply/coexpose edges) -- and, like EBGCN, it *infers* a per-incidence
-edge weight (an edge-enhancement scorer) that reweights each aggregation, with a
-consistency gate between the two directions. It uses the SAME per-split
-hypergraph, node features, burst readout, and validation-only tuning as the other
-graph baselines, so the comparison against PropMLP is controlled.
+This local adaptation learns per-incidence weights for two directional edge
+subsets and combines their representations through a learned scalar gate.
+It shares the local constructed incidence graph and burst-member readout.
+It is not a fidelity-verified implementation of an official EBGCN revision.
+Training selection depends on the calling driver, not this class alone.
+See IMPLEMENTATION-FIDELITY.md for source and historical provenance limits.
 """
 from __future__ import annotations
 import torch

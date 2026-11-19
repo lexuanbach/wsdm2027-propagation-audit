@@ -1,15 +1,10 @@
-"""GCNFN (Monti et al. 2019) — propagation GCN, no text.
+"""GCNFN-style comparator for the event-list diagnostic.
 
-The original GCNFN operates on a pairwise (user-user) propagation graph
-per story and applies two ChebConv layers. We use the same operator (a
-mean-aggregating GCN over the user-only subgraph derived from the
-hypergraph's share+reply edges) and stop at the structural propagation
-signal — so it serves as a clean baseline against DocLessFake's hyperedge
-attention + causal head.
-
-For the without-text regime in paper Table I, GCNFN's text encoder is
-replaced with zero embeddings — we never had a text encoder here, so this
-matches the without-text setting by construction.
+This local adaptation uses two residual node-to-hyperedge-to-node mean passes
+and a burst-member mean readout. It does not implement the upstream ChebConv
+operator or establish fidelity to a particular official GCNFN revision. No
+text encoder is instantiated; this is not a verified ablation of that encoder.
+See IMPLEMENTATION-FIDELITY.md for source and historical provenance limits.
 """
 from __future__ import annotations
 
